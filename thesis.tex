@@ -1,0 +1,82 @@
+\documentclass[oneside,final,letterpaper,10pt]{ucr}
+
+\usepackage{epstopdf}
+\usepackage{appendix,natbib}
+\usepackage[colorlinks=true,citecolor=black,linkcolor=black,urlcolor=blue]{hyperref} %
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{tocloft}
+\usepackage{deluxetable}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{amssymb,amsmath}
+\usepackage{mathtools}
+\usepackage{natbib}
+\usepackage{empheq}
+
+\input{commands}
+
+\mathchardef\mhyphen="2D
+\citestyle{aas}
+\bibliographystyle{apj}
+
+%put figures at top of page pls and thank you
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+
+\def\dsp{\def\baselinestretch{2.0}\large\normalsize} \dsp
+\begin{document}
+
+\title{When Did the Red-Sequence Form?}
+\author{Ryan Michael Foltz}
+\degreemonth{December}
+\degreeyear{2017}
+\degree{Doctor of Philosophy}
+\chair{Dr. Gillian Wilson}
+\othermembers{Dr. Naveen Reddy\\
+Dr. Laura Sales
+}
+\numberofmembers{3}
+\field{Physics}
+\campus{Riverside}
+
+\maketitle
+\copyrightpage{}
+\approvalpage{}
+
+\degreesemester{Fall}
+
+\begin{frontmatter}
+
+\input{acknowledgements}
+
+\input{dedication}
+
+\input{abstract}
+
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\end{frontmatter}
+
+\input{chapter1}
+
+\input{chapter2}
+
+\input{chapter3}
+
+\input{conclusions}
+
+\newpage
+\input{appendix}
+
+\newcommand\newblock{\hskip .11em\@plus.33em\@minus.07em}
+
+\def\dsp{\def\baselinestretch{1.0}\large\normalsize} \dsp
+
+\bibliography{mybib}
+
+\end{document}
