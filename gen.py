@@ -19,8 +19,36 @@ def gen():
   included when the dissertation is recompiled.
   """
   infile = open(input_path, 'r')
-  ipdb.set_trace()
+  lines = infile.readlines()
+  start_index = -1
+  end_index = -1
+  print 'parsing ...'
+  for i, line in enumerate(lines):
+    if '\section{Introduction}' in line:
+      start_index = i
+    if '\end{document}' in line:
+      end_index = i
+      break
   infile.close()
-
   outfile = open(output_path, 'w')
+  outfile.write(r"""\chapter{Quenching timescale}
+
+\newcommand\mynote[1]{\textcolor{red}{#1}}
+\newcommand\persnote[1]{\textcolor{green}{#1}}
+\newcommand\tq[3]{#1\substack{+#2 \\ -#3}}
+\newcommand\hiresult{$\tq{1.24}{0.23}{0.20}\ $}
+\newcommand\htd{$\tq{0.94}{0.20}{0.18}$}
+\newcommand\htf{ $\tq{0.29}{0.14}{0.15}$}
+\newcommand\gresult{$\tq{1.50}{0.19}{0.18}\ $}
+\newcommand\gtd{$\tq{0.69}{0.13}{0.13}$}
+\newcommand\gtf{$\tq{0.80}{0.15}{0.18}$}
+\newcommand\simhiresult{\sim1.2}
+\newcommand\simgresult{\sim1.5}
+\newcommand{\rpm}{\raisebox{.2ex}{$\scriptstyle\pm$}}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+    """)
+  for line in lines[start_index+1:end_index]:
+    outfile.write(line)
   outfile.close()
