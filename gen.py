@@ -11,6 +11,7 @@ plot_hook = re.compile('includegraphics')
 ack_hook = re.compile(r'\\acknowledgments{')
 ack_end_hook = re.compile('}')
 plotname_hook = re.compile('(\w+)\.pdf}')
+width_hook = re.compile('\[width=.+\]')
 
 short_caps = {
   'colormag': 'Color-magnitude diagram for the high-redshift SpARCS cluster sample',
@@ -88,9 +89,11 @@ def gen():
         filename = plotname_hook.search(line).group(1)
         print 'found plot {}'.format(filename)
         capstring = 'caption[{}]'.format(short_caps[filename])
+      if width_hook.search(line):
+        line = width_hook.sub( r'[width=\\textwidth]', line)
+        print r'[width=\textwidth]'
       if '\caption' in line:
-        print 'caption found, subbing {}'.format(capstring)
-        # capstring = 'caption[{}]'.format(short_caps.pop(-1))
+        # print 'caption found, subbing {}'.format(capstring)
         line = re.sub(r'caption', capstring, line)
         pass
       outfile.write(line)

@@ -1,7 +1,10 @@
 √ add short captions to everything
 √ come up with system for ingesting text from paper
-
 √ remove invisiblesection
-why are figures showing up at end of chapter
-move tables in text
+√ why are figures showing up at end of chapter
 
+move tables in text chapter 2
+fix table appearance chapter 3
+bring chapter 2 up to proper standards:
+  italicized filter names
+  italicized variables
