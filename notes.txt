@@ -8,3 +8,6 @@ fix table appearance chapter 3
 bring chapter 2 up to proper standards:
   italicized filter names
   italicized variables
+
+persistent checks:
+  "this paper" / "this work" -> this chapter
