@@ -2,10 +2,14 @@
 .tex file. This makes incorporating changes easier and
 avoids version confusion.
 """
+import re
 import ipdb
 
 input_path = '/Users/RSHAW/science/my_papers/tq_eq/eq.tex'
 output_path = '/Users/RSHAW/science/my_papers/dissertation/tex/chapter3.tex'
+plot_hook = re.compile('includegraphics')
+ack_hook = re.compile(r'\\acknowledgments{')
+ack_end_hook = re.compile('}')
 
 def gen():
   """Generate new chapter .tex file from paper .tex file.
@@ -26,11 +30,13 @@ def gen():
   for i, line in enumerate(lines):
     if '\section{Introduction}' in line:
       start_index = i
-    if '\end{document}' in line:
+    if '% end of chapter 3' in line:
       end_index = i
       break
   infile.close()
+
   outfile = open(output_path, 'w')
+  skipping = False
   outfile.write(r"""\chapter{Quenching timescale}
 
 \newcommand\mynote[1]{\textcolor{red}{#1}}
@@ -49,6 +55,27 @@ def gen():
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist
     """)
+
   for line in lines[start_index+1:end_index]:
-    outfile.write(line)
+    line = re.sub('deluxetable\*', 'deluxetable', line)
+    line = re.sub(r'\\appendix', r'% \\appendix', line)
+    if not skipping:
+      if plot_hook.search(line):
+        print 'plot found: {}'.format(line)
+        line = re.sub('plots/', 'figures/c2/', line)
+      if ack_hook.search(line):
+        print "found acknowledgements. skipping... "
+        print line
+        skipping = True
+        continue
+      outfile.write(line)
+    else:
+      if ack_end_hook.search(line):
+        print "ending acknowledgements."
+        print line
+        skipping = False
+        continue
+
   outfile.close()
+
+gen()
