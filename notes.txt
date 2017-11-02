@@ -1,7 +1,7 @@
-add short captions to everything
+√ add short captions to everything
 √ come up with system for ingesting text from paper
 
-remove invisiblesection
+√ remove invisiblesection
 why are figures showing up at end of chapter
 move tables in text
 
