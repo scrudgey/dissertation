@@ -15,8 +15,9 @@
 
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist
-
+    
 Galaxies form a bimodal distribution in rest-frame color at $z < 2$ \citep{Strateva:2001aa,Baldry:2004aa,Bell:2004aa,Williams:2009tt}, meaning galaxies can be broadly categorized as either actively star-forming spirals (the ``blue cloud"), or quiescent ellipticals and lenticulars (the ``red-sequence").
+%(Cassata et al. 2008; Brammer et al. 2009).
 Although these populations are roughly equivalent in total stellar mass at $z\sim1$, the quiescent galaxy population has nearly doubled in stellar mass, stellar mass density, and number density over the past $\sim7$ Gyr \citep{Arnouts:2007aa,Bell:2004aa,Borch:2006aa,Bundy:2006aa,Brown:2007aa,Faber:2007aa}.
 
 Meanwhile, a variety of studies at intermediate redshift show that galaxy properties correlate with local environment \citep{Cooper:2006aa,Cooper:2007aa,Quadri:2007aa,Patel:2009aa}, such that groups and clusters contain more quiescent than active galaxies at a given stellar mass \citep{George:2011aa,Muzzin:2012dw,Presotto:2012aa,Tanaka:2012aa,Nantais:2017aa}.
@@ -59,7 +60,7 @@ Our magnitudes are reported in the AB system \citep{Oke:1983aa}.
 
 \begin{deluxetable}{lcccccccc}
 \tabletypesize{\scriptsize}
-\tablecaption{SpARCS $z\sim1.6$ cluster sample\label{tbl-clusters}}
+\tablecaption{Description of the $z\sim1.6$ SpARCS cluster sample\label{tbl-clusters}}
 \tablewidth{0pt}
 \tablehead{
 \colhead{Cluster}
@@ -80,6 +81,7 @@ SpARCS-J0335 & 03:35:03.58 & -29:28:55.6 & 1.369 & FORS2, OzDES & \textit{grizYK
 \enddata
 \tablenotetext{a}{Number of spectra.}
 \tablenotetext{b}{Number of spectroscopically-confirmed cluster members.}
+% \tablenotetext{c}{Total number of spectroscopic and photometric cluster members.}
 \end{deluxetable}
 
 The galaxy clusters studied in this work were identified using the Stellar Bump Sequence technique described in detail in \citet[][see also \citealt{Papovich:2008aa}]{Muzzin:2013aa}.
@@ -91,6 +93,7 @@ Spectroscopic confirmation of these clusters was followed by collecting optical 
 For SpARCS-J0330, SpARCS-J0224, and SpARCS-J0335, these data were taken with IMACS at Magellan/Baade, while for SpARCS-J0225 these data come from the Canada-France-Hawaii Telescope (CFHT) Legacy Survey (CFHTLS) which used MegaCam on CFHT.
 All four clusters were imaged in near-infrared \textit{Y}-, \textit{J}-,  and \textit{Ks}-band with HAWK-I at VLT.
 Our photometry also includes the IRAC data from the Spitzer Wide-area Extragalactic Survey \citep[SWIRE;][]{Lonsdale:2003ow} with additional deeper observations in IRAC 3.6 and 4.5 $\mathrm{\mu}$m bands as part of the \textit{Spitzer} Extragalactic Representative Volume Survey (SERVS), and $z^\prime$-band data from the SpARCS survey taken by the MOSAIC-II camera at the Cerro Tololo Inter-American Observatory (CTIO).
+% For more details on the spectroscopic and photometric observations and reductions we refer the reader to \citet{Nantais:2016aa}.
 
 \subsection{Photometric Catalogs}
 
@@ -102,7 +105,7 @@ Robust photometric errors were calculated by directly measuring the 1-$\sigma$ v
 
 The resulting catalog has photometry in $u^\prime~g^\prime~r^\prime~i^\prime~z^\prime$~\textit{Y~J~Ks} and 3.6, 4.5, 5.8, 8.0 $\mu$m.
 We perform an RA/DEC matching to the FORS2 and MOSFIRE spectroscopic data to associate spectroscopic redshifts to galaxies where possible.
-Altogether there are 113 spectroscopically-confirmed members across the four clusters in this sample (see Table \ref{tbl-clusters}).
+Altogether there are 136 spectroscopically-confirmed members across the four clusters in this sample (see Table \ref{tbl-clusters}).
 
 \subsection{Photometric Redshifts}\label{sec-eazy}
 
@@ -116,10 +119,13 @@ When a spectroscopic redshift is available, EAZY fixes the best-fit redshift to 
 Due to instrument constraints, the sample of spectroscopically-confirmed cluster members is almost entirely composed of star-forming galaxies.
 We therefore adopt the photometric cluster membership criteria used by \citet{van-der-Burg:2013aa} and \citet{Nantais:2016aa,Nantais:2017aa}, and consider galaxies to be cluster members if $(z_{\mathrm{phot}}-z_{\mathrm{cluster}})/(1+z_{\mathrm{cluster}}) \leq 0.05$.
 This membership criteria attempts to avoid biasing our sample toward either star-forming or quiescent galaxies, while using a range in photometric redshifts that closely matches the scatter of our photometric redshifts $(\sigma \sim 0.04)$.
+The choice of 0.05 does not drive the results of this work, and repeating the analysis for cutoff values between 0.05 and 0.1 does not change our conclusions.
 
 This necessarily introduces some contamination by field galaxies due to uncertainty in the photometric redshift estimates.
 The present work relies on ratios of the star-forming and quiescent population, which will be largely unaffected if this contamination is not biased toward either galaxy type.
 A previous analysis by \citet{van-der-Burg:2013aa} of a comparable data set and method shows that the overall rate of false positives and negatives is small and largely insensitive to galaxy type at $z\sim1$, and field galaxy surveys find a field passive fraction of $\sim0.5$  \citep[][, see also Appendix \ref{sec-a-field}]{Muzzin:2013aa}, suggesting that this selection introduces minimal error to our conclusions.
+
+
 
 % Galaxies with spectroscopic redshifts are considered to be cluster members if they have a velocity relative to the cluster of $\Delta$ v $\le 1500$ km s$^{-1}$.
 
@@ -158,12 +164,13 @@ The \textit{UVJ}-star-forming and \textit{UVJ}-quiescent populations separate mo
 
 \begin{figure*}[h!]
 \centering \includegraphics[width=\textwidth]{figures/c2/revised/colormag.pdf}
-\caption{Rest-frame \textit{U}-\textit{V} versus absolute \textit{J} magnitude diagram for photometric-redshift-selected cluster members of the four clusters in the sample (see Table \ref{tbl-clusters}).
+\caption[Color-magnitude diagram for the high-redshift SpARCS cluster sample]{Rest-frame \textit{U}-\textit{V} versus absolute \textit{J} magnitude diagram for all photometric-redshift-selected cluster members of the four clusters in the sample (see Table \ref{tbl-clusters}).
 The inset panels show rest-frame \textit{U-V} versus \textit{V-J} color-color diagrams, and galaxies are colored red (quiescent) or blue (star-forming) according to their \textit{U-V} and \textit{V-J} colors (see Section \ref{sec-UVJ}).
+The mass completeness of our sample corresponds roughly to a magnitude limit of $M_J \lesssim -23$.
 % The dashed line shows the location of a model $z=1.6$ color-magnitude relation with a formation redshift of $z_f=5$.
 \label{fig-cmr}}
 \includegraphics[width=\textwidth]{figures/c2/revised/colormag_dustsub.pdf}
-\caption{Dust-corrected rest-frame \textit{U-V} versus absolute \textit{J} magnitude diagram for the four clusters in our sample.
+\caption[Dust-corrected color-magnitude diagram for the high-redshift SpARCS cluster sample]{Dust-corrected rest-frame \textit{U-V} versus absolute \textit{J} magnitude diagram for the four clusters in our sample.
 Galaxies are colored as in Figure \ref{fig-cmr}.
 Photometry is corrected for dust using a Calzetti \citep{Calzetti:2001hh} extinction law with A$_\mathrm{V}$ determined from SED fitting (see Section \ref{sec-fast}).
 Compared to Figure \ref{fig-cmr}, the blue cloud reaches brighter magnitudes and exhibits smaller scatter in \textit{U-V} color.
@@ -195,7 +202,7 @@ The total quenching time $t_Q$, defined as the length of time after accretion un
 
 \begin{figure}[h!]
 \centering \includegraphics[width=0.5\textwidth]{figures/c2/sfr_model.pdf}
-\caption{Model of galaxy star formation rate as a function of time since infall. In this model, galaxies are star-forming and blue before being accreted by a cluster. They remain blue for a time $t_D$, the delay time, before they start to quench and become green. After a further time $t_F$, the fade time, star formation has ceased and the galaxy becomes red.
+\caption[Toy model of star formation history for a quenched galaxy]{Model of galaxy star formation rate as a function of time since infall. In this model, galaxies are star-forming and blue before being accreted by a cluster. They remain blue for a time $t_D$, the delay time, before they start to quench and become green. After a further time $t_F$, the fade time, star formation has ceased and the galaxy becomes red.
 \label{fig-sfr}}
 \end{figure}
 
@@ -276,9 +283,11 @@ In its star-forming phase, a galaxy stays in the blue region, and doesn't enter 
 After quenching, the model crosses the green valley in $\sim0.2$ Gyr.
 The straightforward nature of galaxy evolution in this dust-subtracted color-magnitude space is the primary advantage of this classification scheme, which identifies an unambiguous green valley between the blue cloud and red-sequence.
 
+% what do i mean tosay? tQ depends on RGB so it depends on how we define these populations so it depends on the specific cuts of the ellipses.
+
 \begin{figure}[h!]
 \centering \includegraphics[width=0.5\textwidth]{figures/c2/ellipses_clustering.pdf}
-\caption{Classification of star-forming, intermediate, and quiescent galaxies.
+\caption[Criteria for classifying star-forming, intermediate, and quiescent galaxies based on cuts in dust-corrected color-magnitude space]{Classification of star-forming, intermediate, and quiescent galaxies.
 We plot the dust-corrected rest-frame \textit{U-B} versus absolute \textit{B} magnitude for all cluster members.
 Points are colored according to galaxies' \textit{UVJ} classifications (see Section \ref{sec-UVJ}).
 The colored lines show $3\mhyphen\sigma$ elliptical fits to the two principal clusters of data points identified by a spectral clustering algorithm.
@@ -287,7 +296,7 @@ The solid black line is a BC03 model evolutionary track for continual star forma
 The black line is punctuated by dashes indicating time intervals evenly spaced in redshift.
 The black points on this line mark when the model is is $0.10$ and $9.13$ Gyr old.
 This track demonstrates good agreement between the model's star formation rate and its progressive classification from blue, to green, to red.
-Note that even after 6 Gyr of constantly-integrated star formation, remains fully within the star-forming ellipse, and only leaves it upon quenching.
+Note that even after 6 Gyr of constantly-integrated star formation, the model remains fully within the star-forming ellipse, only leaving it after quenching.
 \label{fig-ellipses}}
 \end{figure}
 
@@ -338,7 +347,7 @@ The central $68\%$ of this distribution then defines the upper and lower confide
 
 \begin{deluxetable}{ccccccccc}
 \tabletypesize{\scriptsize}
-\tablecaption{Quenching Timescales\label{tbl-results}}
+\tablecaption{Quenching timescale measured in the SpARCS and GCLASS cluster samples\label{tbl-results}}
 \tablecolumns{9}
 \tablewidth{0pt}
 \tablehead{
@@ -375,7 +384,7 @@ GCLASS forms a complimentary data set to the $z\sim1.6$ SpARCS sample, having a 
 With this data set, we can compare quenching timescales at $z\sim1.6$ and $z\sim1$.
 
 Using the GCLASS spectroscopic and photometric catalogs, we performed the same cluster member selection and categorization of Sections \ref{sec-members} and \ref{sec-ellipses}.
-We then use the total number of red, blue, and green galaxies to measure a quenching timescale according to Equations~\eqref{eq-model-first}~--~\eqref{eq-model-last}, finding $t_Q=$\gresult Gyr at $z\sim1$.
+We then use the total number of red, blue, and green galaxies above the mass completeness limit $M_* \geq 10^{10.5}~\mathrm{M}_\odot$ to measure a quenching timescale according to Equations~\eqref{eq-model-first}~--~\eqref{eq-model-last}, finding $t_Q=$\gresult Gyr at $z\sim1$.
 
 A previous analysis by our team has independently measured the quenching timescale in this sample.
 \citet{Muzzin:2014aa} identified spectroscopic cluster members with absorption line features indicative of recent, rapidly-truncated star formation.
@@ -387,7 +396,7 @@ The agreement between these methods is therefore a strong indicator that they in
 
 \begin{figure*}[h!]
 \centering \includegraphics[width=\textwidth]{figures/c2/quenching_timescales.pdf}
-\caption{
+\caption[Quenching timescale as a function of redshift]{
 Quenching timescale as a function of redshift.
 Red points show the quenching timescales measured for our cluster samples at $z\sim1$ and $\sim1.6$ (see Section \ref{sec-results}).
 Black points show the quenching timescales measured in clusters by \citet{Wetzel:2013aa}, \cite{Muzzin:2014aa}, \citet{Taranu:2014aa}, \citet{Haines:2015aa}, and \citet{Balogh:2016aa}.
@@ -428,7 +437,7 @@ From this, it is concluded that the quenching time for these galaxies is 4.4 Gyr
 
 This basic approach was adapted by \citet{Wetzel:2013aa}, \citet{Balogh:2016aa}, and \cite{Fossati:2017aa}, and applied to galaxy groups and clusters in the Sloan Digital Sky Survey \citep[SDSS,][]{York:2000aa}, GEEC2, GCLASS, and deep-field 3D-HST/CANDELS \citep{Grogin:2011aa,Koekemoer:2011aa,Brammer:2012aa} data sets.
 In SDSS clusters, \citet{Wetzel:2013aa} find a total quenching time of $4.4 \pm 0.4$ Gyr, where \citet{Balogh:2016aa} finds $5.0\pm0.5$ Gyr.
-\citet{Balogh:2016aa} also finds a quenching time of $7.0 \pm 0.5$ Gyr in SDSS groups, $2.8 \pm 0.5$ Gyr in GEEC2 groups, and $1.5 \pm 0.5$ in the GCLASS cluster sample.
+\citet{Balogh:2016aa} also finds a quenching time of $7.0 \pm 0.5$~Gyr in SDSS groups, $2.8 \pm 0.5$~Gyr in GEEC2 groups, and $1.5 \pm 0.5$~Gyr in the GCLASS cluster sample.
 \citet{Fossati:2017aa} reports the quenching timescale for groups in the 3D-HST/CANDELS fields in three redshift bins spanning $0.5 < z < 1.80$, finding quenching times between 2 and 3 Gyr.
 
 \citet{Muzzin:2014aa} employ a different method to constrain quenching timescales in the GCLASS cluster sample.
@@ -602,14 +611,6 @@ This indicates that environmental quenching mechanisms for these galaxies may de
 
 \end{itemize}
 
-% \acknowledgments{G.W. acknowledges financial support for this work from NSF grant AST-1517863 and from NASA through programs GO-13306, GO-13677, GO-13747 \& GO-13845/14327 from the Space Telescope Science Institute, which is operated by AURA, Inc., under NASA contract NAS 5-26555.
-% JN is supported by Universidad Andres Bello internal research grant DI-18-17/RG.
-% Support for MCC was provided in part by NSF grant AST-1518257 as well as by NASA through grants AR-13242 and AR-14289 from the Space Telescope Science Institute, which is operated by the Association of Universities for Research in Astronomy, Inc., under NASA contract NAS 5-26555.
-% PC acknowledges the support of the FONDECYT postdoctoral research grant no 3160375.
-% Some of the data presented herein were obtained at the W. M. Keck Observatory, which is operated as a scientific partnership among the California Institute of Technology, the University of California and the National Aeronautics and Space Administration
-% The Observatory was made possible by the generous financial support of the W. M. Keck Foundation.
-% The authors wish to recognize and acknowledge the very significant cultural role and reverence that the summit of Maunakea has always had within the indigenous Hawaiian community.
-% We are most fortunate to have the opportunity to conduct observations from this mountain.}
 
 % \appendix
 
@@ -617,7 +618,7 @@ This indicates that environmental quenching mechanisms for these galaxies may de
 
 \begin{figure}[h!]
 \centering \includegraphics[width=0.5\textwidth]{figures/c2/appendix/sfh.pdf}
-\caption{Model star formation rate of a galaxy as a function of time relative to its accretion by the cluster.
+\caption[Toy model of star formation history of a quenched galaxy]{Model star formation rate of a galaxy as a function of time relative to its accretion by the cluster.
 The galaxy's color reflects its star formation rate, such that star-forming galaxies are labeled blue, galaxies with declining star formation rate are labeled green, and quiescent galaxies are labeled red.
 All galaxies that fall into the cluster are assumed to be star-forming, and remain star-forming for a delay time $t_D$.
 Following the delay period, star formation begins to quench over a fade time, $t_F$, after which the galaxy is quiescent.
@@ -706,7 +707,7 @@ The relationship between these variables is summarized visually in Figure \ref{f
 
 \begin{figure}
 \centering \includegraphics{figures/c2/appendix/rgb.pdf}
-\caption{Cluster mass accretion rate $\mathrm{d}M/\mathrm{d}z$ as a function of redshift, for a cluster observed at redshift $z_c$.
+\caption[Relationship between cluster mass accretion rate and counts of galaxies in different phases of evolution]{Cluster mass accretion rate $\mathrm{d}M/\mathrm{d}z$ as a function of redshift, for a cluster observed at redshift $z_c$.
 The number of galaxies accreted over a given redshift interval is proportional to the area under the curve for that interval.
 Blue galaxies, being accreted no later than one $t_D$ ago, have numbers proportional to the integral of the mass accretion rate between $z_c$ and $z_c + \Delta z_D$, labeled B.
 Green galaxies have been in the cluster longer than one $t_D$ but no longer than $t_D + t_F$ and so have been accreted over the interval between $z_c + \Delta z_D$ and $z_c + \Delta z_D + \Delta z_F$, labeled G.
@@ -734,7 +735,7 @@ Altogether we apply the following set of three equations with three unknowns, an
 
 \begin{figure}
 \centering \includegraphics[width=\textwidth]{figures/c2/appendix/fractions.pdf}
-\caption{Modeled evolution of the fractions $\frac{B}{G+R}$ and $\frac{G}{R}$.
+\caption[Evolution of passive fraction within the quenching model]{Modeled evolution of the fractions $\frac{B}{G+R}$ and $\frac{G}{R}$.
 Lines show the evolution of these fractions for the indicated delay and fade times, $t_D$ and $t_F$.
 Note that the fraction of blue galaxies increases with redshift, and with longer delay times, as expected.
 The black point indicates the measured value of these fractions for the stacked high-redshift sample, at the mean redshift of the sample, $z_c = 1.55$.
@@ -808,7 +809,7 @@ The evolution of $f_\mathrm{Q,tot}(z)$ and $f_Q(z)$ with redshift is shown in Fi
 
 \begin{figure}
 \centering \includegraphics[width=0.5\textwidth]{figures/c2/appendix/shechter.pdf}
-\caption{Evolution of the field quiescent fraction with redshift.
+\caption[Evolution of the field quiescent fraction with redshift]{Evolution of the field quiescent fraction with redshift.
 The field quiescent fraction is determined from the field mass function fits of \citet{Muzzin:2013ab} in seven redshift bins, for galaxies with masses $M \geq 10^{10.5}~ \mathrm{M}_\odot$, plotted as points.
 The blue line depicts a function interpolated from the seven points.
 The orange line is the integrated mass accretion rate of a cluster weighted by the field quiescent fraction, or the total fraction of accreted quiescent field galaxies.
@@ -822,7 +823,7 @@ We therefore multiply the number of red galaxies in each cluster by $1-f_\mathrm
 
 \begin{figure}
 \centering \includegraphics[width=\textwidth]{figures/c2/appendix/UVJ.pdf}
-\caption{Left panel: Rest-frame \textit{U-V} versus \textit{V-J} color-color diagram for all cluster members in the high-redshift sample.
+\caption[Mean binned galaxy ages in rest-frame \textit{UVJ} space]{Left panel: Rest-frame \textit{U-V} versus \textit{V-J} color-color diagram for all cluster members in the high-redshift sample.
 Right panel: 2D histogram of mean binned galaxy ages in rest-frame \textit{UVJ} space.
 The ages depicted here are derived from SED fitting (see Section \ref{sec-fast}).
 The vector field plotted in white depicts the negative gradient of the mean binned ages, representing a possible approximation of evolutionary tracks.
@@ -911,7 +912,7 @@ Not all G galaxies are included in the UVJ-star-forming category, having instead
 
 \begin{deluxetable}{ccccccc}
 \tabletypesize{\scriptsize}
-\tablecaption{Quenching Timescales from UVJ Selection\label{tbl-UVJ}}
+\tablecaption{Effect of \textit{UVJ} selection on inferred quenching timescales\label{tbl-UVJ}}
 \tablecolumns{9}
 \tablewidth{0pt}
 \tablehead{
@@ -926,3 +927,4 @@ SpARCS high-redshift & 4 & 1.55 & 85 & 75 & $\tq{1.16}{0.12}{0.14}$ & \hiresult 
 \tablenotetext{a}{Quenching timescale derived using UVJ classification}
 \tablenotetext{b}{Quenching timescale derived using dust-corrected U-B color-magnitude classification, for comparison   (see Section \ref{sec-ellipses})}
 \end{deluxetable}
+
