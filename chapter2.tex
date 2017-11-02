@@ -1,11 +1,11 @@
 \chapter{The Red Sequence at $z\sim1$}
 
-\newcommand\invisiblesection[1]{%
+% \newcommand\invisiblesection[1]{%
 %\refstepcounter{section}%
-\addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}
-\sectionmark{#1}}
+% \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}
+% \sectionmark{#1}}
 
-\invisiblesection{foobar}
+% \invisiblesection{foobar}
 
 Galaxy clusters form from the gravitational collapse and clustering of fluctuations in the primordial density field \citep{Press:1974aa,Gott:1975aa,Kravtsov:2012aa}.
 This purely gravitational process is accompanied by the interrelated evolution of cluster baryonic components, including gas-dynamical radiative cooling and dissipation \citep{White:1978aa,Rudd:2008aa,Gnedin:2004aa,Kravtsov:2012aa}, and the formation and accretion of stellar mass in the form of galaxies. The resulting mature galaxy clusters are massive dark matter halos with deep gravitational potential wells, containing a hot intracluster medium (ICM), old, evolved galaxies, and intergalactic stars.
@@ -33,12 +33,12 @@ The results of our study are discussed in Section \ref{comparison}, while in Sec
 
 In this work we will assume a standard $\Lambda$CDM cosmology with $H_0 = 70 \mathrm{\ km \cdot s^{-1} \cdot Mpc^{-1}}, \Omega_M = 0.3, \mathrm{\ and\ } \Omega_\Lambda = 0.7$, and a Chabrier IMF \citep{chabrierimf} throughout. Our magnitudes are reported in the AB system, unless reported otherwise.
 
-\invisiblesection{Data}
-\addtocounter{section}{1}
+% \invisiblesection{Data}
+% \addtocounter{section}{1}
 \subsection{Data}\label{data}
 \begin{figure*}
 \centering \includegraphics[width=\textwidth]{figures/c1/colormag_final.pdf}
-\caption[Color-mag diagram for GCLASS]{Rest-frame U-B color versus absolute rest-frame B magnitude for spectroscopic members of each of the ten clusters in the GCLASS sample.
+\caption[Color-magnitude diagram for the GCLASS cluster sample]{Rest-frame U-B color versus absolute rest-frame B magnitude for spectroscopic members of each of the ten clusters in the GCLASS sample.
 Quiescent members are shown in red. Those within R$_{200}$ above the 80\% mass completeness limit (see Table \ref{tbl-gclass}) are shown as solid. [O{\sc ii}]-emitters are shown in blue. The dashed lines show the Bayesian maximum likelihood linear fits to the color-magnitude relation for quiescent galaxies within R$_{200}$ above the 80\% mass completeness limit (solid red circles). See also Section \ref{sec-fits} and Table \ref{tbl-colormag}.
 Note that some galaxies are classified as active because they have [O{\sc ii}] emission lines despite having colors consistent with red-sequence quiescent members. These could be be AGN, dust-obscured star-forming galaxies, or red-sequence objects with some residual star formation. They are not included in the fit.\label{fig-colormag}}
 \end{figure*}
@@ -73,7 +73,7 @@ To derive rest-frame photometry, we use the publicly-available photometric redsh
 
 \begin{figure*}
 \centering \includegraphics[width=\textwidth]{figures/c1/colormass_final.pdf}
-\caption{Color-mass relation for each cluster in the GCLASS sample. Symbols are as in Figure 1. The dashed lines show the Bayesian maximum likelihood linear fits to the color-mass relation for quiescent galaxies within R$_{200}$ above the 80\% mass completeness limit (solid red circles). See also Section \ref{sec-fits} and Table \ref{tbl-colormass}.
+\caption[Color-mass diagrams for clusters in the GCLASS sample]{Color-mass relation for each cluster in the GCLASS sample. Symbols are as in Figure 1. The dashed lines show the Bayesian maximum likelihood linear fits to the color-mass relation for quiescent galaxies within R$_{200}$ above the 80\% mass completeness limit (solid red circles). See also Section \ref{sec-fits} and Table \ref{tbl-colormass}.
 Note that some galaxies are classified as active because they have [O{\sc ii}] emission lines despite having colors consistent with red-sequence quiescent members. These could be be AGN, dust-obscured star-forming galaxies, or red-sequence objects with some residual star formation. They are not included in the fit.\label{fig-colormass}}
 \end{figure*}
 
@@ -147,15 +147,15 @@ We show the color-mass relations in Figure \ref{fig-colormass}. The fit paramete
 \subsubsection{Rest-frame UVJ Diagrams}\label{sec-uvj}
 \begin{figure*}
 \centering \includegraphics[width=\textwidth]{figures/c1/uvj.pdf}
-\caption{Rest-frame U-V versus V-J color for each cluster in the GCLASS sample. Quiescent cluster members (without [O{\sc ii}] emission lines) are plotted as red crosses, while star-forming cluster members are plotted in blue. The solid lines show the color-color cut used by \citet{Williams:2009tt} for distinguishing quiescent from star-forming galaxies, where the upper-left quadrant is typically populated by quiescent galaxies.
-We plot in gray a sample of field galaxies from GCLASS with masses $M_* > 10^{9.5} M_\odot$ that are between $0.85 < z < 1.35$, to illustrate the color space occupation at the redshift of the clusters.
+\caption[\textit{U-V} versus \textit{V-J} color-color plot for each cluster in the GCLASS sample]{Rest-frame U-V versus V-J color for each cluster in the GCLASS sample. Quiescent cluster members (without [O{\sc ii}] emission lines) are plotted as red crosses, while star-forming cluster members are plotted in blue. The solid lines show the color-color cut used by \citet{Williams:2009tt} for distinguishing quiescent from star-forming galaxies, where the upper-left quadrant is typically populated by quiescent galaxies.
+We plot in gray a sample of field galaxies from GCLASS with masses $M_* > 10^{9.5}~M_\odot$ that are between $0.85 < z < 1.35$, to illustrate the color space occupation at the redshift of the clusters.
 14\% of the UVJ-quiescent population show [O{\sc ii}] emission, while 16\% of the UVJ-star-forming galaxies exhibit no [O{\sc ii}] emission.
 \label{fig-uvj}}
 \end{figure*}
 
 \begin{figure*}
 \centering \includegraphics[width=\textwidth]{figures/c1/uvjcolormag.pdf}
-\caption{
+\caption[Effect of \textit{UVJ} selection on inferred red-sequence properties]{
 Figure showing how red sequence slope would differ if quiescent members are selected on UVJ color rather than spectroscopically (compare red line to black line from Figure \ref{fig-colormag}).
 As in Figure \ref{fig-colormag}, the figure shows rest-frame U-B versus rest-frame absolute B magnitude for spectroscopic members, color coded by spectroscopically quiescent (red) and star forming (blue), but with symbols denoting UVJ quiescent (circles) and active (stars).  The indicated contamination measures the proportion of UVJ-quiescent, spectroscopically-active galaxies (blue circles).
 The fit shown as a dashed red line is to the solid circles which are UVJ-quiescent galaxies within R$_{200}$ above the 80\% mass completeness limit. See discussion in Section \ref{sec-uvj}.
@@ -191,7 +191,7 @@ We conclude that while the rest-frame UVJ selection technique is generally effec
 
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{figures/c1/colormag_parameter_evolution.pdf}
-\caption{Evolution of the color-magnitude relation slope (top), scatter (middle), and zeropoint (bottom) with redshift, compared to values drawn from the literature. Data points from the GCLASS clusters are plotted as black circles, data from the ACS Intermediate Redshift Survey as red circles (X-ray-selected) or blue circles (optically-selected) (M09), and data from a local sample \citep{Bower:1992mb,van-Dokkum:1998wd,Ellis:1997lk} as yellow circles. The biweight mean value of the parameters from the ACS IRCS sample of X-ray-detected clusters is plotted as a solid line, with dotted lines indicating the 1-$\sigma$ range. We find no measurable difference in the slope, zeropoint or scatter of the CMR in clusters selected by the X-ray or red-sequence technique (see Section \ref{sec-evo}) The zeropoints shown here are Vega magnitudes.
+\caption[Evolution of color-magnitude relation slope, scatter, and intercept with redshift]{Evolution of the color-magnitude relation slope (top), scatter (middle), and zeropoint (bottom) with redshift, compared to values drawn from the literature. Data points from the GCLASS clusters are plotted as black circles, data from the ACS Intermediate Redshift Survey as red circles (X-ray-selected) or blue circles (optically-selected) (M09), and data from a local sample \citep{Bower:1992mb,van-Dokkum:1998wd,Ellis:1997lk} as yellow circles. The biweight mean value of the parameters from the ACS IRCS sample of X-ray-detected clusters is plotted as a solid line, with dotted lines indicating the 1-$\sigma$ range. We find no measurable difference in the slope, zeropoint or scatter of the CMR in clusters selected by the X-ray or red-sequence technique (see Section \ref{sec-evo}) The zeropoints shown here are Vega magnitudes.
 \label{fig-params}}
 \end{figure}
 
@@ -222,13 +222,13 @@ Although the eSFH models redden more slowly, both SSP and eSFH models agree on a
 
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{figures/c1/model_predictions.pdf}
-\caption{Evolution of the color-magnitude relation zeropoint with redshift, compared with exponential SFH (top) and SSP (bottom) model red-sequences. Measured zeropoints of the GCLASS clusters are plotted as red circles in the same manner as the bottom panel of figure \ref{fig-params}. Model values are plotted as dashed lines, while the biweight mean and 1-$\sigma$ variation of our zeropoint values are plotted as solid and dotted lines, respectively. The minimal value for $\langle z_f \rangle_\mathrm{SFH}$ that agrees with the data is $\sim 3$.
+\caption[Using the color-magnitude relation zeropoint to constrain red-sequence formation redshift]{Evolution of the color-magnitude relation zeropoint with redshift, compared with exponential SFH (top) and SSP (bottom) model red-sequences. Measured zeropoints of the GCLASS clusters are plotted as red circles in the same manner as the bottom panel of figure \ref{fig-params}. Model values are plotted as dashed lines, while the biweight mean and 1-$\sigma$ variation of our zeropoint values are plotted as solid and dotted lines, respectively. The minimal value for $\langle z_f \rangle_\mathrm{SFH}$ that agrees with the data is $\sim 3$.
 \label{fig-models}}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{figures/c1/scatter_model.pdf}
-\caption{Difference in $(U-B)_{z=0}$ color for pairs of model stellar populations with age differences $\Delta t = 0.25, 0.5, 0.75$, and $1.0$ Gyr. The age of the younger galaxy model is plotted on the x axis. The vertical solid line is placed at the lower-limit age constraint derived from our zeropoint considerations, such that all viable models must lie in the shaded region. The horizontal lines indicate the biweight mean and 1-$\sigma$ variation in our MLE-measured $(U-B)_{z=0}$ scatters. From this plot, we see that our measured intrinsic scatter is consistent with an age spread $\Delta t > 1$ Gyr.
+\caption[Using the color-magnitude relation scatter to constrain scatter in red-sequence ages]{Difference in $(U-B)_{z=0}$ color for pairs of model stellar populations with age differences $\Delta t = 0.25, 0.5, 0.75$, and $1.0$ Gyr. The age of the younger galaxy model is plotted on the x axis. The vertical solid line is placed at the lower-limit age constraint derived from our zeropoint considerations, such that all viable models must lie in the shaded region. The horizontal lines indicate the biweight mean and 1-$\sigma$ variation in our MLE-measured $(U-B)_{z=0}$ scatters. From this plot, we see that our measured intrinsic scatter is consistent with an age spread $\Delta t > 1$ Gyr.
 \label{fig-scatmodel}}
 \end{figure}
 
@@ -247,7 +247,7 @@ The evolution of this color scatter, and our determination of an age spread, dep
 
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{figures/c1/scatter_evolution.pdf}
-\caption{Evolution of the color-magnitude relation $(U-V)_{z=0}$ scatter with redshift, compared against values drawn from \citet{Snyder:2012wq} (gray circles), \citet{Hilton:2009nq} (white circles), and \citet{Papovich:2010yj}, \citet{Stanford:2012yi}, \citet{Zeimann:2012bf} (gray squares). Data from the GCLASS sample are plotted as black circles. The overlaid models show the difference in $(U-V)_{z=0}$ color for pairs of galaxies of different ages ($\Delta t$), and therefore trace the passive evolution of a purely age-dependent scatter. The models are averaged over galaxies for $\langle z_f \rangle_\mathrm{SFH} > 2$.
+\caption[Evolution of the color-magnitude relation scatter with redshift, with values drawn from the literature]{Evolution of the color-magnitude relation $(U-V)_{z=0}$ scatter with redshift, compared against values drawn from \citet{Snyder:2012wq} (gray circles), \citet{Hilton:2009nq} (white circles), and \citet{Papovich:2010yj}, \citet{Stanford:2012yi}, \citet{Zeimann:2012bf} (gray squares). Data from the GCLASS sample are plotted as black circles. The overlaid models show the difference in $(U-V)_{z=0}$ color for pairs of galaxies of different ages ($\Delta t$), and therefore trace the passive evolution of a purely age-dependent scatter. The models are averaged over galaxies for $\langle z_f \rangle_\mathrm{SFH} > 2$.
 \label{fig-scatter_evolution}}
 \end{figure}
 
@@ -267,11 +267,10 @@ A possible explanation for this is that our sample exhibits progenitor bias \cit
 
 \begin{figure}[t]
 \includegraphics[width=0.5\textwidth]{figures/c1/colormass_parameter_evolution.pdf}
-\caption{Evolution of the color-mass relation slope (top), scatter (middle), and zeropoint (bottom) with redshift. The biweight mean value of the parameters is plotted as a solid line, with dotted lines indicating the 1-$\sigma$ range.\label{fig-massparams}}
+\caption[Evolution of the color-mass relation slope, scatter, and zeropoint with redshift]{Evolution of the color-mass relation slope (top), scatter (middle), and zeropoint (bottom) with redshift. The biweight mean value of the parameters is plotted as a solid line, with dotted lines indicating the 1-$\sigma$ range.\label{fig-massparams}}
 \end{figure}
 
 Historically, studies have compared galaxy color as a function of magnitude, with models to infer the properties of quiescent members. However, galaxy properties such as morphology, size, and color also correlate with stellar mass, and it is a more physically meaningful parameter than magnitude. In Figure \ref{fig-colormass} we show the color-mass relation and linear fits for the ten GCLASS clusters (see Table \ref{tbl-colormass}). While previous studies have presented color-mass relations \citep{Borch:2006aa,Cardamone:2010aa,Huertas-Company:2010aa,Strazzullo:2010kh,Bassett:2013hq,Cimatti:2013aa,Moresco:2013aa}, this is the first time to our knowledge that the red-sequence color-mass relation has been fit.
-
 
 The redshift evolution of this relation's slope, scatter, and zeropoint is shown in Figure \ref{fig-massparams}. We plot the biweight mean values of our fit parameters and their 1-$\sigma$ variation (see Table \ref{tbl-colormass}). We have been unable to find any comparable mass-color fits in the literature to compare with at low redshift, so we are only able to investigate the redshift evolution of the fit over the redshift range spanned by the GCLASS sample. Over this redshift range, $0.8 < z < 1.3$, we do not detect any evolution in the color-mass relation. We note that we also do not find any evolution in the color-mag relation over this redshift range (see Section \ref{sec-evo}).
 
@@ -322,6 +321,7 @@ The CMR zeropoints measured for $0.8 < z < 1.3$ allow us to constrain the quiesc
 % \appendix
 
 \section{Star Formation Histories}\label{appendix}
+
 The eSFH models employ a star formation history parametrized by:
 \begin{equation}\label{eq-esfh}
 \Psi(t,\tau) = \mathrm{SFR}_0\cdot e^{-t/\tau} \left[ \frac{M_{\odot}}{\mathrm{yr}} \right],
@@ -352,7 +352,7 @@ Our observed zeropoints can then place constraints on this $\langle t \rangle_\m
 
 \begin{deluxetable}{llcccccc}
 \tabletypesize{\scriptsize}
-\tablecaption{The GCLASS cluster sample\label{tbl-gclass}}
+\tablecaption[Description of the GCLASS cluster sample]{The GCLASS cluster sample\label{tbl-gclass}}
 \tablewidth{0pt}
 \tablehead{
 \colhead{Index}
@@ -384,7 +384,7 @@ Our observed zeropoints can then place constraints on this $\langle t \rangle_\m
 
 \begin{deluxetable}{llcccccc}
 \tabletypesize{\scriptsize}
-\tablecaption{Color-Magnitude Fit Parameters\label{tbl-colormag}}
+\tablecaption[Color-magnitude relation fit parameters]{Color-Magnitude Fit Parameters\label{tbl-colormag}}
 \tablewidth{0pt}
 \tablehead{
 \colhead{Index} & \colhead{Cluster}
@@ -428,7 +428,7 @@ Our observed zeropoints can then place constraints on this $\langle t \rangle_\m
 
 \begin{deluxetable}{llcccc}
 \tabletypesize{\scriptsize}
-\tablecaption{Color-Mass Fit Parameters\label{tbl-colormass}}
+\tablecaption[Color-mass relation fit parameters]{Color-Mass Fit Parameters\label{tbl-colormass}}
 \tablewidth{0pt}
 
 \tablehead{
