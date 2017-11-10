@@ -1,13 +1,35 @@
+√ edit chapter figures
+adam's comments
+get new figure ready for publication
+  legend
+  axes color black
+  new points
+new figure caption
+investigate bill's intro and summary
+  can i combine / restate my intros?
+outline summary
+  synthesize the two papers
+  future work
+new figure text
+intro
+  lambda cdm -> galaxy formation, baryon dynamics?
+  combine both intros: the red sequence, and how it forms
+chapter 2 text edits
+
+
 √ add short captions to everything
 √ come up with system for ingesting text from paper
 √ remove invisiblesection
 √ why are figures showing up at end of chapter
 
-move tables in text chapter 2
-fix table appearance chapter 3
-bring chapter 2 up to proper standards:
-  italicized filter names
-  italicized variables
+text edits:
+  move tables in text chapter 2
+  fix table appearance chapter 3
+  bring chapter 2 up to proper standards:
+    italicized filter names
+    italicized variables
+  fix figure sizes
 
 persistent checks:
   "this paper" / "this work" -> this chapter
+  appendix -> is it in an appendix or did it get moved?
