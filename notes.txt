@@ -1,20 +1,28 @@
 √ edit chapter figures
-adam's comments
-get new figure ready for publication
-  legend
-  axes color black
-  new points
+√ adam's comments
+  discuss halo mass dependence more?
+  remove harassment from intro
+  a handful of other
+√ get new figure ready for publication
+  √ legend
+  √ axes color black
+  new points (wait)
 new figure caption
-investigate bill's intro and summary
-  can i combine / restate my intros?
-outline summary
-  synthesize the two papers
-  future work
 new figure text
+tQ plot adjustments
+  √ colorblind adjustment
+  SFR outflow change?
+√ investigate bill's intro and summary
+outline summary
+  synthesize the two papers as investigation of red galaxies
+    understand peebles better?
+  future work
 intro
-  lambda cdm -> galaxy formation, baryon dynamics?
+  √ physical cosmology to motivate galaxy evolution
   combine both intros: the red sequence, and how it forms
-chapter 2 text edits
+full text edits (see below)
+acknowledgements
+abstract
 
 
 √ add short captions to everything
@@ -33,3 +41,4 @@ text edits:
 persistent checks:
   "this paper" / "this work" -> this chapter
   appendix -> is it in an appendix or did it get moved?
+  capitalization of sections

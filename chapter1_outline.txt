@@ -1,0 +1,62 @@
+
+  hierarchical
+      A hallmark of cosmology has been the establishment of hierarchical formation (White & Frenk 1991) in which growth of structure in the universe proceeds via a “bottom-up” scenario: matter condenses into low mass halos which eventually merge to form larger structures, culminating with galaxy clusters.
+        noble 2013
+      Current models for the formation and evolution of cosmic struc- ture and galaxies provide us with a picture of hierarchical struc- ture formation, where large objects are built-up successively from the merging of smaller, previously formed objects (e.g. Blumenthal et al. 1984; Davis et al. 1985) and from the more gradual inflow of gas (e.g. White & Rees 1978; Murali et al. 2002).
+        borch 2006
+      Within the standard   cold dark matter ( CDM) cosmological model, dark matter (DM) haloes evolve through hierarchical as- sembly to form galaxies; their gravitational-only dynamics is pow- erfully described by N-body (collisionless) simulations (e.g. Evrard 1990; Thomas & Couchman 1992; Navarro, Frenk & White 1995).
+        romeo 2008
+      Subsequently, emergence of the hierarchical model of structure formation (Gott & Rees 1975, Press & Schechter 1974, White & Rees 1978), combined with the cold dark matter (CDM) cosmological scenario (Blumenthal et al. 1984; Bond, Szalay & Turner 1982), provided a powerful framework for interpretation of the multi-wavelength cluster observations.
+        krastov & borgani
+
+
+
+  successes of the theory
+    The accepted view, convincingly stated by peebles, silk and others, puts the formation of these large-scale objects at some epoch between recombination and the present, because only in this period have the large condensing masses been substantially smaller than the cosmological horizon but bigger than their jeans length.
+      -press & schecter 1974
+    This cosmology accounts for the growth of the large-scale structures of the universe-- clusters, filaments, and voids-- starting from the extremely smooth initial conditions indicated by the cosmic microwave background (Springel 2006).
+      scarlata 2007
+    In a ⇤CDM Universe, dark matter structure is well-described by a network of virialised haloes, connected with and embedded within walls, filaments and sheets of matter.
+      balogh 2014
+    The dynamical aspects of CDM-based galaxy formation can by now be well described either by numerical ab-initio sim- ulations (e.g. Springel & Hernquist 2003; Weinberg et al. 2004) or by semi-analytic modeling (Kauffmann et al. 1993; Cole et al. 1994; Cole et al. 2000; Somerville et al. 2001).
+      borch 2006
+    Many of the bulk properties of clusters are thought to be determined solely by the initial conditions, dissipationless DM that dominates cluster mass budget, and gravity. Thus, clus- ter formation is often approximated in models as DM–driven dissipationless collapse from cosmological initial conditions in an expanding Universe.
+    Studies of abundance and spatial distribution of clusters using dissipationless cosmological simulations show that these statistics retain remarkable memory of the initial conditions.
+      kratsov & borgani
+
+
+
+  but simulations are less successful at smaller resolutions, galaxy scale, where baryonic physics dominate
+    We still lack, however, an understanding of the astrophysical pro- cesses that produce massive galaxies with the properties that these show in the local universe: gas cooling, star formation, stellar, and active galactic nucleus (AGN ) feedback are all poorly—if at all— understood processes, which are currently parameterized with ad hoc recipes in galaxy formation models. Simulations have been less successful on these lower, galactic scales ( 100 kpc), and it is not clear yet whether this is due to the just mentioned complexities of baryon physics or to other reasons.
+      scarlata 2007
+    Yet, when, how and how efficiently stars formed in the course of this evolution appears to depend sensitively on regulating feed-back and on sub-grid (i.e. unresolved) physical processes; consequently, the current generation of models has limited power to robustly ad- dress this most central question of galaxy formation.
+      borch 2006
+    While the hierarchical growth of dark mat- ter haloes has been studied in large N-body simulations (e.g. Springel et al. 2005), the baryonic physics that regulates the cooling of gas and formation of stars in these haloes is much harder to simulate and is not yet well understood.
+      van der burg 2013
+    Therefore, a fully physical approach has to include all the mechanisms driving the baryons’ evolution within DM haloes: radiative cooling of the gas, star formation and the subsequent feedback from the latter on to the gas again, in form of both chemical enrichment and energy release from supernovae (SN), and possibly active galactic nucleus (AGN) feedbacks.
+      romeo 2008
+
+
+galaxies have some unexplained properties
+    The most favored explanation for this growth in the total number of red-sequence galaxies is via the transformation of star-forming galaxies to passive ones, following a quenching episode (Blanton 2006; Bundy et al. 2006; Faber et al. 2007; Brammer et al. 2011).
+      rudnick 2012
+    One of the missing parts in the theory of galaxy formation and evolution is a detailed understanding of the build up of stellar mass in the Universe.
+      van der burg 2013
+    Yet, when, how and how efficiently stars formed in the course of this evolution appears to depend sensitively on regulating feed-back and on sub-grid (i.e. unresolved) physical processes; consequently, the current generation of models has limited power to robustly ad- dress this most central question of galaxy formation.
+    In this context, an empirical assessment of the build-up of stellar mass from early epochs to the present is an im- portant constraint.
+      borch 2006
+    Baryonic matter traces this network on large scales; on small scales, where galaxies and stars form, the relationship between stellar mass and dark matter mass and its evolution is more difficult to understand theoretically.
+    ...Such models provide a remarkably accurate description of the clustering statis- tics of galaxies, and lead to a heavily parameterised prediction of how stellar mass is related to dark matter (e.g. Leauthaud et al. 2012b; Behroozi et al. 2013).
+      balogh 2014
+    an increase in the stellar mass density of the early-type galaxy population since z   1, as large galaxies are assembled primarily at relatively late times (e.g., Aragon-Salamanca et al. 1998; Kauffmann & Charlot 1998). Therefore, an important test of the hierarchi- cal formation scenario is to quantify the evolution of early- type galaxies since z   1.
+      bell 2004
+
+
+* bimodal populations
+* stellar mass functions
+
+galaxy evolution
+    The most favored explanation for this growth in the total number of red-sequence galaxies is via the transformation of star-forming galaxies to passive ones, following a quenching episode (Blanton 2006; Bundy et al. 2006; Faber et al. 2007; Brammer et al. 2011).
+      rudnick 2012
+    Processes such as galaxy–galaxy mergers (Lavery & Henry 1988), harassment and tidal interactions (Moore, Lake & Katz 1998; Bekki & Couch 2011), strangulation (Larson, Tinsley & Caldwell 1980), and ram pressure stripping (Gunn & Gott 1972) are all likely to take place in the dense environments of clusters and groups of galaxies.
+      cerulo 2016
