@@ -35,6 +35,8 @@
       van der burg 2013
     Therefore, a fully physical approach has to include all the mechanisms driving the baryons’ evolution within DM haloes: radiative cooling of the gas, star formation and the subsequent feedback from the latter on to the gas again, in form of both chemical enrichment and energy release from supernovae (SN), and possibly active galactic nucleus (AGN) feedbacks.
       romeo 2008
+    (ii) critical aspects of galaxy formation physics are uncer- tain and beyond the reach of direct simulation (for example, the structure of the interstellar medium, its consequences for star formation and for the generation of galactic winds, the ejection and mixing of heavy elements, AGN feeding and feedback effects . . . ) – these must be treated by phenomenological models whose form and parameters are adjusted by trial and error as part of the overall data-modelling process.
+      springel 2005
 
 
 galaxies have some unexplained properties
@@ -60,3 +62,12 @@ galaxy evolution
       rudnick 2012
     Processes such as galaxy–galaxy mergers (Lavery & Henry 1988), harassment and tidal interactions (Moore, Lake & Katz 1998; Bekki & Couch 2011), strangulation (Larson, Tinsley & Caldwell 1980), and ram pressure stripping (Gunn & Gott 1972) are all likely to take place in the dense environments of clusters and groups of galaxies.
       cerulo 2016
+
+
+
+
+
+CMR
+
+a second fact about the red sequence is the CMR
+    The red-sequence of galaxies is defined by a relation between the color and magnitude of quiescent galaxies \citep{Bower:1992mb,van-Dokkum:1998wd,Baldry:2004oq,Bell:2004qe}, and the slope and intrinsic scatter of this relation has been used to constrain the formation epochs and age spread of the early-type populations within galaxy clusters \citep{Bower:1998cr,2003ApJ...596L.143B,Mei:2009wt}.

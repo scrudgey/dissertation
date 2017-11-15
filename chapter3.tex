@@ -1,7 +1,7 @@
 \chapter{Quenching timescale}
 
-\newcommand\mynote[1]{\textcolor{red}{#1}}
-\newcommand\persnote[1]{\textcolor{green}{#1}}
+%\newcommand\mynote[1]{\textcolor{red}{#1}}
+%\newcommand\persnote[1]{\textcolor{green}{#1}}
 \newcommand\tq[3]{#1\substack{+#2 \\ -#3}}
 \newcommand\hiresult{$\tq{1.24}{0.23}{0.20}\ $}
 \newcommand\htd{$\tq{0.94}{0.20}{0.18}$}
@@ -20,6 +20,7 @@ Galaxies form a bimodal distribution in rest-frame color at $z < 2$ \citep{Strat
 %(Cassata et al. 2008; Brammer et al. 2009).
 Although these populations are roughly equivalent in total stellar mass at $z\sim1$, the quiescent galaxy population has nearly doubled in stellar mass, stellar mass density, and number density over the past $\sim7$ Gyr \citep{Arnouts:2007aa,Bell:2004aa,Borch:2006aa,Bundy:2006aa,Brown:2007aa,Faber:2007aa}.
 
+\mynote{at a given stellar mass?}
 Meanwhile, a variety of studies at intermediate redshift show that galaxy properties correlate with local environment \citep{Cooper:2006aa,Cooper:2007aa,Quadri:2007aa,Patel:2009aa}, such that groups and clusters contain more quiescent than active galaxies at a given stellar mass \citep{George:2011aa,Muzzin:2012dw,Presotto:2012aa,Tanaka:2012aa,Nantais:2017aa}.
 Moreover, with increasing cluster-centric radius (and thus decreasing time since infall), observations find a relative reduction in the number of quiescent systems \cite[e.g.][]{Presotto:2012aa}.
 Together, these results suggest that dense environments shut off (or ``quench") star formation in galaxies —-- a process typically termed ``environmental quenching" \citep{Peng:2010aa}.
@@ -34,7 +35,7 @@ As a galaxy forms stars, its cold gas reservoir is replenished by cooling flows 
 Following the interruption of cooling flows, a galaxy would quench as star formation exhausts the remaining cold gas reservoir over a molecular gas depletion time, $t_{\mathrm{depl}}(\mathrm{H_{mol}})$.
 If the hot gas halo is not stripped, the role of the environment may be simply to prevent the accretion of fresh gas onto the galaxy, which would then quench over a longer total gas depletion time $t_{\mathrm{depl}}(\mathrm{H_I}+\mathrm{H_{mol}})$.
 
-Others have suggested that gas-dynamical feedback and outflows play a central role in removing the gas from galaxy halos \citep{McGee:2014aa,Balogh:2016aa}.
+It is also possible that gas-dynamical feedback and outflows play a central role in removing the gas from galaxy halos \citep{McGee:2014aa,Balogh:2016aa}.
 In this ``overconsumption" scenario, the depletion of gas is augmented by outflows produced by star formation, either directly through radiation pressure or from subsequent supernovae \citet{McGee:2014aa}.
 Quenching then proceeds over an accelerated gas depletion timescale that is inversely proportional to the star formation rate (SFR).
 
@@ -131,6 +132,8 @@ A previous analysis by \citet{van-der-Burg:2013aa} of a comparable data set and 
 
 \subsection{Rest-Frame Colors and UVJ Classification}\label{sec-UVJ}
 
+\mynote{williams $z=1$ cut}
+
 We infer rest-frame absolute magnitudes for each cluster member by convolving its best-fit SED (derived using EAZY) with filter curves at the redshift of each galaxy.
 We note that the span of the observed filters ensures that rest-frame magnitudes are interpolated from the available data, often overlapping with multiple observed passbands.
 
@@ -191,7 +194,7 @@ Section \ref{sec-error} describes how we derive confidence intervals for $t_Q$ w
 A galaxy that is actively forming stars will have blue optical colors dominated by the bright contributions of short-lived O- and B-class stars.
 After the onset of quenching, a galaxy's colors will become redder as these high-mass stars exhaust their hydrogen fuel and leave the main sequence, without new stars to replace them.
 Eventually, a quiescent galaxy's color will reflect primarily the red colors of low-mass, long-lived main sequence stars and red giants.
-We define the  quenching timescale as the time since first infall after which galaxies are quenched.
+We define the quenching timescale as the time since first infall after which galaxies are quenched.
 In this section, we provide a conceptual summary of the method we use to measure $t_Q$, and refer the reader to Appendix \ref{sec-math} for details.
 
 Recent work has shown that environmental quenching can be described by two principal timescales, a ``delay time" ($t_D$) and a ``fade time" ($t_F$) \citep{Wetzel:2013aa, McGee:2014aa, Mok:2014aa, Haines:2015aa, Balogh:2016aa, Fossati:2017aa}.
@@ -242,7 +245,7 @@ We must restrict our analysis to galaxies with masses above these limits, to ens
 
 Second, it has been shown that the environmental quenching timescale varies with satellite galaxy mass \citep{De-Lucia:2012aa,Wetzel:2013aa,Wheeler:2014aa,Fillingham:2015aa}, and it is therefore inaccurate to refer to a singular environmental quenching timescale for all galaxies.
 Any quenching timescale measured with the above toy model will necessarily be for an ensemble of galaxies spanning some range in stellar mass.
-However, the quenching timescale does not vary much at the high mass end, over the small dynamical range in mass studied in this work \citep[e.g. see Fig. 8 of ][Figure 5]{Fillingham:2015aa,Wetzel:2013aa}.
+However, the quenching timescale does not vary much over the small dynamical range in mass studied in this work, at least at low redshift \citep[e.g. see Fig. 8 of ][Figure 5]{Fillingham:2015aa,Wetzel:2013aa}.
 
 Third, the mass dependence must be considered when comparing with results of different studies.
 Comparing with other studies will allow us to investigate the evolution of $t_Q$ with redshift (see Section \ref{sec-discussion}).
@@ -283,7 +286,11 @@ In its star-forming phase, a galaxy stays in the blue region, and doesn't enter 
 After quenching, the model crosses the green valley in $\sim0.2$ Gyr.
 The straightforward nature of galaxy evolution in this dust-subtracted color-magnitude space is the primary advantage of this classification scheme, which identifies an unambiguous green valley between the blue cloud and red-sequence.
 
-% what do i mean tosay? tQ depends on RGB so it depends on how we define these populations so it depends on the specific cuts of the ellipses.
+% how to introduce the subject of final tQ? is this the right place to put it?
+These elliptical regions define the star-forming, quiescent, and intermediate populations, and therefore the final value of $t_Q$ depends on their precise contours.
+The total value of $t_Q$ is set by the location of the border between the green and red population, while the blue-green border, determining the fraction of star-forming galaxies that are intermediate, affects the way $t_Q$ is subdivided into $t_D$ and $t_F$.
+Through repeated experimentation, we determine that the results are robust to reasonable tweaks in the contours of these ellipses, which affect the result within error bars.
+The red-green border necessarily lies in the green valley, a region of low galaxy number density, where tweaks to this border do not affect the bulk of galaxies considered quenched or star-forming, therefore having little effect on their ratio.
 
 \begin{figure}[h!]
 \centering \includegraphics[width=\textwidth]{figures/c2/ellipses_clustering.pdf}
@@ -322,7 +329,7 @@ Although we can measure a velocity dispersion for these clusters, it would not b
 We therefore test our method using a variety of cuts on physical clustercentric distance, $r \leq 1000$ kpc, $r \leq 1500$ kpc, and $r \leq 2000$ kpc.
 The choice of radial cut does not greatly affect the results of our analysis, and so we choose to restrict our consideration to galaxies with $r \leq 2000$ kpc.
 
-\subsection{Field Correction}\label{sec-bkg}
+\subsection{Background Subtraction}\label{sec-bkg}
 
 Our number counts are contaminated by the inclusion of field galaxies due to the uncertainty inherent in photometric-redshift selection.
 Before determining the quenching timescale we need to subtract the field galaxy background.
@@ -343,7 +350,7 @@ For each cluster, we create 200 simulated data sets consisting of numbers of red
 For each simulated data set we substitute the values for R, G, and B into Equations~\eqref{eq-model-first}~--~\eqref{eq-model-last} and solve for $t_Q$, arriving at a distribution in $t_Q$.
 The central $68\%$ of this distribution then defines the upper and lower confidence intervals for $t_Q$.
 
-\section{Results}\label{sec-results}
+\section{Interpreting the Quenching Timescale}\label{sec-results}
 
 \begin{deluxetable}{ccccccccc}
 \tabletypesize{\scriptsize}
@@ -480,7 +487,7 @@ This is accomplished variously by cuts on colors and/or magnitude, inferred star
 Second, they must relate the characteristics of the quenched or active population, or quenched fraction to timescale information.
 This is universally done by comparison with numerical simulations, which can relate infall times to distributions in phase space, radial surface densities, or to mass accretion histories, as in the present work.
 
-Besides these fundamental differences in model, the next most important source of systematic error is likely the choice of how to treat the field subtraction (Appendix \ref{sec-a-field} in the present work).
+Besides these fundamental differences in model, the next most important source of systematic error is likely the choice of how to treat the field-quenched correction (Appendix \ref{sec-a-field} in the present work).
 When characterizing the quenched population of a cluster, one needs to account for the fact that the observed quenched fraction in clusters isn't entirely the result of quenching within the cluster, because quenched galaxies are found in the field as well.
 Therefore some number of quenched galaxies need to be subtracted from the observed count, in a manner informed by the field quenched fraction.
 For \citet{McGee:2011aa}, \citet{Balogh:2016aa}, and \cite{Fossati:2017aa}, this is done by calculating the quenched fraction that is in excess of the field at the observed redshift of the cluster, which is sometimes referred to as the ``conversion fraction" or the ``environmental quenching efficiency".
@@ -538,7 +545,7 @@ This value of $\eta$ was found to best fit the quenching timescales described by
 While \citet{McGee:2014aa} intend for this timescale to model the delay time rather than the full quenching time, we include it on Figure \ref{fig-tq}, noting that any difference due to the addition of fade time can be recovered by minor adjustments to $\eta$.
 It is broadly the case that outflow timescales for various values of $\eta$ scale with redshift approximately as SFR, and so we also include on Figure \ref{fig-tq} the SFR evolution of \citet{Whitaker:2012aa}, normalized to a low-redshift timescale of 5 Gyr.
 
-The dynamical time $t_{\mathrm{dyn}}$ is commonly used to characterize timescales that depend on the kinematics of a galaxy within a cluster, such as gas stripping scenarios or harassment.
+The dynamical time $t_{\mathrm{dyn}}$ is commonly used to characterize timescales that depend on the kinematics of a galaxy within a cluster, such as gas stripping scenarios.
 A cluster halo in virial equilibrium is characterized by relations between its radius $R$ and the velocity $V$ of its constituent galaxies, defining a dynamical timescale, $t_{\mathrm{dyn}}=R/V$.
 From considerations of cosmology, the dynamical time is expected to scale with redshift as $t_{\mathrm{dyn}} \propto (1+z)^{-1.5}$.
 If quenching is accomplished after a galaxy makes one or multiple passes through a particular radius of its host halo, $t_Q$ will be proportional to $t_{\mathrm{dyn}}$.
@@ -565,7 +572,7 @@ It is also possible that gas is simply consumed more quickly by high-mass galaxi
 
 The evolution of the dynamical time represents an evolution in the properties of groups and clusters (velocity dispersions, halo masses, etc.), not galaxy properties (SFR, gas fractions, etc.).
 If quenching tracks $t_\mathrm{dyn}$, then it must be determined by the dynamical properties of clusters .
-Such a scenario is often interpreted as being evidential of dynamical quenching scenarios such as ram-pressure stripping, or harassment.
+Such a scenario is often interpreted as being evidential of dynamical quenching scenarios such as ram-pressure stripping.
 
 The SFR-outflow timescale does not fit the data points at high redshift.
 While $\eta$ may be adjusted to yield systematically longer or shorter timescales, it is the evolution of the timescale that makes it a poor fit to the data points, and this evolution is indeed driven by the evolution in galaxies' star formation rates.
@@ -602,12 +609,12 @@ We measure a quenching timescale of $t_Q= $\gresult{} Gyr in a sample of 10 gala
 \item
 The evolution of the quenching timescale in clusters from the local universe to $z=1.55$ evolves faster than the gas depletion timescale but slower than an SFR outflow model.
 Instead, it appears to scale with the dynamical time, when normalized to the quenching timescale in local galaxy clusters.
-This suggests that kinematical quenching mechanisms such as ram-pressure stripping or harassment may dominate in galaxies with masses $M_* \geq 10^{10.5}~ \mathrm{M}_\odot$ in clusters at high redshift.
+This suggests that kinematical quenching mechanisms such as ram-pressure stripping may dominate in galaxies with masses $M_* \geq 10^{10.5}~ \mathrm{M}_\odot$ in clusters at high redshift.
 
 
 \item
 The quenching timescale for galaxies with masses $M_* \geq 10^{10.5}~ \mathrm{M}_\odot$, measured out to $z\sim1.55$, appears to be shorter in clusters than in groups.
-This indicates that environmental quenching mechanisms for these galaxies may depend on host halo mass at high redshift, as would be the case for kinematical quenching mechanisms such as ram-pressure stripping or harassment.
+This indicates that environmental quenching mechanisms for these galaxies may depend on host halo mass at high redshift, as would be the case for kinematical quenching mechanisms such as ram-pressure stripping.
 
 \end{itemize}
 
@@ -634,7 +641,7 @@ We take as given the observed numbers of red, green, and blue galaxies in a give
 For our purposes, it is first necessary to correct for galaxies that were already quenched before they fell into the cluster.
 We calculate the total fraction of quiescent galaxies accreted from the field over the lifetime of the cluster using the field galaxy mass functions computed by \citet{Muzzin:2013ab}.
 We then subtract this fraction from the observed number of red galaxies, leaving only galaxies that were blue when accreted by the cluster.
-This correction is described in detail in \ref{sec-a-field}.
+This field-quenched correction is described in detail in \ref{sec-a-field}.
 For the rest of this discussion, we assume corrected number counts of galaxies, and that these galaxies were star-forming when accreted.
 
 A (blue) star-forming galaxy that falls into the cluster will remain star-forming for a delay time, $t_D$.
@@ -766,7 +773,7 @@ and thereby measure the quenching timescale, $t_Q = t_D + t_F$.
 The technique we describe here relies on interpreting the integrated mass accretion history of a cluster, and so the resulting quenching timescales are time-averaged over the history of the cluster.
 This should not impact the results of this paper as the clusters we study here are still very young, but would need to be taken into consideration when applying this technique at low redshift.
 
-\subsection{Correcting for accreted quiescent galaxies}\label{sec-a-field}
+\subsection{Field-quenched Correction}\label{sec-a-field}
 
 Quenched galaxies exist in the field, and therefore some of the galaxies accreted by a cluster will already be quenched.
 If these galaxies are included when calculating $t_Q$, they will inflate the relative proportion of red galaxies, resulting in an apparently shorter quenching time.

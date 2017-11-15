@@ -56,8 +56,8 @@ def gen():
   skipping = False
   outfile.write(r"""\chapter{Quenching timescale}
 
-\newcommand\mynote[1]{\textcolor{red}{#1}}
-\newcommand\persnote[1]{\textcolor{green}{#1}}
+%\newcommand\mynote[1]{\textcolor{red}{#1}}
+%\newcommand\persnote[1]{\textcolor{green}{#1}}
 \newcommand\tq[3]{#1\substack{+#2 \\ -#3}}
 \newcommand\hiresult{$\tq{1.24}{0.23}{0.20}\ $}
 \newcommand\htd{$\tq{0.94}{0.20}{0.18}$}

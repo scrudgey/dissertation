@@ -1,25 +1,87 @@
+\newcommand\mynote[1]{\textcolor{red}{#1}}
+\newcommand\persnote[1]{\textcolor{green}{#1}}
+
 \chapter{Introduction}
 
-In recent years, the $\lambda$CDM paradigm has emerged as the accepted description of the universe.
-In this model, dark matter (DM) haloes evolve through hierarchical assembly, being built-up from successive mergers of smaller haloes over cosmological times. (cites)
-The dynamical aspects of structure formation in a $\lambda$CDM universe are well described by the purely gravitational collapse of dissipationless dark matter, and can be studied in large N-body simulations (e.g. Springel et al. 2005).
-This $\lambda$CDM framework has enjoyed dramatic success in accounting for the observed state of the universe, from the abundance and spatial distribution of the large-scale structures of the universe (clusters, voids, and filaments), to their emergence from the extremely smooth initial conditions indicated by the cosmic microwave background (CMB) (Springel 2006), as well as the temperature anisotropy of the CMB.
+In recent years, the $\Lambda$CDM paradigm has emerged as the accepted description of the universe.
+In this model, dark matter (DM) haloes evolve through hierarchical assembly, being built-up from successive mergers of smaller haloes over cosmological times. \citep{Gott:1975ab,Press:1974aa,White:1978aa,Blumenthal:1984aa,Davis:1985aa,White:1991aa,Barnes:1992aa,Cole:2000aa}.
+Baryonic matter traces the DM distribution, forming the visible components of these structures.
+The dynamical aspects of structure formation in a $\Lambda$CDM universe are well described by the purely gravitational collapse of dissipationless dark matter, and can be studied in large N-body simulations \citep[e.g.,][]{Springel:2005aa,Thomas:1992aa,Navarro:1995aa,Weinberg:2004aa}.
 
-On smaller, galactic scales (100 kpc), however, this picture is complicated by the dissipative physics of baryons:
-radiative cooling of gas, star formation, active galactic nucleus (AGN) feedback, and chemical enrichment and energy release from supernovae (SN) are poorly—understood processes, which are currently parameterized with ad hoc recipes in galaxy formation models with varying degrees of success.
-Consequently, the current generation of models have lacked a complete accounting of galaxy formation and evolution.
-A full description of the relevant physics is vitally important to complete the picture from large-scale cosmology to small-scale astrophysics.
+This $\Lambda$CDM framework has enjoyed dramatic successes in accounting for the observed state of the universe, from the abundance and spatial distribution of the large-scale structures of the universe (clusters, voids, and filaments), to their emergence from the extremely smooth initial conditions indicated by the cosmic microwave background (CMB) \citep{Springel:2006aa}, as well as the temperature anisotropy of the CMB \citep[][and references therein]{Narlikar:2001aa}.
 
-An empirical description of galaxy evolution emerges from observations revealed by surveys of galaxy populations and clusters to high redshift.
-First among the salient facts revealed by galaxy surveys is that galaxies form a bimodal distribution in rest-frame color at $z < 2$ \citep{Strateva:2001aa,Baldry:2004aa,Bell:2004aa,Williams:2009tt}, meaning galaxies can be broadly categorized as either actively star-forming spirals (the ``blue cloud"), or quiescent ellipticals and lenticulars (the ``red-sequence").
+% semianalytic / hydrodynamical simulations?
+
+On smaller, galactic scales (100 kpc), however, the consequences of this model are complicated by the dissipative physics of baryons:
+radiative cooling of gas, star formation, active galactic nucleus (AGN) feedback, and chemical enrichment and energy release from supernovae (SN) are poorly\-understood processes, which are currently parameterized by ad hoc recipes in galaxy formation models.
+Consequently, the current generation of models have lacked a complete accounting of the build-up over cosmic time of stellar mass.
+Better observational constraints on the formation and evolution of galaxies are vitally important in order to complete the description of the relevant physics, from large-scale cosmology to small-scale astrophysics.
+
+\section{Quenching}
+
+An empirical description of galaxy evolution emerges from surveys of galaxy populations and clusters to high redshift.
+First among the salient facts is that galaxies form a bimodal distribution in rest-frame color at $z < 2$ \citep{Strateva:2001aa,Baldry:2004aa,Bell:2004aa,Williams:2009tt}, meaning galaxies can be broadly categorized as either actively star-forming spirals (the ``blue cloud"), or quiescent ellipticals and lenticulars (the ``red-sequence").
 Although these populations are roughly equivalent in total stellar mass at $z\sim1$, the quiescent galaxy population has nearly doubled in stellar mass, stellar mass density, and number density over the past $\sim7$ Gyr \citep{Arnouts:2007aa,Bell:2004aa,Borch:2006aa,Bundy:2006aa,Brown:2007aa,Faber:2007aa}.
-The favored explanation for this is that active galaxies transform into passive ones through a process of ``quenching". (Blanton 2006; Bundy et al. 2006; Faber et al. 2007; Brammer et al. 2011)
+The favored explanation for this is that active galaxies transform into passive ones through a process of ``quenching" \citep{Blanton:2006aa,Bundy:2006aa,Faber:2007aa,Brammer:2011aa}.
 
-Although much evidence exists for quenching driven both by galaxy stellar mass and environment, the specific physical mechanisms responsible remain unclear.
-Processes such as galaxy–galaxy mergers (Lavery & Henry 1988), harassment and tidal interactions (Moore, Lake & Katz 1998; Bekki & Couch 2011), strangulation (Larson, Tinsley & Caldwell 1980), and ram pressure stripping (Gunn & Gott 1972) are all likely to take place in the dense environments of clusters and groups of galaxies.
-At the same time, processes intrinsic to the galaxy, such as AGN feedback, or the exhaustion of gas reservoirs by star-formation-driven gas-dynamical outflows have also been proposed as quenching mechanisms \citep{McGee:2014aa,Balogh:2016aa}.
+Much work is now focused on understanding the specifics of quenching: where and when it happens in the course of a galaxy's life, and how it is physically accomplished.
+Quenching would have to shut off star formation and possibly effect morphological transformation \citep{Dressler:1980aa}.
+Observations in this area have the potential to constrain the relative contributions of the various nonlinear dynamical and baryonic processes that are thought to occur in dark matter halos.
 
-motivates paper 1, paper 2
+Quenching is at least partly driven by environmental factors.
+A variety of studies at intermediate redshift show that galaxy properties correlate with local environment \citep{Cooper:2006aa,Cooper:2007aa,Quadri:2007aa,Patel:2009aa}, such that groups and clusters contain more quiescent than active galaxies at a given stellar mass \citep{George:2011aa,Muzzin:2012dw,Presotto:2012aa,Tanaka:2012aa,Nantais:2017aa}.
+Moreover, with increasing cluster-centric radius, observations find a relative reduction in the number of quiescent systems \cite[e.g.][]{Presotto:2012aa}.
+Processes such as galaxy–galaxy mergers \citep{Lavery:1988aa}, harassment and tidal interactions \citep{Moore:1998aa,Bekki:2011aa}, strangulation \citep{Larson:1980aa}, and ram pressure stripping \citep{Gunn:1972aa} are all likely to take place in dense cluster environments.
+
+Quenching also correlates with galaxy mass, in that more massive galaxies are more frequently quiescent, independent of the environmental effect \citep{Kauffmann:2004aa,Baldry:2006aa,Peng:2010aa}.
+Processes intrinsic to the galaxy, such as AGN feedback, or the exhaustion of gas reservoirs by star-formation-driven gas-dynamical outflows are possible candidates for mass-driven quenching mechanisms \citep{McGee:2014aa,Balogh:2016aa}.
+
+The specific physical mechanisms responsible for quenching remain unclear.
+% understanding it or constraining it will aid our understanding of the processes that shape baryons within DM halos.
+
+\section{The Color-Magnitude Relation}
+
+The quiescent population of galaxies exhibits a clear relationship between color and magnitude, such that brighter galaxies are redder \citep{Bower:1992mb,van-Dokkum:1998wd,Baldry:2004oq,Bell:2004qe}.
+The color-magnitude relation exhibits remarkably little scatter, even over a dynamic range spanning () orders of magnitude
+It has been recognized that this regularity within the quenched population is a valuable clue as to the nature of the formation and evolution of galaxies (?)
+
+% linear relation, parametrized by slope, scatter, and intercept
+
+A galaxy's luminosity, being the integrated light of its stellar population, is a good proxy for its stellar mass, especially in infrared bands where dust attenuation is minimal.
+The interpretation of color is more subtle, as it depends in general on a galaxy's dust content, age, star formation history, and metallicity.
+The CMR is a property of quiescent galaxies in general, containing information about the formation and evolution of this population.
+% Nevertheless, the CMR has been interpreted as yielding valuable insights into the history of galaxy formation and evolution.
+% this in turn aids our understanding of the subscale baryonic physics
+
+Kodama \& Arimoto have shown that the slope of the CMR is predominantly a mass-metallicity relation rather than a mass-age relation, due to its lack of evolution with redshift.
+This means that more massive galaxies are more metal rich, a fact which may relate to the enrichment of the ISM in massive DM halos in the early universe.
+
+The zeropoint of the CMR describes the typical redness of a galaxy of a given mass.
+The red color of a passively-evolving stellar population increases monotonically with age as the main-sequence turn off moves down the main sequence.
+The zeropoint of the CMR is indeed seen to evolve with redshift in a manner consistent with aging over cosmological time.
+The overall value of the zeropoint, then, can be interpreted to yield an overall age of the red-sequence population, or a formation redshift.
+
+peebles, early work: half of queiscent galaxies formed at z ≥ 1
+
+The intrinsic scatter of the CMR is commonly taken to be the result of variation in the physical properties of red-sequence galaxies, independent of the dominant mass effect.
+The scatter could indicate variation in galaxy ages or metallicities.
+
+rudnick refs: RS properties from models
+
+taken together, these observations describe a scenario where ()
+the study and interpretation of the RS, esp. to high redshift, is a basic way to inform our understanding of galaxy formation and evolution
+% and thereby complete our picture of baryonic processes
+
+% open questions: is it present in the blue cloud?
+% how is it affected by galaxies migranting onto RS?
+% can models reproduce its properties?
+
+
+
+In this work, we present studies of the galaxy populations in two samples of clusters with the aim of better understanding the history of quiescent galaxies in the universe.
+
+something more general: red population as function of selection method
+measure red-sequence color-mag relation
 
 introduce samples?
 
