@@ -71,3 +71,16 @@ CMR
 
 a second fact about the red sequence is the CMR
     The red-sequence of galaxies is defined by a relation between the color and magnitude of quiescent galaxies \citep{Bower:1992mb,van-Dokkum:1998wd,Baldry:2004oq,Bell:2004qe}, and the slope and intrinsic scatter of this relation has been used to constrain the formation epochs and age spread of the early-type populations within galaxy clusters \citep{Bower:1998cr,2003ApJ...596L.143B,Mei:2009wt}.
+
+CMR s;p[e scatter zerpoint studies over redshift
+    see my paper for cites
+
+
+interpretation of zeropoint to formation redshift
+    foltz 2015
+
+interpretation of scatter as age
+    bower 1992
+
+simulations failing to reproduce RS properties
+    i thought this was rudnick?
