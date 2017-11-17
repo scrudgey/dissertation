@@ -72,15 +72,26 @@ CMR
 a second fact about the red sequence is the CMR
     The red-sequence of galaxies is defined by a relation between the color and magnitude of quiescent galaxies \citep{Bower:1992mb,van-Dokkum:1998wd,Baldry:2004oq,Bell:2004qe}, and the slope and intrinsic scatter of this relation has been used to constrain the formation epochs and age spread of the early-type populations within galaxy clusters \citep{Bower:1998cr,2003ApJ...596L.143B,Mei:2009wt}.
 
+    The scatter, slope, and evolution of the CMR in clusters of galaxies are all consistent with the interpretation of the CMR as primarily a metallicity sequence of old galaxies, in which more massive galaxies are more metal-rich (e.g., Bower et al. 1992; Kodama & Arimoto 1997; Vazdekis et al. 2001; Bernardi et al. 2003). A modest age spread is possible (Trager et al. 2000).
+      bell 2004
+
 CMR s;p[e scatter zerpoint studies over redshift
     see my paper for cites
-
-
-interpretation of zeropoint to formation redshift
-    foltz 2015
-
-interpretation of scatter as age
-    bower 1992
+    and the slope and intrinsic scatter of this relation has been used to constrain the formation epochs and age spread of the early-type populations within galaxy clusters \citep{Bower:1998cr,2003ApJ...596L.143B,Mei:2009wt}.
+      foltz 2015
+    The evolution of the properties of individual early-type galaxies with redshift has been studied in clusters of galaxies, where the assembly of sizable galaxy samples has been fea- sible. It appears as if individual early-type galaxies were formed relatively quickly at high redshift and simply aged to the present day through so-called passive evolution (e.g., Kodama & Arimoto 1997; Kelson et al. 2001; van Dokkum et al. 2003).
+      bell 2004
 
 simulations failing to reproduce RS properties
-    i thought this was rudnick?
+    The current (and sim- ple) implementation of this quenching has difficulty in matching the clustering and abundance of red galaxies, implying that the model is too efficient at quenching star formation in low-mass galaxies (e.g., Coil et al. 2008).
+      -rudnick 2012
+      see also mcgee 2014
+
+    For example, the hydrodynamical and N-body simulations of Romeo et al. (2008) predict a strong evolu- tion in the slope of the cluster red sequence, which at z = 0.8 flattens and then turns positive, while the semi-analytical models of Menci et al. (2008) predict a non-evolving flat red sequence. This high- lights a major deficiency in these models.
+      -cerulo 2016
+      Merson et al. (2015)
+    Generally speak- ing, the correct reproduction of the red sequence requires some post-processing of the outputs of semi-analytical models (see e.g. Ascaso, Mei & Ben ́ıtez 2015).
+      -cerulo 2016
+
+    Another persistent problem is in the prediction of satellite galaxy properties; models consistently predict satellite populations that ceased star formation prematurely, compared with observations (e.g. Weinmann et al. 2011; Vulcani et al. 2014). Attempts to solve this problem with a more physical treatment of gas stripping (e.g. McCarthy et al. 2008) generally fail to reproduce the observed SFR distribution of these galaxies (e.g. Font et al. 2008; Weinmann et al. 2010).
+      balogh 2016

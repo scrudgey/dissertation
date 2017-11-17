@@ -54,7 +54,7 @@ def gen():
 
   outfile = open(output_path, 'w')
   skipping = False
-  outfile.write(r"""\chapter{Quenching timescale}
+  outfile.write(r"""\chapter{Quenching timescale}\label{chap-3}
 
 %\newcommand\mynote[1]{\textcolor{red}{#1}}
 %\newcommand\persnote[1]{\textcolor{green}{#1}}
