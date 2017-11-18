@@ -43,3 +43,4 @@ persistent checks:
   appendix -> is it in an appendix or did it get moved?
   capitalization of sections
   abbreviations and the order they appear in the text
+
