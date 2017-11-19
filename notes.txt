@@ -1,34 +1,38 @@
+THESIS
+acknowledgements
+√ abstract
+summary
+full text edits (see below)
+  requires modification of eq.tex, do this last
+  document your changes so that they can be repeated later (sigh)
+√ intro
+  √ physical cosmology to motivate galaxy evolution
+  √ combine both intros: the red sequence, and how it forms
+√ investigate bill's intro and summary
+√ outline summary
+  understand peebles better?
+√ add short captions to everything
+√ come up with system for ingesting text from paper
+√ remove invisiblesection
+√ why are figures showing up at end of chapter
+
+CHAPTER 3
 √ edit chapter figures
 √ adam's comments
   discuss halo mass dependence more?
   remove harassment from intro
-  a handful of other
+  a handful of other things
 √ get new figure ready for publication
   √ legend
   √ axes color black
-  new points (wait)
+  new points
 new figure caption
 new figure text
 tQ plot adjustments
   √ colorblind adjustment
   SFR outflow change?
-√ investigate bill's intro and summary
-outline summary
-  synthesize the two papers as investigation of red galaxies
-    understand peebles better?
-  future work
-intro
-  √ physical cosmology to motivate galaxy evolution
-  combine both intros: the red sequence, and how it forms
-full text edits (see below)
-acknowledgements
-abstract
-
-
-√ add short captions to everything
-√ come up with system for ingesting text from paper
-√ remove invisiblesection
-√ why are figures showing up at end of chapter
+conclusion
+  adam said more discussion not just bullet points
 
 text edits:
   move tables in text chapter 2
@@ -37,10 +41,11 @@ text edits:
     italicized filter names
     italicized variables
   fix figure sizes
+  section title caps
+  hyphen?
 
 persistent checks:
   "this paper" / "this work" -> this chapter
   appendix -> is it in an appendix or did it get moved?
   capitalization of sections
   abbreviations and the order they appear in the text
-
