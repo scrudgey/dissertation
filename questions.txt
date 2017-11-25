@@ -1,0 +1,22 @@
+Q:
+
+time evolution of tQ is not included in model, but tQ does evolve
+how does averaging over the past affect measured tQ?
+
+discuss in summary:
+dynamical evolution is consistent with most massive galaxies,
+  but this is also where mass quenching should be strongest.
+can you really justify ram pressure stripping as the primary mechanism?
+  font 2008: gradual RPS is good!
+
+understand in detail the mechanism of RPS: what does it depend on?
+  ICM density gradient? how does this change with z?
+
+contra RPS:
+  balogh 2016
+  mcgee 2014
+
+pro RPS:
+  font 2008
+
+citation for disk stripping being seen
