@@ -1,17 +1,20 @@
 
-  hierarchical
-      A hallmark of cosmology has been the establishment of hierarchical formation (White & Frenk 1991) in which growth of structure in the universe proceeds via a “bottom-up” scenario: matter condenses into low mass halos which eventually merge to form larger structures, culminating with galaxy clusters.
-        noble 2013
-      Current models for the formation and evolution of cosmic struc- ture and galaxies provide us with a picture of hierarchical struc- ture formation, where large objects are built-up successively from the merging of smaller, previously formed objects (e.g. Blumenthal et al. 1984; Davis et al. 1985) and from the more gradual inflow of gas (e.g. White & Rees 1978; Murali et al. 2002).
-        borch 2006
-      Within the standard   cold dark matter ( CDM) cosmological model, dark matter (DM) haloes evolve through hierarchical as- sembly to form galaxies; their gravitational-only dynamics is pow- erfully described by N-body (collisionless) simulations (e.g. Evrard 1990; Thomas & Couchman 1992; Navarro, Frenk & White 1995).
-        romeo 2008
-      Subsequently, emergence of the hierarchical model of structure formation (Gott & Rees 1975, Press & Schechter 1974, White & Rees 1978), combined with the cold dark matter (CDM) cosmological scenario (Blumenthal et al. 1984; Bond, Szalay & Turner 1982), provided a powerful framework for interpretation of the multi-wavelength cluster observations.
-        krastov & borgani
+hierarchical
+    A hallmark of cosmology has been the establishment of hierarchical formation (White & Frenk 1991) in which growth of structure in the universe proceeds via a “bottom-up” scenario: matter condenses into low mass halos which eventually merge to form larger structures, culminating with galaxy clusters.
+      noble 2013
+    Current models for the formation and evolution of cosmic struc- ture and galaxies provide us with a picture of hierarchical struc- ture formation, where large objects are built-up successively from the merging of smaller, previously formed objects (e.g. Blumenthal et al. 1984; Davis et al. 1985) and from the more gradual inflow of gas (e.g. White & Rees 1978; Murali et al. 2002).
+      borch 2006
+    Within the standard   cold dark matter ( CDM) cosmological model, dark matter (DM) haloes evolve through hierarchical as- sembly to form galaxies; their gravitational-only dynamics is pow- erfully described by N-body (collisionless) simulations (e.g. Evrard 1990; Thomas & Couchman 1992; Navarro, Frenk & White 1995).
+      romeo 2008
+    Subsequently, emergence of the hierarchical model of structure formation (Gott & Rees 1975, Press & Schechter 1974, White & Rees 1978), combined with the cold dark matter (CDM) cosmological scenario (Blumenthal et al. 1984; Bond, Szalay & Turner 1982), provided a powerful framework for interpretation of the multi-wavelength cluster observations.
+      krastov & borgani
+
+baryons trace the matter: halo model
+    This simple description forms the basis of the Halo Model (e.g. Berlind & Weinberg 2002), in which each dark matter halo is assumed to host one central galaxy with a number of satellites de- scribed by an assumed Halo Occupation Distribution. Such models provide a remarkably accurate description of the clustering statis- tics of galaxies, and lead to a heavily parameterised prediction of how stellar mass is related to dark matter (e.g. Leauthaud et al. 2012b; Behroozi et al. 2013).
+      -balogh 2014 (ms_satcen.pdf)
 
 
-
-  successes of the theory
+successes of the theory
     The accepted view, convincingly stated by peebles, silk and others, puts the formation of these large-scale objects at some epoch between recombination and the present, because only in this period have the large condensing masses been substantially smaller than the cosmological horizon but bigger than their jeans length.
       -press & schecter 1974
     This cosmology accounts for the growth of the large-scale structures of the universe-- clusters, filaments, and voids-- starting from the extremely smooth initial conditions indicated by the cosmic microwave background (Springel 2006).
@@ -26,7 +29,7 @@
 
 
 
-  but simulations are less successful at smaller resolutions, galaxy scale, where baryonic physics dominate
+but simulations are less successful at smaller resolutions, galaxy scale, where baryonic physics dominate
     We still lack, however, an understanding of the astrophysical pro- cesses that produce massive galaxies with the properties that these show in the local universe: gas cooling, star formation, stellar, and active galactic nucleus (AGN ) feedback are all poorly—if at all— understood processes, which are currently parameterized with ad hoc recipes in galaxy formation models. Simulations have been less successful on these lower, galactic scales ( 100 kpc), and it is not clear yet whether this is due to the just mentioned complexities of baryon physics or to other reasons.
       scarlata 2007
     Yet, when, how and how efficiently stars formed in the course of this evolution appears to depend sensitively on regulating feed-back and on sub-grid (i.e. unresolved) physical processes; consequently, the current generation of models has limited power to robustly ad- dress this most central question of galaxy formation.
@@ -38,6 +41,14 @@
     (ii) critical aspects of galaxy formation physics are uncer- tain and beyond the reach of direct simulation (for example, the structure of the interstellar medium, its consequences for star formation and for the generation of galactic winds, the ejection and mixing of heavy elements, AGN feeding and feedback effects . . . ) – these must be treated by phenomenological models whose form and parameters are adjusted by trial and error as part of the overall data-modelling process.
       springel 2005
 
+    Many SAMs assumed that a satellite subhalo’s hot gas is stripped instantaneously as it passes within the host halo’s virial shock, but this scenario quenches star formation too rapidly; only models that remove/strip gas more gradually produce realistic qui- escent fractions (Weinmann et al. 2006b; Font et al. 2008; Kang & van den Bosch 2008; Book & Benson 2010), but, in general, they have difficulty in correctly reproducing the full SFR distribution.
+      wetzel 2013
+
+    Another persistent problem is in the prediction of satellite galaxy properties; models consistently predict satellite populations that ceased star formation prematurely, compared with observations (e.g. Weinmann et al. 2011; Vulcani et al. 2014). Attempts to solve this problem with a more physical treatment of gas stripping (e.g. McCarthy et al. 2008) generally fail to reproduce the observed SFR distribution of these galaxies (e.g. Font et al. 2008; Weinmann et al. 2010).
+      balogh 2016
+
+    Another discrepancy concerns the fraction of satellites in the model and the observations. At 8 < log(M/M⊙) < 8.5, there are only 27 per cent satellites in the Yang et al. catalogue (including volume- weighting), but ∼50 per cent in the SAM if satellites outside of Rvir are counted, and ∼40 per cent if those are not counted. This means that either (a) there are too many satellite galaxies in the SAM
+      weinmann 2011
 
 galaxies have some unexplained properties
     The most favored explanation for this growth in the total number of red-sequence galaxies is via the transformation of star-forming galaxies to passive ones, following a quenching episode (Blanton 2006; Bundy et al. 2006; Faber et al. 2007; Brammer et al. 2011).

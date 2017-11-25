@@ -1,0 +1,5 @@
+halo bias
+  The environmental dependence can be partly understood by the intrinsic effect called ‘galaxy formation bias’ (e.g. Cen & Ostriker 1993) where high-density regions should have started off from the largest initial density fluctuations that collapse first in the universe, and galaxy formation takes place earliest in such regions and sub- sequent evolution is prompted. In lower density regions, however, galaxy formation is delayed and time-scales of star formation and mass assembly are longer. Likewise, the mass dependence of galaxy formation called ‘down-sizing’ (e.g. Cowie et al. 1996; Kodama et al. 2004a) may be partly understood by the scaled-down version of the bias on galactic scale, where more massive galaxies today correspond to higher initial density fluctuations on galactic scale and their formation such as star formation and assembly of building blocks take place earlier than less massive galaxies.
+  -hayashi 2010
+
+is halo bias relevant to my assumption that the mass accretion rate is proportional to the galaxy accretion rate
