@@ -1,6 +1,8 @@
 THESIS
 acknowledgements
 √ abstract
+√ intro
+  note that henriques simulation more successful
 summary
 full text edits (see below)
   requires modification of eq.tex, do this last
@@ -17,6 +19,7 @@ full text edits (see below)
 √ why are figures showing up at end of chapter
 
 CHAPTER 3
+  tidal stripping
 √ edit chapter figures
 √ adam's comments
   discuss halo mass dependence more?
