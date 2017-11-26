@@ -2,15 +2,20 @@ Q:
 
 time evolution of tQ is not included in model, but tQ does evolve
 how does averaging over the past affect measured tQ?
+derive dynamical time
+understand why delayed-then-rapid arguments
+
 
 discuss in summary:
-dynamical evolution is consistent with most massive galaxies,
-  but this is also where mass quenching should be strongest.
+dynamical evolution is consistent with most massive galaxies, but this is also where mass quenching should be strongest.
 can you really justify ram pressure stripping as the primary mechanism?
+don't forget about tidal stripping
   font 2008: gradual RPS is good!
+  henriquez: RPS is essential (but they only apply to cluster halos)
 
 understand in detail the mechanism of RPS: what does it depend on?
   ICM density gradient? how does this change with z?
+tidal disruption?
 
 contra RPS:
   balogh 2016
@@ -18,5 +23,12 @@ contra RPS:
 
 pro RPS:
   font 2008
+  henriquez 2017
 
 citation for disk stripping being seen
+
+
+the essential thing is that the *evolution* is dynamical.
+if it's a constant (related to outflows?) + dynamical delay, then we would see this same behavior.
+gas depletion time is roughly constant, and evolves very slowly with redshift
+outflow time is

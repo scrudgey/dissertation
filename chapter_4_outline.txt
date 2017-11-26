@@ -1,5 +1,18 @@
-halo bias
-  The environmental dependence can be partly understood by the intrinsic effect called ‘galaxy formation bias’ (e.g. Cen & Ostriker 1993) where high-density regions should have started off from the largest initial density fluctuations that collapse first in the universe, and galaxy formation takes place earliest in such regions and sub- sequent evolution is prompted. In lower density regions, however, galaxy formation is delayed and time-scales of star formation and mass assembly are longer. Likewise, the mass dependence of galaxy formation called ‘down-sizing’ (e.g. Cowie et al. 1996; Kodama et al. 2004a) may be partly understood by the scaled-down version of the bias on galactic scale, where more massive galaxies today correspond to higher initial density fluctuations on galactic scale and their formation such as star formation and assembly of building blocks take place earlier than less massive galaxies.
-  -hayashi 2010
 
-is halo bias relevant to my assumption that the mass accretion rate is proportional to the galaxy accretion rate
+tidal stripping
+  merritt 1983
+  moore 1999
+  gnedin 2003
+
+
+environmental mechanism
+  Until now, most current semi-analytic models of galaxy formation have adopted a crude modelling of the ram-pressure stripping of the hot-gaseous haloes of satellite galaxies. In particular, they typ- ically assume complete and instantaneous stripping of the hot-gas halo when the galaxy first falls in, without regard for the galaxy’s mass, orbit or structural properties. This is at odds with results of hydrodynamic simulations, and also with recent X-ray observations of galaxies in massive clusters.
+    font 2008
+
+
+environmental and mass quenching NOT independent!
+    Although treated as separate processes, AGN quenching and environmental quenching are clearly connected in the model. Hot gas masses are larger in more massive haloes, leading to enhanced black hole accretion and AGN feedback in denser environments. In addition, such environments promote black hole growth by enhancing both mergers with smaller black holes and merger-stimulated accretion of cold gas. At the same time, larger halo and hot gas masses boost environmental quenching through tidal and ram-pressure stripping. As a result, one may expect that quenched central galaxies will typically have more massive haloes and more massive hot gas atmospheres than blue centrals of sim- ilar stellar mass, and that this will cause a larger fraction of their satellites to be quenched. Wang & White (2012) showed that this effect is indeed present in the Guo et al. (2011) model and compared its strength to the effects they found in SDSS data, demonstrating that all the observed trends with satellite and primary stellar mass are reproduced qualitatively by the model but that its satellites are systematically too red.
+      henriques 2017
+
+the picture is clearly complicated.
+

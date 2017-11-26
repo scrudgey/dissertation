@@ -1,10 +1,11 @@
 THESIS
+title
 acknowledgements
 √ abstract
 √ intro
   note that henriques simulation more successful
 summary
-full text edits (see below)
+full text edits (see below) (this can wait till after first pass?)
   requires modification of eq.tex, do this last
   document your changes so that they can be repeated later (sigh)
 √ intro
@@ -19,7 +20,7 @@ full text edits (see below)
 √ why are figures showing up at end of chapter
 
 CHAPTER 3
-  tidal stripping
+  RPS -> environmental / RPS + tidal stripping
 √ edit chapter figures
 √ adam's comments
   discuss halo mass dependence more?
