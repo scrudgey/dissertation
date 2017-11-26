@@ -98,12 +98,12 @@ def gen():
         line = re.sub(r'caption', capstring, line)
         pass
       outfile.write(line)
-    else:
-      if ack_end_hook.search(line):
-        print "ending acknowledgements."
-        print line
-        skipping = False
-        continue
+    # else:
+    #   if ack_end_hook.search(line):
+    #     print "ending acknowledgements."
+    #     print line
+    #     skipping = False
+    #     continue
 
   outfile.close()
 

@@ -3,7 +3,8 @@ title
 acknowledgements
 √ abstract
 √ intro
-  note that henriques simulation more successful
+move appendices
+
 summary
 full text edits (see below) (this can wait till after first pass?)
   requires modification of eq.tex, do this last

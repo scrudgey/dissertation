@@ -1,10 +1,461 @@
+
 \appendix
 
-\chapter{Appendices}
+% \chapter{Appendices}
 
-\newpage
 
-appendices
+\chapter{Star Formation Histories}\label{appendix}
+
+The eSFH models employ a star formation history parametrized by:
+\begin{equation}\label{eq-esfh}
+\Psi(t,\tau) = \mathrm{SFR}_0\cdot e^{-t/\tau} \left[ \frac{M_{\odot}}{\mathrm{yr}} \right],
+\end{equation}
+where $\Psi$ is the instantaneous star formation rate at time $t$ after the onset of star formation, SFR$_0$ is the initial star formation rate, and $\tau$ is a parameter ranging from 0.5 Gyr $\leq \tau \leq$ 5 Gyr.
+
+We begin by generating model stellar populations with the range of six metallicities provided by the BC03 population synthesis code ($\mathrm{Z} = 0.0001, 0.0004, 0.004, 0.008, 0.02\, (\mathrm{Z}_\odot) , 0.05$). These six models each exhibit a metallicity-dependent U-V, J-K, and V-K color, but the absolute $M_{B,z=0}$ magnitudes are free parameters of these stellar population models.
+We therefore fix each $M_{B,z=0}$ magnitude by finding the value for which the reported Coma CMRs \citep{Bower:1992mb} best match each model's U-V, J-K, and V-K colors, by minimizing $\chi^2$.
+This essentially provides mass normalizations for each galaxy model and reproduces the CMR at $z=0$. The galaxy models then describe a simple red-sequence which may be passively evolved backward in redshift to provide a predicted redshift evolution of CMR slope and zeropoint.
+
+There is remarkably good agreement between the slope of the modeled red-sequence and those which we report for the GCLASS sample in Table \ref{tbl-colormag}. The modeled slope does not evolve significantly or disagree with our measured slope between $0.8 < z < 1.3$, for any chosen formation redshift or star formation history, and therefore does not constrain our models.
+
+The competing influences of age and ongoing star formation on the zeropoint color introduce a sort of degeneracy which means we cannot distinguish between young galaxies that very quickly shut off star formation and old galaxies with more recent star formation. Therefore we combine both factors into a single parameter which can be constrained by observation: the star formation weighted age, $\langle t \rangle_\mathrm{SFH}$, which gives the average age of the bulk of the stars, following \citet{Rettura:2011aa}:
+
+\begin{equation}\label{eq-tsfh}
+\langle t \rangle_\mathrm{SFH} \equiv \frac{\int_0^t(t-t^\prime)\Psi(t^\prime,\tau)\mathrm{d}t^\prime}
+{\int_0^t\Psi(t^\prime,\tau)\mathrm{d}t^\prime}
+\end{equation}
+
+For the star formation history defined in Equation \ref{eq-esfh}, this equals
+
+\begin{equation}\label{eq-etsfh}
+\langle t \rangle_\mathrm{SFH} = \frac{t - \tau + \tau\cdot e^{-t/\tau}}{1-e^{-t/\tau}} .
+\end{equation}
+
+Our observed zeropoints can then place constraints on this $\langle t \rangle_\mathrm{SFH}$, which, together with the lookback time to the redshift of the cluster, can constrain the star-formation-weighted formation redshift $\langle z_f \rangle_\mathrm{SFH}$ of these stellar populations. We note that in general, the formation of the stars will be followed by their assembly into galaxies, and the age of the galaxy will be younger than the age of its component stars.
+\clearpage
+
+\begin{deluxetable}{llcccccc}
+\tabletypesize{\scriptsize}
+\tablecaption{Description of the GCLASS cluster sample\label{tbl-gclass}}
+\tablewidth{0pt}
+\tablehead{
+\colhead{Index}
+& \colhead{Cluster}
+& \colhead{R.A.}
+& \colhead{Decl.}
+& \colhead {z}
+& \colhead{Members\textsuperscript{a}}
+& \colhead{R$_{200}$\textsuperscript{b} ($h^{-1}$ Mpc) }
+& \colhead{Mass ($10^{14} \mathrm{M}_\odot$)}
+}
+\startdata
+1 & SpARCS J003442-430752 & 00:34:42.086 & -43:07:53.360 & 0.866 & 34 & $0.93\substack{+0.10\\-0.18}$ & $2.4\substack{+0.9\\-1.2}$ \\
+2 & SpARCS J003645-441050 & 00:36:45.039 & -44:10:49.911 & 0.869 & 48 & $1.1\substack{+0.1\\-0.2}$    & $4.4\substack{+1.7\\-1.6}$ \\
+3 & SpARCS J161314+564930 & 16:13:14.641 & 56:49:29.504  & 0.871 & 89 & $1.8\substack{+0.1\\-0.2}$    & $17.6\substack{+4.6\\-4.2}$ \\
+4 & SpARCS J104737+574137 & 10:47:37.463 & 57:41:37.960  & 0.956 & 30 & $0.76\substack{+0.09\\-0.10}$ & $1.5\substack{+0.6\\-0.5}$ \\
+5 & SpARCS J021524-034331 & 02:15:23.200 & -03:43:34.482 & 1.004 & 46 & $0.55\substack{+0.07\\-0.10}$ & $0.59\substack{+0.27\\-0.26}$ \\
+6 & SpARCS J105111+581803 & 10:51:11.232 & 58:18:03.128  & 1.035 & 32 & $0.61\substack{+0.10\\-0.13}$ & $0.85\substack{+0.46\\-0.44}$ \\
+7 & SpARCS J161641+554513 & 16:16:41.232 & 55:45:25.708  & 1.156 & 45 & $0.74\substack{+0.09\\-0.12}$ & $1.7\substack{+0.7\\-0.7}$ \\
+8 & SpARCS J163435+402151 & 16:34:35.402 & 40:21:51.588  & 1.177 & 46 & $0.89\substack{+0.11\\-0.12}$  & $3.1\substack{+1.3\\-1.1}$ \\
+9 & SpARCS J163852+403843 & 16:38:51.625 & 40:38:42.893  & 1.196 & 39 & $0.56\substack{+0.06\\-0.12}$ & $0.77\substack{+0.31\\-0.40}$ \\
+10 & SpARCS J003550-431224 & 00:35:49.700 & -43:12:24.160 & 1.335 & 23 & $1.0\substack{+0.2\\-0.2}$   & $5.5\substack{+3.0\\-3.2}$ \\
+\enddata
+\tablenotetext{a}{Number of spectroscopically-confirmed member galaxies.}
+\tablenotetext{b}{The radius for which the mean density is 200 times the critical density. From Wilson et al. (2015, in prep).}
+\end{deluxetable}
+
+\clearpage
+
+\begin{deluxetable}{llcccccc}
+\tabletypesize{\scriptsize}
+\tablecaption{Color-magnitude relation fit parameters\label{tbl-colormag}}
+\tablewidth{0pt}
+\tablehead{
+\colhead{Index} & \colhead{Cluster}
+& \colhead{N\textsuperscript{a}}
+& \colhead{Method\textsuperscript{b}}
+& \colhead{$\frac{ \Delta(U-B)_{z=0} }{ \Delta M_{B,z=0} }$\textsuperscript{c}}
+& \colhead{$\sigma(U-B)_{z=0}$\textsuperscript{d}}
+& \colhead{$c_0 \mathrm{(AB)}$\textsuperscript{e}}
+& \colhead{$c_0 \mathrm{(Vega)}$}
+}
+\startdata
+1  & SpARCS J003442-430752 & 14 & MLE & $-0.041\substack{+0.043 \\ -0.044} $ & $0.067\substack{+0.024 \\ -0.017}$ & $1.211\substack{+0.026 \\ -0.023}$ & $0.3720\substack{+0.026 \\ -0.023}$ \\[1.5ex]
+   &                       &    & TLS & $-0.046\substack{+0.030 \\ -0.061} $ & $0.057\substack{+0.017 \\ -0.018}$ & $1.189\substack{+0.043 \\ -0.006}$ & $0.3490\substack{+0.043 \\ -0.006}$ \\[1.5ex]
+2  & SpARCS J003645-441050 & 22 & MLE & $-0.003\substack{+0.041 \\ -0.042} $ & $0.123\substack{+0.028 \\ -0.022}$ & $1.239\substack{+0.031 \\ -0.028}$ & $0.4020\substack{+0.031 \\ -0.028}$ \\[1.5ex]
+   &                       &    & TLS & $-0.016\substack{+0.057 \\ -0.038} $ & $0.094\substack{+0.018 \\ -0.024}$ & $1.214\substack{+0.050 \\ -0.040}$ & $0.3760\substack{+0.050 \\ -0.040}$ \\[1.5ex]
+3  & SpARCS J161314+564930 & 54 & MLE & $-0.008\substack{+0.023 \\ -0.024} $ & $0.123\substack{+0.015 \\ -0.013}$ & $1.194\substack{+0.025 \\ -0.023}$ & $0.3570\substack{+0.025 \\ -0.023}$ \\[1.5ex]
+   &                       &    & TLS & $-0.024\substack{+0.028 \\ -0.015} $ & $0.069\substack{+0.018 \\ -0.021}$ & $1.191\substack{+0.018 \\ -0.029}$ & $0.3530\substack{+0.018 \\ -0.029}$ \\[1.5ex]
+4  & SpARCS J104737+574137 & 14 & MLE & $-0.034\substack{+0.074 \\ -0.077} $ & $0.112\substack{+0.036 \\ -0.025}$ & $1.226\substack{+0.041 \\ -0.042}$ & $0.3870\substack{+0.041 \\ -0.042}$ \\[1.5ex]
+   &                       &    & TLS & $-0.082\substack{+0.041 \\ -0.045} $ & $0.065\substack{+0.011 \\ -0.040}$ & $1.223\substack{+0.018 \\ -0.039}$ & $0.3810\substack{+0.018 \\ -0.039}$ \\[1.5ex]
+5  & SpARCS J021524-034331 & 24 & MLE & $-0.033\substack{+0.043 \\ -0.044} $ & $0.102\substack{+0.025 \\ -0.020}$ & $1.284\substack{+0.028 \\ -0.026}$ & $0.4450\substack{+0.028 \\ -0.026}$ \\[1.5ex]
+   &                       &    & TLS & $-0.057\substack{+0.033 \\ -0.038} $ & $0.046\substack{+0.034 \\ -0.008}$ & $1.269\substack{+0.031 \\ -0.032}$ & $0.4290\substack{+0.031 \\ -0.032}$ \\[1.5ex]
+6  & SpARCS J105111+581803 & 16 & MLE & $-0.013\substack{+0.044 \\ -0.041} $ & $0.089\substack{+0.032 \\ -0.024}$ & $1.220\substack{+0.032 \\ -0.033}$ & $0.3820\substack{+0.032 \\ -0.033}$ \\[1.5ex]
+   &                       &    & TLS & $-0.018\substack{+0.043 \\ -0.051} $ & $0.065\substack{+0.008 \\ -0.038}$ & $1.216\substack{+0.033 \\ -0.035}$ & $0.3780\substack{+0.033 \\ -0.035}$ \\[1.5ex]
+7  & SpARCS J161641+554513 & 25 & MLE & $-0.009\substack{+0.017 \\ -0.018} $ & $0.046\substack{+0.012 \\ -0.011}$ & $1.222\substack{+0.015 \\ -0.014}$ & $0.3840\substack{+0.015 \\ -0.014}$ \\[1.5ex]
+   &                       &    & TLS & $-0.014\substack{+0.014 \\ -0.013} $ & $0.030\substack{+0.010 \\ -0.008}$ & $1.215\substack{+0.016 \\ -0.015}$ & $0.3770\substack{+0.016 \\ -0.015}$ \\[1.5ex]
+8  & SpARCS J163435+402151 & 17 & MLE & $-0.038\substack{+0.044 \\ -0.044} $ & $0.051\substack{+0.018 \\ -0.013}$ & $1.229\substack{+0.014 \\ -0.015}$ & $0.3900\substack{+0.014 \\ -0.015}$ \\[1.5ex]
+   &                       &    & TLS & $-0.035\substack{+0.027 \\ -0.039} $ & $0.030\substack{+0.010 \\ -0.011}$ & $1.226\substack{+0.017 \\ -0.010}$ & $0.3870\substack{+0.017 \\ -0.010}$ \\[1.5ex]
+9  & SpARCS J163852+403843 & 7 & MLE &  $-0.064\substack{+0.088 \\ -0.100} $ & $0.061\substack{+0.046 \\ -0.023}$ & $1.200\substack{+0.032 \\ -0.031}$ & $0.3590\substack{+0.032 \\ -0.031}$ \\[1.5ex]
+   &                       &   & TLS &  $-0.040\substack{+0.034 \\ -0.140} $ & $0.028\substack{+0.001 \\ -0.023}$ & $1.200\substack{+0.010 \\ -0.012}$ & $0.3610\substack{+0.010 \\ -0.012}$ \\[1.5ex]
+10  & SpARCS J003550-431224 & 11 & MLE & $-0.030\substack{+0.068 \\ -0.068} $ & $0.094\substack{+0.044 \\ -0.032}$ & $1.242\substack{+0.042 \\ -0.040}$ & $0.4030\substack{+0.042 \\ -0.040}$ \\[1.5ex]
+    &                       &    & TLS & $-0.041\substack{+0.057 \\ -0.030} $ & $0.047\substack{+0.014 \\ -0.022}$ & $1.233\substack{+0.036 \\ -0.034}$ & $0.3940\substack{+0.036 \\ -0.034}$ \\
+\enddata
+\tablenotetext{a}{The number of quiescent cluster member galaxies used in computing the fit.}
+\tablenotetext{b}{The method used to derive fit parameters: maximum likelihood estimator (MLE) or total least squares (TLS).}
+\tablenotetext{c}{The slope of the rest-frame U-B color-magnitude relation.}
+\tablenotetext{d}{The intrinsic scatter of the rest-frame U-B color-magnitude relation.}
+\tablenotetext{e}{The zeropoint, i.e., the U-B color of the color-magnitude relation evaluated at M$_B$=-21.4, reported as an AB magnitude.}
+\end{deluxetable}
+
+\clearpage
+
+\begin{deluxetable}{llcccc}
+\tabletypesize{\scriptsize}
+\tablecaption{Color-mass relation fit parameters\label{tbl-colormass}}
+\tablewidth{0pt}
+
+\tablehead{
+\colhead{Index} & \colhead{Cluster}
+& \colhead{N\textsuperscript{a}}
+& \colhead{$\frac{ \Delta(U-B)_{z=0} }{ \Delta log(M_*/M_{\odot}) }$\textsuperscript{b}}
+& \colhead{$\sigma(U-B)_{z=0}$\textsuperscript{c}}
+& \colhead{$c_0$\textsuperscript{d}}
+}
+\startdata
+1  & SpARCS J003442-430752 & 18 & $0.043\substack{+0.166 \\ -0.136} $ & $0.033\substack{+0.024 \\ -0.015}$ & $1.211\substack{+0.020 \\ -0.017}$ \\
+2  & SpARCS J003645-441050 & 28 & $0.173\substack{+0.405 \\ -0.408} $ & $0.088\substack{+0.034 \\ -0.026}$ & $1.267\substack{+0.095 \\ -0.137}$ \\
+3  & SpARCS J161314+564930 & 44 & $0.086\substack{+0.085 \\ -0.083} $ & $0.127\substack{+0.017 \\ -0.014}$ & $1.209\substack{+0.024 \\ -0.026}$ \\
+4  & SpARCS J104737+574137 & 15 & $0.079\substack{+0.235 \\ -0.305} $ & $0.083\substack{+0.042 \\ -0.030}$ & $1.252\substack{+0.050 \\ -0.051}$ \\
+5  & SpARCS J021524-034331 & 30 & $0.048\substack{+0.168 \\ -0.199} $ & $0.048\substack{+0.026 \\ -0.022}$ & $1.298\substack{+0.022 \\ -0.021}$ \\
+6  & SpARCS J105111+581803 & 14 & $0.234\substack{+0.130 \\ -0.118} $ & $0.058\substack{+0.026 \\ -0.020}$ & $1.271\substack{+0.035 \\ -0.033}$ \\
+7  & SpARCS J161641+554513 & 29 & $0.048\substack{+0.065 \\ -0.071} $ & $0.033\substack{+0.014 \\ -0.012}$ & $1.225\substack{+0.018 \\ -0.017}$ \\
+8  & SpARCS J163435+402151 & 17 & $0.338\substack{+0.182 \\ -0.140} $ & $0.030\substack{+0.019 \\ -0.014}$ & $1.263\substack{+0.033 \\ -0.027}$ \\
+9  & SpARCS J163852+403843 & 7 & $0.314\substack{+0.226 \\ -0.255} $ & $0.085\substack{+0.054 \\ -0.032}$ & $1.217\substack{+0.053 \\ -0.056}$ \\
+10  & SpARCS J003550-431224 & 11 & $0.181\substack{+0.139 \\ -0.128} $ & $0.076\substack{+0.040 \\ -0.029}$ & $1.240\substack{+0.032 \\ -0.031}$ \\
+\enddata
+\tablecomments{These fit parameters were derived using a Bayesian maximum likelihood estimator.}
+\tablenotetext{a}{The number of quiescent cluster member galaxies used in computing the fit.}
+\tablenotetext{b}{The slope of the rest-frame U-B color-mass relation.}
+\tablenotetext{c}{The intrinsic scatter of the rest-frame U-B color-mass relation.}
+\tablenotetext{d}{The zeropoint of the rest-frame U-B color-mass relation, in AB magnitudes.}
+\end{deluxetable}
+
+
+\chapter{Environmental Quenching Model}\label{sec-math}
+
+\begin{figure}[h!]
+\centering \includegraphics[width=\textwidth]{figures/c2/appendix/sfh.pdf}
+\caption[Toy model of star formation history of a quenched galaxy]{Model star formation rate of a galaxy as a function of time relative to its accretion by the cluster.
+The galaxy's color reflects its star formation rate, such that star-forming galaxies are labeled blue, galaxies with declining star formation rate are labeled green, and quiescent galaxies are labeled red.
+All galaxies that fall into the cluster are assumed to be star-forming, and remain star-forming for a delay time $t_D$.
+Following the delay period, star formation begins to quench over a fade time, $t_F$, after which the galaxy is quiescent.
+The total quenching time $t_Q$ is $t_D + t_F$.
+\label{fig-a-sfh}}
+\end{figure}
+
+In this model, environmental quenching is characterized by a quenching timescale $t_Q$, defined as the length of time after accretion for a galaxy to be completely quenched.
+A galaxy's time in the cluster is divided into three evolutionary phases: a (blue) delay phase, wherein star formation continues as if unaffected by environment, a (green) fade phase, during which star formation declines, and a (red) quenched phase, after star formation has fully ceased.
+The observed colors of galaxies trace their star formation rate and therefore the galaxy's evolutionary phase (see Figure \ref{fig-ellipses}), and form the basis for labeling the delay, fade, and quenched phases as blue, green, and red, respectively.
+
+We take as given the observed numbers of red, green, and blue galaxies in a given cluster (R, G, and B, respectively), at the redshift of the cluster, $z_c$.
+For our purposes, it is first necessary to correct for galaxies that were already quenched before they fell into the cluster.
+We calculate the total fraction of quiescent galaxies accreted from the field over the lifetime of the cluster using the field galaxy mass functions computed by \citet{Muzzin:2013ab}.
+We then subtract this fraction from the observed number of red galaxies, leaving only galaxies that were blue when accreted by the cluster.
+This field-quenched correction is described in detail in \ref{sec-a-field}.
+For the rest of this discussion, we assume corrected number counts of galaxies, and that these galaxies were star-forming when accreted.
+
+A (blue) star-forming galaxy that falls into the cluster will remain star-forming for a delay time, $t_D$.
+After the passage of one delay time $t_D$, the galaxy's star formation rate fades over the fade time, $t_F$.
+Subsequent to a total amount of time $t_Q = t_D + t_F$, a galaxy has completely ceased forming stars, and is considered quiescent.
+In Figure \ref{fig-a-sfh}, we show this evolution of galaxy type schematically as a function of time following infall.
+
+From this, it follows that star-forming (blue) cluster members were accreted as recently as up to one $t_D$ ago, and so are still in their star-forming ``delay" phase.
+Intermediate (green) cluster members, in the ``fade" phase, were accreted between $t_D$ and $t_D + t_F$ ago.
+Quenched (red) cluster members are all galaxies accreted earlier than that.
+The quenching time $t_Q$ is then the sum of the delay time, $t_D$, and a fade time, $t_F$.
+
+The central assumption of this model is that all galaxies undergo the same evolutionary process, passing from blue to green to red once accreted by the cluster.
+Because of this, the numbers of blue and green galaxies found in the cluster trace the amount of time spent in the delay and fade phases of evolution, and red galaxies trace the integrated history of all galaxy accretion older than one quenching time.
+
+Given a galaxy accretion rate $\mathrm{d}N/\mathrm{d}t$, the numbers of red, green, and blue galaxies can constrain the times $t_D$ and $t_F$.
+Specifically,
+
+\begin{empheq}{align*}
+&B = \int_{-t_D}^{0} \mathrm{d}N/\mathrm{d}t\ \mathrm{d}t\\
+&G = \int_{-(t_D+t_F)}^{-t_D} \mathrm{d}N/\mathrm{d}t\ \mathrm{d}t\\
+&R = \int_{-t_H}^{-(t_D+t_F)} \mathrm{d}N /\mathrm{d}t\ \mathrm{d}t
+\end{empheq}
+
+where B, G, and R are the numbers of blue, green, and red cluster galaxies, respectively, observed at time $t=0$, and $t_H$ is the Hubble time.
+Note that the negative sign of the integration limits emphasizes the fact that these galaxies were accreted in the past.
+While we have begun by stating functions here in terms of time $t$ relative to the cluster, later we will cast our equations in terms of redshift for easier use with real data.
+
+In principle, the galaxy accretion rate $\mathrm{d}N/\mathrm{d}t$ is some fraction of the total halo mass accretion rate $\mathrm{d}M/\mathrm{d}t$, determined by the baryon and gas fractions of galaxies, and related to observed counts by the stellar mass function above the mass completeness of our sample.
+However, it is not necessary to calculate this factor if we consider ratios of galaxy counts instead of absolute numbers.
+Given that galaxy stellar mass is some fraction of the mass accreted by the cluster, such that $\mathrm{d}N/\mathrm{d}t\ = f_G\ \mathrm{d}M/\mathrm{d}t$, it follows that
+
+\begin{equation*}
+\frac{\displaystyle\int_{t_2}^{t_1} \mathrm{d}N/dt\ \mathrm{d}t}{\displaystyle\int_{t_3}^{t_2} \mathrm{d}N/\mathrm{d}t\ dt} = \frac{\displaystyle\int_{t_2}^{t_1} f_G\ \mathrm{d}M/\mathrm{d}t\ \mathrm{d}t}{\displaystyle\int_{t_3}^{t_2} f_G\ \mathrm{d}M/\mathrm{d}t\ \mathrm{d}t}
+\end{equation*}
+
+for arbitrary times $t_1$, $t_2$, $t_3$.
+If we assume $f_G$ remains relatively constant with time, we can cancel it from the right-hand side of the above equation, and can therefore express ratios of galaxy counts purely in terms of the mass accretion rate, $\mathrm{d}M/\mathrm{d}t$.
+
+Cosmological N-body simulations can make predictions for the mass accretion histories of cluster-scale dark matter halos \citep{Lacey:1993aa}.
+\citet{Fakhouri:2010aa} has used merger histories in the Millennium-\textsc{II} simulation to fit an expression for the mean mass growth rate of halos of the form
+
+\begin{equation*}
+\frac{\mathrm{d}M}{\mathrm{d}t} = 46.1\ \mathrm{M_\odot\ yr^{-1}} \left(\frac{M}{10^{12}\ \mathrm{M_\odot}}\right)^{1.1}\times(1+1.11z)\sqrt{\Omega_{\mathrm{m}}(1+z)^3 + \Omega_{\Lambda}}
+\end{equation*}
+
+for a halo of mass $M$ at redshift $z$.
+
+A change of units yields
+
+\begin{empheq}{align*}
+&\frac{\mathrm{d}M}{\mathrm{d}z} = \frac{-t_H}{46.1\ \mathrm{yr}} \times \left(\frac{1+1.11z}{1+z}\right)\left(\frac{M}{10^{12}\ \mathrm{M_\odot}}\right)^{1.1} \mathrm{M_\odot}\\
+&M(z=1.6) = 3\times10^{14}\ \mathrm{M_\odot}\\
+\end{empheq}
+
+where we have used the mean cluster mass of the $z=1.6$ cluster sample as a boundary condition.
+When calculating quenching timescales for the lower-redshift cluster sample, the mean cluster mass boundary condition is $M=3.8\times10^{14}\ \mathrm{M_\odot}$ at $z=1$.
+We note that our $z=1.6$ cluster sample has a mean halo mass that is only slightly higher than that of progenitors of the $z=1$ sample \citep{Lidman:2012aa,Nantais:2017aa}, and our results do not depend strongly on the choice of host halo mass for a reasonable range of masses.
+
+This system of equations can be solved numerically for $M(z)$, the total cluster mass as a function of redshift, and $\mathrm{d}M/\mathrm{d}z$, the mass accretion rate.
+By recasting our earlier set of equations to be functions of redshift, we can now write
+
+\begin{align*}
+&\frac{B}{G+R} = \frac{\displaystyle\int_{z_c + \Delta z_D}^{z_c} \mathrm{d}M/\mathrm{d}z\ \mathrm{d}z}{\displaystyle\int_{\infty}^{z_c + \Delta z_D} \mathrm{d}M/\mathrm{d}z\ \mathrm{d}z}\\
+&\frac{G}{R} = \frac{\displaystyle\int_{z_c + \Delta z_D + \Delta z_F}^{z_c + \Delta z_D} \mathrm{d}M/\mathrm{d}z\ \mathrm{d}z}{\displaystyle\int_{\infty}^{z_c + \Delta z_D + \Delta z_F} \mathrm{d}M/\mathrm{d}z\ \mathrm{d}z}
+\end{align*}
+
+where, for a cluster at $z=z_c$, $z_c + \Delta z_D$ is the redshift one delay time $t_D$ ago, and $z_c + \Delta z_D + \Delta z_F$ is one delay plus fade time, $t_D + t_F$, ago.
+The relationship between these variables is summarized visually in Figure \ref{fig-rgb}.
+
+\begin{figure}
+\centering \includegraphics{figures/c2/appendix/rgb.pdf}
+\caption[Relationship between cluster mass accretion rate and counts of galaxies in different phases of evolution]{Cluster mass accretion rate $\mathrm{d}M/\mathrm{d}z$ as a function of redshift, for a cluster observed at redshift $z_c$.
+The number of galaxies accreted over a given redshift interval is proportional to the area under the curve for that interval.
+Blue galaxies, being accreted no later than one $t_D$ ago, have numbers proportional to the integral of the mass accretion rate between $z_c$ and $z_c + \Delta z_D$, labeled B.
+Green galaxies have been in the cluster longer than one $t_D$ but no longer than $t_D + t_F$ and so have been accreted over the interval between $z_c + \Delta z_D$ and $z_c + \Delta z_D + \Delta z_F$, labeled G.
+The number of red galaxies, R, is proportional to the integral of all mass accretion that occurred at redshifts greater than $z_c + \Delta z_D + \Delta z_F$.
+\label{fig-rgb}}
+\end{figure}
+
+With an expression for $M(z)$, the integral relations become
+
+\begin{align*}
+&\frac{B}{G+R} = \frac{M(z_c) - M(z_c + \Delta z_D)}{M(z_c + \Delta z_D)}\\
+&\frac{G}{R} = \frac{M(z_c + \Delta z_D) - M(z_c + \Delta z_D + \Delta z_F)}{M(z_c + \Delta z_D + \Delta z_F)}
+\end{align*}
+
+where we have used the fact that $M(z)=0$ when $z\to\infty$.
+
+Altogether we apply the following set of three equations with three unknowns, and one boundary condition:
+
+\begin{empheq}{align}
+&\frac{\mathrm{d}M}{\mathrm{d}z} = \frac{-t_H}{46.1\ \mathrm{yr}} \times \left(\frac{1+1.11z}{1+z}\right)\left(\frac{M}{10^{12}\ \mathrm{M_\odot}}\right)^{1.1} \mathrm{M_\odot} \label{eq-model-first} \\
+&\frac{B}{G+R} = \frac{M(z_c) - M(z_c + \Delta z_D)}{M(z_c + \Delta z_D)} \label{eq-model-zd} \\
+&\frac{B+G}{R} = \frac{M(z_c + \Delta z_D) - M(z_c + \Delta z_D + \Delta z_F)}{M(z_c + \Delta z_D + \Delta z_F)} \label{eq-model-zf}\\
+&M(1.6) = 3\times10^{14}\ \mathrm{M_\odot} \label{eq-model-last}
+\end{empheq}
+
+\begin{figure}
+\centering \includegraphics[width=\textwidth]{figures/c2/appendix/fractions.pdf}
+\caption[Evolution of passive fraction within the quenching model]{Modeled evolution of the fractions $\frac{B}{G+R}$ and $\frac{G}{R}$.
+Lines show the evolution of these fractions for the indicated delay and fade times, $t_D$ and $t_F$.
+Note that the fraction of blue galaxies increases with redshift, and with longer delay times, as expected.
+The black point indicates the measured value of these fractions for the stacked high-redshift sample, at the mean redshift of the sample, $z_c = 1.55$.
+From the left panel, it is clear that a delay time of $t_D = 9.4\times10^8$ yr is indicated in order to produce the observed fraction of blue galaxies.
+With this value for $t_D$ we plot the redshift evolution of $\frac{G}{R}$ in the right panel, given that green galaxies were accreted between $t_D$ and $t_F$ ago, for selected values of $t_F$.
+A value of $3.0\times10^8$ yr is indicated for $t_F$.
+\label{fig-frac}}
+\end{figure}
+
+Through Equations~\eqref{eq-model-first}~--~\eqref{eq-model-last}, the numbers of red, green, and blue galaxies at cluster redshift $z_c$ constrain the delay and fade redshift intervals, $\Delta z_D$ and $\Delta z_F$.
+For our purposes, we find it easiest to first solve the differential equation for $M(z)$ numerically with Mathematica using \texttt{NDSolve}.
+Knowing $M(z)$, it is then a matter of finding the redshift interval $\Delta z_D$ that satisfies Equation \ref{eq-model-zd}, which we accomplish with \texttt{FindRoot}.
+We repeat the process to then determine $\Delta z_F$ from Equation \ref{eq-model-zf}.
+% mention changing tq with time? the whole point of this is to measure changing tq with time
+
+To illustrate the method, we plot the modeled evolution of the fractions $\frac{B}{G+R}$ and $\frac{G}{R}$ in Figure \ref{fig-frac} for selected values of $t_D$ and $t_F$.
+From this plot, it is clear that the observed ratios of red, green, and blue galaxies constrain $t_D$ and $t_F$.
+
+Having determined $\Delta z_D$ and $\Delta z_F$, we can apply standard cosmology to calculate the time intervals
+
+\begin{align*}
+&t_D = t_H \int_{z_c}^{z_c+\Delta z_D}\frac{\mathrm{d}z}{(1+z)\sqrt{\Omega_m(1+z)^3 + \Omega_\Lambda}}\\
+&t_F = t_H \int_{z_c+\Delta z_D}^{z_c+\Delta z_D+\Delta z_F}\frac{\mathrm{d}z}{(1+z)\sqrt{\Omega_m(1+z)^3 + \Omega_\Lambda}}
+\end{align*}
+
+and thereby measure the quenching timescale, $t_Q = t_D + t_F$.
+
+The technique we describe here relies on interpreting the integrated mass accretion history of a cluster, and so the resulting quenching timescales are time-averaged over the history of the cluster.
+This should not impact the results of this paper as the clusters we study here are still very young, but would need to be taken into consideration when applying this technique at low redshift.
+
+\section{Field-quenched Correction}\label{sec-a-field}
+
+Quenched galaxies exist in the field, and therefore some of the galaxies accreted by a cluster will already be quenched.
+If these galaxies are included when calculating $t_Q$, they will inflate the relative proportion of red galaxies, resulting in an apparently shorter quenching time.
+Correcting for this is a simple matter of calculating the fraction of galaxies that were quiescent when accreted, and subtracting them from the total number of red galaxies.
+
+We start by calculating the quiescent fraction of field galaxies above the mass completeness limit of $10^{10.5}~ \mathrm{M}_\odot$ as a function of redshift, $f_Q(z)$.
+\citet{Muzzin:2013ab} provides Schechter mass function fits to field galaxies in the COSMOS/UltraVISTA survey.
+These functions have the form
+
+\begin{equation*}
+\Phi(M) = \mathrm{ln}\ 10\times\Phi^*\times10^{(M-M^*)(1+\alpha)}\times \mathrm{exp}(-10^{(M-M^*)})
+\end{equation*}
+
+and are parametrized by a normalization, $\Phi^*$, a characteristic mass, $M^*$, and a low-mass-end slope, $\alpha$.
+The masses $M$ and $M^*$ are logarithmic stellar masses of the form $M=\mathrm{log}_{10}(M_{star}/M_\odot)$.
+\citet{Muzzin:2013ab} fits separate mass functions for star-forming and quiescent galaxies in seven redshift bins from $0.2 \leq z \leq 4.0$
+
+From these mass functions we can define the field quiescent fraction $f_Q(z_i)$ at seven redshift points $z_i$,
+
+\begin{equation*}
+f_Q(z_i) = \frac{\int_{10.5}^{\infty}~\Phi_Q(M, z_i)~\mathrm{d}M}{\int_{10.5}^{\infty}~\Phi_Q(M, z_i)~\mathrm{d}M+\int_{10.5}^{\infty}~\Phi_A(M, z_i)~\mathrm{d}M}
+\end{equation*}
+
+where $\Phi_Q(M, z_i)$ and $\Phi_A(M, z_i)$ are the quiescent and star-forming mass functions, respectively, and $z_i$ is the mean redshift of the $i^{\mathrm{th}}$ redshift bin.
+
+The fraction of quiescent field galaxies with masses above $10^{10.5}~ \mathrm{M}_\odot$ evolves with cosmic time as the cluster accretes galaxies from the field.
+To determine the total fraction of quiescent field galaxies accreted over the lifetime of the cluster, we must integrate the galaxy accretion rate weighted by the field quiescent fraction.
+Therefore we interpolate $f_Q(z_i)$ between the seven redshift points by fitting $3^{\mathrm{rd}}$-order polynomial curves between successive data points using the Mathematica function \texttt{Interpolation}.
+This creates a continuous and differentiable function $f_Q(z)$ suitable for integration.
+
+Previously, we used the cluster mass accretion rate, $\mathrm{d}M/\mathrm{d}z$, as a proxy for the cluster galaxy accretion rate.
+The total accreted field quiescent fraction $f_\mathrm{Q,tot}(z)$ is therefore
+
+\begin{equation}\label{eq-ftot}
+f_\mathrm{Q,tot}(z) = \frac{\int_{-\infty}^z~ \mathrm{d}M/\mathrm{d}z'~f_Q(z')~\mathrm{d}z'}{\int_{-\infty}^z~ \mathrm{d}M/\mathrm{d}z'~\mathrm{d}z'}.
+\end{equation}
+
+where $z$ is the redshift of the cluster.
+The evolution of $f_\mathrm{Q,tot}(z)$ and $f_Q(z)$ with redshift is shown in Figure \ref{fig-a-schechter}.
+
+\begin{figure}
+\centering \includegraphics[width=\textwidth]{figures/c2/appendix/shechter.pdf}
+\caption[Evolution of the field quiescent fraction with redshift]{Evolution of the field quiescent fraction with redshift.
+The field quiescent fraction is determined from the field mass function fits of \citet{Muzzin:2013ab} in seven redshift bins, for galaxies with masses $M \geq 10^{10.5}~ \mathrm{M}_\odot$, plotted as points.
+The blue line depicts a function interpolated from the seven points.
+The orange line is the integrated mass accretion rate of a cluster weighted by the field quiescent fraction, or the total fraction of accreted quiescent field galaxies.
+\label{fig-a-schechter}}
+\end{figure}
+
+From Equation \ref{eq-ftot}, we can determine the fraction of quiescent galaxies in a cluster at redshift $z$ that were already quenched at the time they were accreted.
+We therefore multiply the number of red galaxies in each cluster by $1-f_\mathrm{Q,tot}(z_c)$ before applying Equations~\eqref{eq-model-first}~--~\eqref{eq-model-last} and determining $t_Q$.
+
+\chapter{Where is the Green Valley in UVJ-Space?}\label{sec-a-uvj}
+
+\begin{figure}
+\centering \includegraphics[width=\textwidth]{figures/c2/appendix/UVJ.pdf}
+\caption[Mean binned galaxy ages in rest-frame  extit{UVJ} space]{Left panel: Rest-frame \textit{U-V} versus \textit{V-J} color-color diagram for all cluster members in the high-redshift sample.
+Right panel: 2D histogram of mean binned galaxy ages in rest-frame \textit{UVJ} space.
+The ages depicted here are derived from SED fitting (see Section \ref{sec-fast}).
+The vector field plotted in white depicts the negative gradient of the mean binned ages, representing a possible approximation of evolutionary tracks.
+Almost all of these tracks depict galaxies moving from the star-forming to the quiescent bin, and therefore quenching (intermediate) galaxies.
+Note that these tracks take paths that cross all portions of the boundary between the star-forming and quiescent regions.
+\label{fig-a-UVJ}}
+\end{figure}
+
+Rest-frame \textit{UVJ} color-color selection is frequently used to distinguish quiescent and star-forming galaxies, by dividing the space of rest-frame \textit{U-V} versus \textit{V-J} colors into a star-forming and a quiescent region.
+The cuts that define these regions have been empirically derived by \citet{Williams:2009tt}, being tuned to maximally reflect the bimodality of galaxy populations out to $z\sim2.5$.
+The \textit{UVJ} method accounts for dust reddening by using two colors that differ in their sensitivity to star formation and dust, to break the degeneracy between old-and-quiescent and star-forming-and-dusty galaxies.
+In Figure \ref{fig-a-UVJ}, we plot the \textit{UVJ} color-color diagram for all cluster members in our sample.
+
+The \textit{UVJ} method parallels the selection used in Section \ref{sec-ellipses} to classify quiescent (red), star-forming (blue), and intermediate (green) galaxies.
+A natural question is whether similar values for $t_Q$ are obtained when galaxies are classified according to their \textit{UVJ} colors rather than the dust-corrected color-magnitude method.
+In this appendix we will perform this comparison and report the results.
+This subject will be expanded on in a letter (Foltz 2017, in prep).
+
+Equations ~\eqref{eq-model-first}~--~\eqref{eq-model-last} are written in terms of the observed number of red, green, and blue galaxies in a cluster.
+The \textit{UVJ} method (as it is commonly used) however only classifies galaxies as either star-forming or quiescent.
+The principal difficulty in identifying an intermediate \textit{UVJ} region lies in the fact that a galaxy's location in \textit{UVJ} space is strongly dependent on both its star formation rate and its dust reddening.
+
+For example, a galaxy in the upper-right region of the star-forming bin is both star-forming and very dust-reddened.
+If it quenches, after some time it will end up in the quiescent bin, where star formation rates are low and dust-reddening is low.
+The galaxy will need to decrease in dust-reddening as it decreases its star formation rate, and its precise trajectory in \textit{UVJ} space will depend on the details of how both of these values change in time.
+The \textit{UVJ} green valley is therefore defined not only by intermediate star formation rates, but also by intermediate dust-reddening values.
+
+This point is illustrated further in Figure \ref{fig-a-UVJ}.
+The right panel of this figure depicts mean binned ages of galaxies in rest-frame \textit{UVJ} space, and the gradient of these mean ages is shown as a white vector field.
+Intermediate galaxies, by definition, are those moving from the star-forming to the quiescent bin, and the age bins indicate many possible paths such galaxies might take as they age.
+This makes it difficult to know where to look in \textit{UVJ} space for galaxies that have recently shut off their star formation, although it is natural to suppose that they must lie along the boundary of the quiescent and star-forming regions, especially since that boundary was drawn precisely to separate these two populations.
+At the very least, there is reasonable doubt about the specific evolutionary tracks of quenching galaxies in a \textit{UVJ} diagram, in light of the lack of a prescription for modeling how dust reddening will change following the cessation of star formation.
+In contrast, the evolution of quenched galaxies in Figure \ref{fig-ellipses} is unambiguous, allowing a straightforward identification of blue, green, and red galaxies.
+
+There have been some attempts to augment the \textit{UVJ} method with the addition of a third bin.
+\citet{Whitaker:2012aa} subdivides the quiescent bin into young and old sections, in light of the fact that the color sequence of \textit{UVJ}-quiescent galaxies is driven by the ages of their stellar populations \citep{Whitaker:2010aa,Whitaker:2012aa}.
+We wish to emphasize that this \textit{V-J} cut is successful for the purposes of \citet{Whitaker:2010aa,Whitaker:2012aa} in that it identifies young, quiescent galaxies.
+We simply caution against others interpreting this cut as a general intermediate bin, as the age-color relation does not extend to the full population of galaxies, where the picture is complicated by dust reddening.
+There is a difference between young quiescent galaxies and intermediate galaxies in general.
+For the purposes of our quenching model, it is necessary to identify intermediate galaxies that have just left the star-forming blue cloud.
+
+In a different approach, by adapting the method described in Appendix \ref{sec-math}, we can measure a quenching time using only numbers of star-forming and quiescent galaxies.
+The general approach is to omit the number of intermediate galaxies (G) by assuming they are included in the number of star-forming galaxies (B), under the assumption that their declining but nonzero star formation rates will count them among the star-forming galaxies in the \textit{UVJ} diagram.
+We then reformulate our equations under this assumption as follows:
+the loss of the known variable G comes at the cost being unable to solve for $t_D$ and $t_F$ separately, and so we solve for $t_Q$ directly without separating it into delay and fade times.
+
+Mathematically, if we apply the follow transformation:
+
+\begin{equation*}
+\begin{aligned}
+R'&=R    & t_D'&=t_D+t_F=t_Q\\
+G'&=0    & t_F'&=0\\
+B'&=B+G & \\
+\end{aligned}
+\end{equation*}
+
+then the earlier integral relations simplify to
+
+\begin{equation*}
+\frac{B'}{R'} = \frac{\displaystyle\int_{z_c + \Delta z_Q}^{z_c} \mathrm{d}M/\mathrm{d}z\ \mathrm{d}z}{\displaystyle\int_{\infty}^{z_c + \Delta z_Q} \mathrm{d}M/\mathrm{d}z\ \mathrm{d}z}
+\end{equation*}
+
+where $\Delta z_Q$ is the redshift interval that spans one quenching time $t_Q$, $B'$ is the number of \textit{UVJ}-star-forming galaxies, and $R'$ is the number of \textit{UVJ}-quiescent galaxies.
+From here, the arguments of Appendix \ref{sec-math} follow, and we can use the \textit{UVJ}-derived number counts to constrain a quenching time with the following set of equations:
+
+\begin{align*}
+&\frac{\mathrm{d}M}{\mathrm{d}z} = \frac{-t_H}{46.1\ \mathrm{yr}} \times \left(\frac{1+1.11z}{1+z}\right)\left(\frac{M}{10^{12}\ \mathrm{M_\odot}}\right)^{1.1} \mathrm{M_\odot}\\
+&M(1.6) = 3\times10^{14}\ \mathrm{M_\odot}\\
+&\frac{B}{R} = \frac{M(z_c) - M(z_c + \Delta z_Q)}{M(z_c + \Delta z_Q)}
+\end{align*}
+
+As in Section \ref{sec-results}, we stack each cluster sample by taking the total numbers of \textit{UVJ}-quiescent and \textit{UVJ}-star-forming galaxies at the mean redshift of both cluster samples.
+These number counts then constrain a quenching timescale as described in Appendix \ref{sec-math}.
+Poisson counting statistics and a Monte Carlo simulation with 200 iterations provides the 68\% confidence interval, as described in Section \ref{sec-error}.
+The results are reported in Table \ref{tbl-UVJ}, alongside the results of the main analysis for comparison.
+
+The quenching timescales derived by both methods very nearly agree within uncertainties.
+For the GCLASS sample at $z=1.0$, we find $\tq{1.11}{0.16}{0.20}$~ Gyr, compared to $\simgresult$ Gyr for the RGB classification method.
+In the higher-redshift sample at $z=1.55$, we find $\tq{1.16}{0.12}{0.14}$~ Gyr, compared to $\simhiresult$ Gyr for the RGB method.
+Our error bars are likely under-estimated when adapting the Monte Carlo method to the UVJ classification, as it describes uncertainty in only two variables (RB) instead of the RGB method's full three.
+The UVJ method yields a $t_Q$ that is lower in both cases because it finds a slightly higher passive fraction.
+This is indicative of the way both classification schemes treat intermediate galaxies, which are necessarily split between the UVJ-star-forming and UVJ-quiescent categories.
+Not all G galaxies are included in the UVJ-star-forming category, having instead been classified UVJ-quiescent.
+
+% When adapting our method to the UVJ classification, we started with the assumption that all G galaxies would be folded into the UVJ-star-forming category,
+
+\begin{deluxetable}{ccccccc}
+\tabletypesize{\scriptsize}
+\tablecaption{Effect of \textit{UVJ} selection on inferred quenching timescales\label{tbl-UVJ}}
+\tablecolumns{9}
+\tablewidth{0pt}
+\tablehead{
+\colhead{Cluster} \vspace{-0.4cm} & & & & & \colhead{UVJ ${t_Q}^a$} & \colhead{RGB ${t_Q}^b$}\\ \vspace{-0.4cm}
+& \colhead{N} & \colhead{$\bar{z}$} & \colhead{Quiescent} & \colhead{Star-Forming} & & \\
+\colhead{Sample} & \colhead{} & \colhead{} & \colhead{} & \colhead{} & \colhead{(Gyr)} & \colhead{(Gyr)}
+}
+\startdata
+GCLASS & 10 & 1.04 & 187 & 58 & $\tq{1.11}{0.16}{0.20}$ & \gresult \\
+SpARCS high-redshift & 4 & 1.55 & 85 & 75 & $\tq{1.16}{0.12}{0.14}$ & \hiresult \\
+\enddata
+\tablenotetext{a}{Quenching timescale derived using UVJ classification}
+\tablenotetext{b}{Quenching timescale derived using dust-corrected U-B color-magnitude classification, for comparison   (see Section \ref{sec-ellipses})}
+\end{deluxetable}
+
 
 \normalsize
 

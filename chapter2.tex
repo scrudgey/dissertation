@@ -28,7 +28,7 @@ In this work we will assume a standard $\Lambda$CDM cosmology with $H_0 = 70 \ma
 
 % \invisiblesection{Data}
 % \addtocounter{section}{1}
-\subsection{Data}\label{data}
+\section{Data}\label{data}
 \begin{figure*}
 \centering \includegraphics[width=\textwidth]{figures/c1/colormag_final.pdf}
 \caption[Color-magnitude diagram for the GCLASS cluster sample]{Rest-frame U-B color versus absolute rest-frame B magnitude for spectroscopic members of each of the ten clusters in the GCLASS sample.
@@ -45,9 +45,9 @@ The spectroscopic confirmation of these clusters was followed by optical imaging
 
 A summary of the GCLASS sample is presented in Table \ref{tbl-gclass}. For more details on the spectroscopic and photometric observations we refer the reader to \citet{Muzzin:2012dw} and \citet{van-der-Burg:2013zn}, respectively.  The GCLASS sample has been used to study brightest cluster galaxies \citep[][Rettura et al., in prep.]{Lidman:2012il,Lidman:2013vp}, the relative effect of environment quenching and stellar mass quenching on galaxy evolution \citep{Muzzin:2012dw}, cluster and field stellar mass functions at $z\sim1$ \citep{van-der-Burg:2013zn}, cluster scaling relationships \citep{van-der-Burg:2014bs}, and phase space analysis constraints on the locations and timescales of quenching \citep{Noble:2013vh,Muzzin:2014sf}.
 
-\subsection{Analysis}\label{analysis}
+\section{Analysis}\label{analysis}
 
-\subsubsection{Photometric Catalog}\label{sec-catalog}
+\subsection{Photometric Catalog}\label{sec-catalog}
 
 As described in detail in \citet{van-der-Burg:2013zn}, the imaging data were combined into a matched catalog by first using Source Extractor to detect sources in the \textit{K$_s$}-band data. Each object was assigned a Gaussian PSF weight function based upon the Source Extractor half-light radius in the Ks-band image. This function was used to compute the weighted Gaussian-aperture-and-PSF flux for each object \citep{Kuijken:2008vf}. Robust errors were calculated by directly measuring the 1-$\sigma$ variation in background flux in randomly-placed apertures that do not contain any sources.
 
@@ -58,7 +58,7 @@ from the line-of-sight velocity distributions, after rejecting outliers \citep{G
 
 The photometric data were then matched to the spectroscopic catalog, such that each spectroscopic member considered in this work also has associated photometry in \textit{u' g' r' i' z' J Ks } and 3.6, 4.5, 5.8, 8.0 $\mu$m. In the following sections, we employ this catalog to derive rest-frame colors and magnitudes, stellar masses, and to fit the color-magnitude and color-mass relations for our cluster sample.
 
-\subsubsection{Rest-Frame Colors}\label{sec-rest_frame_color}
+\subsection{Rest-Frame Colors}\label{sec-rest_frame_color}
 
 In order to compare the photometric properties of cluster members over the range $0.8 < z < 1.3$, we need to first derive absolute rest-frame colors and magnitudes for these galaxies, to eliminate the effects of distance and account for k-correction.
 
@@ -77,7 +77,7 @@ The rest frame $M_{B,z=0}$ magnitudes and $\mathrm{(U-B)}_{z=0}$ colors of clust
 The estimated 1-$\sigma$ uncertainties in these rest-frame colors and magnitudes are derived from 200 Monte Carlo simulations: the observed flux in each passband is varied by a random amount drawn from a normal distribution with a standard deviation given by the photometric uncertainties, and the CMR fit repeated.
 The central 68\% of the resulting output then defines the upper and lower confidence intervals on our rest-frame $(U-B)_{z=0}$ color.
 
-\subsubsection{Stellar masses}\label{sec-stellar_masses}
+\subsection{Stellar masses}\label{sec-stellar_masses}
 
 Here we use our photometric catalogs to derive stellar masses for the cluster members for the purpose of fitting the color-mass relations.
 
@@ -89,7 +89,7 @@ For our grid of parameters, we use a range of ages from 10 Myr to 10 Gyr (exclud
 
 With the best fit stellar mass thus derived, a confidence interval is provided by a Monte Carlo simulation with 200 iterations. The color-mass relations are plotted in Figure \ref{fig-colormass}.
 
-\subsubsection{Color-Magnitude and Color-Mass Relations}\label{sec-fits}
+\subsection{Color-Magnitude and Color-Mass Relations}\label{sec-fits}
 
 Having explained how we derive rest-frame colors and magnitudes in Section \ref{sec-rest_frame_color}, and stellar masses in Section \ref{sec-stellar_masses}, we are now ready to determine the color-magnitude and color-mass relations.
 
@@ -137,7 +137,7 @@ We employ a Bayesian maximum likelihood estimator to obtain the fit parameters. 
 
 We show the color-mass relations in Figure \ref{fig-colormass}. The fit parameters are reported in Table \ref{tbl-colormass}, and discussed in Section \ref{sec-colormass}.
 
-\subsubsection{Rest-frame UVJ Diagrams}\label{sec-uvj}
+\subsection{Rest-frame UVJ Diagrams}\label{sec-uvj}
 \begin{figure*}
 \centering \includegraphics[width=\textwidth]{figures/c1/uvj.pdf}
 \caption[\textit{U-V} versus \textit{V-J} color-color plot for each cluster in the GCLASS sample]{Rest-frame U-V versus V-J color for each cluster in the GCLASS sample. Quiescent cluster members (without [O{\sc ii}] emission lines) are plotted as red crosses, while star-forming cluster members are plotted in blue. The solid lines show the color-color cut used by \citet{Williams:2009tt} for distinguishing quiescent from star-forming galaxies, where the upper-left quadrant is typically populated by quiescent galaxies.
@@ -313,139 +313,139 @@ The CMR zeropoints measured for $0.8 < z < 1.3$ allow us to constrain the quiesc
 %\facility{Spitzer}
 % \appendix
 
-\section{Star Formation Histories}\label{appendix}
+% \section{Star Formation Histories}\label{appendix}
 
-The eSFH models employ a star formation history parametrized by:
-\begin{equation}\label{eq-esfh}
-\Psi(t,\tau) = \mathrm{SFR}_0\cdot e^{-t/\tau} \left[ \frac{M_{\odot}}{\mathrm{yr}} \right],
-\end{equation}
-where $\Psi$ is the instantaneous star formation rate at time $t$ after the onset of star formation, SFR$_0$ is the initial star formation rate, and $\tau$ is a parameter ranging from 0.5 Gyr $\leq \tau \leq$ 5 Gyr.
+% The eSFH models employ a star formation history parametrized by:
+% \begin{equation}\label{eq-esfh}
+% \Psi(t,\tau) = \mathrm{SFR}_0\cdot e^{-t/\tau} \left[ \frac{M_{\odot}}{\mathrm{yr}} \right],
+% \end{equation}
+% where $\Psi$ is the instantaneous star formation rate at time $t$ after the onset of star formation, SFR$_0$ is the initial star formation rate, and $\tau$ is a parameter ranging from 0.5 Gyr $\leq \tau \leq$ 5 Gyr.
 
-We begin by generating model stellar populations with the range of six metallicities provided by the BC03 population synthesis code ($\mathrm{Z} = 0.0001, 0.0004, 0.004, 0.008, 0.02\, (\mathrm{Z}_\odot) , 0.05$). These six models each exhibit a metallicity-dependent U-V, J-K, and V-K color, but the absolute $M_{B,z=0}$ magnitudes are free parameters of these stellar population models.
-We therefore fix each $M_{B,z=0}$ magnitude by finding the value for which the reported Coma CMRs \citep{Bower:1992mb} best match each model's U-V, J-K, and V-K colors, by minimizing $\chi^2$.
-This essentially provides mass normalizations for each galaxy model and reproduces the CMR at $z=0$. The galaxy models then describe a simple red-sequence which may be passively evolved backward in redshift to provide a predicted redshift evolution of CMR slope and zeropoint.
+% We begin by generating model stellar populations with the range of six metallicities provided by the BC03 population synthesis code ($\mathrm{Z} = 0.0001, 0.0004, 0.004, 0.008, 0.02\, (\mathrm{Z}_\odot) , 0.05$). These six models each exhibit a metallicity-dependent U-V, J-K, and V-K color, but the absolute $M_{B,z=0}$ magnitudes are free parameters of these stellar population models.
+% We therefore fix each $M_{B,z=0}$ magnitude by finding the value for which the reported Coma CMRs \citep{Bower:1992mb} best match each model's U-V, J-K, and V-K colors, by minimizing $\chi^2$.
+% This essentially provides mass normalizations for each galaxy model and reproduces the CMR at $z=0$. The galaxy models then describe a simple red-sequence which may be passively evolved backward in redshift to provide a predicted redshift evolution of CMR slope and zeropoint.
 
-There is remarkably good agreement between the slope of the modeled red-sequence and those which we report for the GCLASS sample in Table \ref{tbl-colormag}. The modeled slope does not evolve significantly or disagree with our measured slope between $0.8 < z < 1.3$, for any chosen formation redshift or star formation history, and therefore does not constrain our models.
+% There is remarkably good agreement between the slope of the modeled red-sequence and those which we report for the GCLASS sample in Table \ref{tbl-colormag}. The modeled slope does not evolve significantly or disagree with our measured slope between $0.8 < z < 1.3$, for any chosen formation redshift or star formation history, and therefore does not constrain our models.
 
-The competing influences of age and ongoing star formation on the zeropoint color introduce a sort of degeneracy which means we cannot distinguish between young galaxies that very quickly shut off star formation and old galaxies with more recent star formation. Therefore we combine both factors into a single parameter which can be constrained by observation: the star formation weighted age, $\langle t \rangle_\mathrm{SFH}$, which gives the average age of the bulk of the stars, following \citet{Rettura:2011aa}:
+% The competing influences of age and ongoing star formation on the zeropoint color introduce a sort of degeneracy which means we cannot distinguish between young galaxies that very quickly shut off star formation and old galaxies with more recent star formation. Therefore we combine both factors into a single parameter which can be constrained by observation: the star formation weighted age, $\langle t \rangle_\mathrm{SFH}$, which gives the average age of the bulk of the stars, following \citet{Rettura:2011aa}:
 
-\begin{equation}\label{eq-tsfh}
-\langle t \rangle_\mathrm{SFH} \equiv \frac{\int_0^t(t-t^\prime)\Psi(t^\prime,\tau)\mathrm{d}t^\prime}
-{\int_0^t\Psi(t^\prime,\tau)\mathrm{d}t^\prime}
-\end{equation}
+% \begin{equation}\label{eq-tsfh}
+% \langle t \rangle_\mathrm{SFH} \equiv \frac{\int_0^t(t-t^\prime)\Psi(t^\prime,\tau)\mathrm{d}t^\prime}
+% {\int_0^t\Psi(t^\prime,\tau)\mathrm{d}t^\prime}
+% \end{equation}
 
-For the star formation history defined in Equation \ref{eq-esfh}, this equals
+% For the star formation history defined in Equation \ref{eq-esfh}, this equals
 
-\begin{equation}\label{eq-etsfh}
-\langle t \rangle_\mathrm{SFH} = \frac{t - \tau + \tau\cdot e^{-t/\tau}}{1-e^{-t/\tau}} .
-\end{equation}
+% \begin{equation}\label{eq-etsfh}
+% \langle t \rangle_\mathrm{SFH} = \frac{t - \tau + \tau\cdot e^{-t/\tau}}{1-e^{-t/\tau}} .
+% \end{equation}
 
-Our observed zeropoints can then place constraints on this $\langle t \rangle_\mathrm{SFH}$, which, together with the lookback time to the redshift of the cluster, can constrain the star-formation-weighted formation redshift $\langle z_f \rangle_\mathrm{SFH}$ of these stellar populations. We note that in general, the formation of the stars will be followed by their assembly into galaxies, and the age of the galaxy will be younger than the age of its component stars.
-\clearpage
+% Our observed zeropoints can then place constraints on this $\langle t \rangle_\mathrm{SFH}$, which, together with the lookback time to the redshift of the cluster, can constrain the star-formation-weighted formation redshift $\langle z_f \rangle_\mathrm{SFH}$ of these stellar populations. We note that in general, the formation of the stars will be followed by their assembly into galaxies, and the age of the galaxy will be younger than the age of its component stars.
+% \clearpage
 
-\begin{deluxetable}{llcccccc}
-\tabletypesize{\scriptsize}
-\tablecaption{Description of the GCLASS cluster sample\label{tbl-gclass}}
-\tablewidth{0pt}
-\tablehead{
-\colhead{Index}
-& \colhead{Cluster}
-& \colhead{R.A.}
-& \colhead{Decl.}
-& \colhead {z}
-& \colhead{Members\textsuperscript{a}}
-& \colhead{R$_{200}$\textsuperscript{b} ($h^{-1}$ Mpc) }
-& \colhead{Mass ($10^{14} \mathrm{M}_\odot$)}
-}
-\startdata
-1 & SpARCS J003442-430752 & 00:34:42.086 & -43:07:53.360 & 0.866 & 34 & $0.93\substack{+0.10\\-0.18}$ & $2.4\substack{+0.9\\-1.2}$ \\
-2 & SpARCS J003645-441050 & 00:36:45.039 & -44:10:49.911 & 0.869 & 48 & $1.1\substack{+0.1\\-0.2}$    & $4.4\substack{+1.7\\-1.6}$ \\
-3 & SpARCS J161314+564930 & 16:13:14.641 & 56:49:29.504  & 0.871 & 89 & $1.8\substack{+0.1\\-0.2}$    & $17.6\substack{+4.6\\-4.2}$ \\
-4 & SpARCS J104737+574137 & 10:47:37.463 & 57:41:37.960  & 0.956 & 30 & $0.76\substack{+0.09\\-0.10}$ & $1.5\substack{+0.6\\-0.5}$ \\
-5 & SpARCS J021524-034331 & 02:15:23.200 & -03:43:34.482 & 1.004 & 46 & $0.55\substack{+0.07\\-0.10}$ & $0.59\substack{+0.27\\-0.26}$ \\
-6 & SpARCS J105111+581803 & 10:51:11.232 & 58:18:03.128  & 1.035 & 32 & $0.61\substack{+0.10\\-0.13}$ & $0.85\substack{+0.46\\-0.44}$ \\
-7 & SpARCS J161641+554513 & 16:16:41.232 & 55:45:25.708  & 1.156 & 45 & $0.74\substack{+0.09\\-0.12}$ & $1.7\substack{+0.7\\-0.7}$ \\
-8 & SpARCS J163435+402151 & 16:34:35.402 & 40:21:51.588  & 1.177 & 46 & $0.89\substack{+0.11\\-0.12}$  & $3.1\substack{+1.3\\-1.1}$ \\
-9 & SpARCS J163852+403843 & 16:38:51.625 & 40:38:42.893  & 1.196 & 39 & $0.56\substack{+0.06\\-0.12}$ & $0.77\substack{+0.31\\-0.40}$ \\
-10 & SpARCS J003550-431224 & 00:35:49.700 & -43:12:24.160 & 1.335 & 23 & $1.0\substack{+0.2\\-0.2}$   & $5.5\substack{+3.0\\-3.2}$ \\
-\enddata
-\tablenotetext{a}{Number of spectroscopically-confirmed member galaxies.}
-\tablenotetext{b}{The radius for which the mean density is 200 times the critical density. From Wilson et al. (2015, in prep).}
-\end{deluxetable}
+% \begin{deluxetable}{llcccccc}
+% \tabletypesize{\scriptsize}
+% \tablecaption{Description of the GCLASS cluster sample\label{tbl-gclass}}
+% \tablewidth{0pt}
+% \tablehead{
+% \colhead{Index}
+% & \colhead{Cluster}
+% & \colhead{R.A.}
+% & \colhead{Decl.}
+% & \colhead {z}
+% & \colhead{Members\textsuperscript{a}}
+% & \colhead{R$_{200}$\textsuperscript{b} ($h^{-1}$ Mpc) }
+% & \colhead{Mass ($10^{14} \mathrm{M}_\odot$)}
+% }
+% \startdata
+% 1 & SpARCS J003442-430752 & 00:34:42.086 & -43:07:53.360 & 0.866 & 34 & $0.93\substack{+0.10\\-0.18}$ & $2.4\substack{+0.9\\-1.2}$ \\
+% 2 & SpARCS J003645-441050 & 00:36:45.039 & -44:10:49.911 & 0.869 & 48 & $1.1\substack{+0.1\\-0.2}$    & $4.4\substack{+1.7\\-1.6}$ \\
+% 3 & SpARCS J161314+564930 & 16:13:14.641 & 56:49:29.504  & 0.871 & 89 & $1.8\substack{+0.1\\-0.2}$    & $17.6\substack{+4.6\\-4.2}$ \\
+% 4 & SpARCS J104737+574137 & 10:47:37.463 & 57:41:37.960  & 0.956 & 30 & $0.76\substack{+0.09\\-0.10}$ & $1.5\substack{+0.6\\-0.5}$ \\
+% 5 & SpARCS J021524-034331 & 02:15:23.200 & -03:43:34.482 & 1.004 & 46 & $0.55\substack{+0.07\\-0.10}$ & $0.59\substack{+0.27\\-0.26}$ \\
+% 6 & SpARCS J105111+581803 & 10:51:11.232 & 58:18:03.128  & 1.035 & 32 & $0.61\substack{+0.10\\-0.13}$ & $0.85\substack{+0.46\\-0.44}$ \\
+% 7 & SpARCS J161641+554513 & 16:16:41.232 & 55:45:25.708  & 1.156 & 45 & $0.74\substack{+0.09\\-0.12}$ & $1.7\substack{+0.7\\-0.7}$ \\
+% 8 & SpARCS J163435+402151 & 16:34:35.402 & 40:21:51.588  & 1.177 & 46 & $0.89\substack{+0.11\\-0.12}$  & $3.1\substack{+1.3\\-1.1}$ \\
+% 9 & SpARCS J163852+403843 & 16:38:51.625 & 40:38:42.893  & 1.196 & 39 & $0.56\substack{+0.06\\-0.12}$ & $0.77\substack{+0.31\\-0.40}$ \\
+% 10 & SpARCS J003550-431224 & 00:35:49.700 & -43:12:24.160 & 1.335 & 23 & $1.0\substack{+0.2\\-0.2}$   & $5.5\substack{+3.0\\-3.2}$ \\
+% \enddata
+% \tablenotetext{a}{Number of spectroscopically-confirmed member galaxies.}
+% \tablenotetext{b}{The radius for which the mean density is 200 times the critical density. From Wilson et al. (2015, in prep).}
+% \end{deluxetable}
 
-\clearpage
+% \clearpage
 
-\begin{deluxetable}{llcccccc}
-\tabletypesize{\scriptsize}
-\tablecaption{Color-magnitude relation fit parameters\label{tbl-colormag}}
-\tablewidth{0pt}
-\tablehead{
-\colhead{Index} & \colhead{Cluster}
-& \colhead{N\textsuperscript{a}}
-& \colhead{Method\textsuperscript{b}}
-& \colhead{$\frac{ \Delta(U-B)_{z=0} }{ \Delta M_{B,z=0} }$\textsuperscript{c}}
-& \colhead{$\sigma(U-B)_{z=0}$\textsuperscript{d}}
-& \colhead{$c_0 \mathrm{(AB)}$\textsuperscript{e}}
-& \colhead{$c_0 \mathrm{(Vega)}$}
-}
-\startdata
-1  & SpARCS J003442-430752 & 14 & MLE & $-0.041\substack{+0.043 \\ -0.044} $ & $0.067\substack{+0.024 \\ -0.017}$ & $1.211\substack{+0.026 \\ -0.023}$ & $0.3720\substack{+0.026 \\ -0.023}$ \\[1.5ex]
-   &                       &    & TLS & $-0.046\substack{+0.030 \\ -0.061} $ & $0.057\substack{+0.017 \\ -0.018}$ & $1.189\substack{+0.043 \\ -0.006}$ & $0.3490\substack{+0.043 \\ -0.006}$ \\[1.5ex]
-2  & SpARCS J003645-441050 & 22 & MLE & $-0.003\substack{+0.041 \\ -0.042} $ & $0.123\substack{+0.028 \\ -0.022}$ & $1.239\substack{+0.031 \\ -0.028}$ & $0.4020\substack{+0.031 \\ -0.028}$ \\[1.5ex]
-   &                       &    & TLS & $-0.016\substack{+0.057 \\ -0.038} $ & $0.094\substack{+0.018 \\ -0.024}$ & $1.214\substack{+0.050 \\ -0.040}$ & $0.3760\substack{+0.050 \\ -0.040}$ \\[1.5ex]
-3  & SpARCS J161314+564930 & 54 & MLE & $-0.008\substack{+0.023 \\ -0.024} $ & $0.123\substack{+0.015 \\ -0.013}$ & $1.194\substack{+0.025 \\ -0.023}$ & $0.3570\substack{+0.025 \\ -0.023}$ \\[1.5ex]
-   &                       &    & TLS & $-0.024\substack{+0.028 \\ -0.015} $ & $0.069\substack{+0.018 \\ -0.021}$ & $1.191\substack{+0.018 \\ -0.029}$ & $0.3530\substack{+0.018 \\ -0.029}$ \\[1.5ex]
-4  & SpARCS J104737+574137 & 14 & MLE & $-0.034\substack{+0.074 \\ -0.077} $ & $0.112\substack{+0.036 \\ -0.025}$ & $1.226\substack{+0.041 \\ -0.042}$ & $0.3870\substack{+0.041 \\ -0.042}$ \\[1.5ex]
-   &                       &    & TLS & $-0.082\substack{+0.041 \\ -0.045} $ & $0.065\substack{+0.011 \\ -0.040}$ & $1.223\substack{+0.018 \\ -0.039}$ & $0.3810\substack{+0.018 \\ -0.039}$ \\[1.5ex]
-5  & SpARCS J021524-034331 & 24 & MLE & $-0.033\substack{+0.043 \\ -0.044} $ & $0.102\substack{+0.025 \\ -0.020}$ & $1.284\substack{+0.028 \\ -0.026}$ & $0.4450\substack{+0.028 \\ -0.026}$ \\[1.5ex]
-   &                       &    & TLS & $-0.057\substack{+0.033 \\ -0.038} $ & $0.046\substack{+0.034 \\ -0.008}$ & $1.269\substack{+0.031 \\ -0.032}$ & $0.4290\substack{+0.031 \\ -0.032}$ \\[1.5ex]
-6  & SpARCS J105111+581803 & 16 & MLE & $-0.013\substack{+0.044 \\ -0.041} $ & $0.089\substack{+0.032 \\ -0.024}$ & $1.220\substack{+0.032 \\ -0.033}$ & $0.3820\substack{+0.032 \\ -0.033}$ \\[1.5ex]
-   &                       &    & TLS & $-0.018\substack{+0.043 \\ -0.051} $ & $0.065\substack{+0.008 \\ -0.038}$ & $1.216\substack{+0.033 \\ -0.035}$ & $0.3780\substack{+0.033 \\ -0.035}$ \\[1.5ex]
-7  & SpARCS J161641+554513 & 25 & MLE & $-0.009\substack{+0.017 \\ -0.018} $ & $0.046\substack{+0.012 \\ -0.011}$ & $1.222\substack{+0.015 \\ -0.014}$ & $0.3840\substack{+0.015 \\ -0.014}$ \\[1.5ex]
-   &                       &    & TLS & $-0.014\substack{+0.014 \\ -0.013} $ & $0.030\substack{+0.010 \\ -0.008}$ & $1.215\substack{+0.016 \\ -0.015}$ & $0.3770\substack{+0.016 \\ -0.015}$ \\[1.5ex]
-8  & SpARCS J163435+402151 & 17 & MLE & $-0.038\substack{+0.044 \\ -0.044} $ & $0.051\substack{+0.018 \\ -0.013}$ & $1.229\substack{+0.014 \\ -0.015}$ & $0.3900\substack{+0.014 \\ -0.015}$ \\[1.5ex]
-   &                       &    & TLS & $-0.035\substack{+0.027 \\ -0.039} $ & $0.030\substack{+0.010 \\ -0.011}$ & $1.226\substack{+0.017 \\ -0.010}$ & $0.3870\substack{+0.017 \\ -0.010}$ \\[1.5ex]
-9  & SpARCS J163852+403843 & 7 & MLE &  $-0.064\substack{+0.088 \\ -0.100} $ & $0.061\substack{+0.046 \\ -0.023}$ & $1.200\substack{+0.032 \\ -0.031}$ & $0.3590\substack{+0.032 \\ -0.031}$ \\[1.5ex]
-   &                       &   & TLS &  $-0.040\substack{+0.034 \\ -0.140} $ & $0.028\substack{+0.001 \\ -0.023}$ & $1.200\substack{+0.010 \\ -0.012}$ & $0.3610\substack{+0.010 \\ -0.012}$ \\[1.5ex]
-10  & SpARCS J003550-431224 & 11 & MLE & $-0.030\substack{+0.068 \\ -0.068} $ & $0.094\substack{+0.044 \\ -0.032}$ & $1.242\substack{+0.042 \\ -0.040}$ & $0.4030\substack{+0.042 \\ -0.040}$ \\[1.5ex]
-    &                       &    & TLS & $-0.041\substack{+0.057 \\ -0.030} $ & $0.047\substack{+0.014 \\ -0.022}$ & $1.233\substack{+0.036 \\ -0.034}$ & $0.3940\substack{+0.036 \\ -0.034}$ \\
-\enddata
-\tablenotetext{a}{The number of quiescent cluster member galaxies used in computing the fit.}
-\tablenotetext{b}{The method used to derive fit parameters: maximum likelihood estimator (MLE) or total least squares (TLS).}
-\tablenotetext{c}{The slope of the rest-frame U-B color-magnitude relation.}
-\tablenotetext{d}{The intrinsic scatter of the rest-frame U-B color-magnitude relation.}
-\tablenotetext{e}{The zeropoint, i.e., the U-B color of the color-magnitude relation evaluated at M$_B$=-21.4, reported as an AB magnitude.}
-\end{deluxetable}
+% \begin{deluxetable}{llcccccc}
+% \tabletypesize{\scriptsize}
+% \tablecaption{Color-magnitude relation fit parameters\label{tbl-colormag}}
+% \tablewidth{0pt}
+% \tablehead{
+% \colhead{Index} & \colhead{Cluster}
+% & \colhead{N\textsuperscript{a}}
+% & \colhead{Method\textsuperscript{b}}
+% & \colhead{$\frac{ \Delta(U-B)_{z=0} }{ \Delta M_{B,z=0} }$\textsuperscript{c}}
+% & \colhead{$\sigma(U-B)_{z=0}$\textsuperscript{d}}
+% & \colhead{$c_0 \mathrm{(AB)}$\textsuperscript{e}}
+% & \colhead{$c_0 \mathrm{(Vega)}$}
+% }
+% \startdata
+% 1  & SpARCS J003442-430752 & 14 & MLE & $-0.041\substack{+0.043 \\ -0.044} $ & $0.067\substack{+0.024 \\ -0.017}$ & $1.211\substack{+0.026 \\ -0.023}$ & $0.3720\substack{+0.026 \\ -0.023}$ \\[1.5ex]
+%    &                       &    & TLS & $-0.046\substack{+0.030 \\ -0.061} $ & $0.057\substack{+0.017 \\ -0.018}$ & $1.189\substack{+0.043 \\ -0.006}$ & $0.3490\substack{+0.043 \\ -0.006}$ \\[1.5ex]
+% 2  & SpARCS J003645-441050 & 22 & MLE & $-0.003\substack{+0.041 \\ -0.042} $ & $0.123\substack{+0.028 \\ -0.022}$ & $1.239\substack{+0.031 \\ -0.028}$ & $0.4020\substack{+0.031 \\ -0.028}$ \\[1.5ex]
+%    &                       &    & TLS & $-0.016\substack{+0.057 \\ -0.038} $ & $0.094\substack{+0.018 \\ -0.024}$ & $1.214\substack{+0.050 \\ -0.040}$ & $0.3760\substack{+0.050 \\ -0.040}$ \\[1.5ex]
+% 3  & SpARCS J161314+564930 & 54 & MLE & $-0.008\substack{+0.023 \\ -0.024} $ & $0.123\substack{+0.015 \\ -0.013}$ & $1.194\substack{+0.025 \\ -0.023}$ & $0.3570\substack{+0.025 \\ -0.023}$ \\[1.5ex]
+%    &                       &    & TLS & $-0.024\substack{+0.028 \\ -0.015} $ & $0.069\substack{+0.018 \\ -0.021}$ & $1.191\substack{+0.018 \\ -0.029}$ & $0.3530\substack{+0.018 \\ -0.029}$ \\[1.5ex]
+% 4  & SpARCS J104737+574137 & 14 & MLE & $-0.034\substack{+0.074 \\ -0.077} $ & $0.112\substack{+0.036 \\ -0.025}$ & $1.226\substack{+0.041 \\ -0.042}$ & $0.3870\substack{+0.041 \\ -0.042}$ \\[1.5ex]
+%    &                       &    & TLS & $-0.082\substack{+0.041 \\ -0.045} $ & $0.065\substack{+0.011 \\ -0.040}$ & $1.223\substack{+0.018 \\ -0.039}$ & $0.3810\substack{+0.018 \\ -0.039}$ \\[1.5ex]
+% 5  & SpARCS J021524-034331 & 24 & MLE & $-0.033\substack{+0.043 \\ -0.044} $ & $0.102\substack{+0.025 \\ -0.020}$ & $1.284\substack{+0.028 \\ -0.026}$ & $0.4450\substack{+0.028 \\ -0.026}$ \\[1.5ex]
+%    &                       &    & TLS & $-0.057\substack{+0.033 \\ -0.038} $ & $0.046\substack{+0.034 \\ -0.008}$ & $1.269\substack{+0.031 \\ -0.032}$ & $0.4290\substack{+0.031 \\ -0.032}$ \\[1.5ex]
+% 6  & SpARCS J105111+581803 & 16 & MLE & $-0.013\substack{+0.044 \\ -0.041} $ & $0.089\substack{+0.032 \\ -0.024}$ & $1.220\substack{+0.032 \\ -0.033}$ & $0.3820\substack{+0.032 \\ -0.033}$ \\[1.5ex]
+%    &                       &    & TLS & $-0.018\substack{+0.043 \\ -0.051} $ & $0.065\substack{+0.008 \\ -0.038}$ & $1.216\substack{+0.033 \\ -0.035}$ & $0.3780\substack{+0.033 \\ -0.035}$ \\[1.5ex]
+% 7  & SpARCS J161641+554513 & 25 & MLE & $-0.009\substack{+0.017 \\ -0.018} $ & $0.046\substack{+0.012 \\ -0.011}$ & $1.222\substack{+0.015 \\ -0.014}$ & $0.3840\substack{+0.015 \\ -0.014}$ \\[1.5ex]
+%    &                       &    & TLS & $-0.014\substack{+0.014 \\ -0.013} $ & $0.030\substack{+0.010 \\ -0.008}$ & $1.215\substack{+0.016 \\ -0.015}$ & $0.3770\substack{+0.016 \\ -0.015}$ \\[1.5ex]
+% 8  & SpARCS J163435+402151 & 17 & MLE & $-0.038\substack{+0.044 \\ -0.044} $ & $0.051\substack{+0.018 \\ -0.013}$ & $1.229\substack{+0.014 \\ -0.015}$ & $0.3900\substack{+0.014 \\ -0.015}$ \\[1.5ex]
+%    &                       &    & TLS & $-0.035\substack{+0.027 \\ -0.039} $ & $0.030\substack{+0.010 \\ -0.011}$ & $1.226\substack{+0.017 \\ -0.010}$ & $0.3870\substack{+0.017 \\ -0.010}$ \\[1.5ex]
+% 9  & SpARCS J163852+403843 & 7 & MLE &  $-0.064\substack{+0.088 \\ -0.100} $ & $0.061\substack{+0.046 \\ -0.023}$ & $1.200\substack{+0.032 \\ -0.031}$ & $0.3590\substack{+0.032 \\ -0.031}$ \\[1.5ex]
+%    &                       &   & TLS &  $-0.040\substack{+0.034 \\ -0.140} $ & $0.028\substack{+0.001 \\ -0.023}$ & $1.200\substack{+0.010 \\ -0.012}$ & $0.3610\substack{+0.010 \\ -0.012}$ \\[1.5ex]
+% 10  & SpARCS J003550-431224 & 11 & MLE & $-0.030\substack{+0.068 \\ -0.068} $ & $0.094\substack{+0.044 \\ -0.032}$ & $1.242\substack{+0.042 \\ -0.040}$ & $0.4030\substack{+0.042 \\ -0.040}$ \\[1.5ex]
+%     &                       &    & TLS & $-0.041\substack{+0.057 \\ -0.030} $ & $0.047\substack{+0.014 \\ -0.022}$ & $1.233\substack{+0.036 \\ -0.034}$ & $0.3940\substack{+0.036 \\ -0.034}$ \\
+% \enddata
+% \tablenotetext{a}{The number of quiescent cluster member galaxies used in computing the fit.}
+% \tablenotetext{b}{The method used to derive fit parameters: maximum likelihood estimator (MLE) or total least squares (TLS).}
+% \tablenotetext{c}{The slope of the rest-frame U-B color-magnitude relation.}
+% \tablenotetext{d}{The intrinsic scatter of the rest-frame U-B color-magnitude relation.}
+% \tablenotetext{e}{The zeropoint, i.e., the U-B color of the color-magnitude relation evaluated at M$_B$=-21.4, reported as an AB magnitude.}
+% \end{deluxetable}
 
-\clearpage
+% \clearpage
 
-\begin{deluxetable}{llcccc}
-\tabletypesize{\scriptsize}
-\tablecaption{Color-mass relation fit parameters\label{tbl-colormass}}
-\tablewidth{0pt}
+% \begin{deluxetable}{llcccc}
+% \tabletypesize{\scriptsize}
+% \tablecaption{Color-mass relation fit parameters\label{tbl-colormass}}
+% \tablewidth{0pt}
 
-\tablehead{
-\colhead{Index} & \colhead{Cluster}
-& \colhead{N\textsuperscript{a}}
-& \colhead{$\frac{ \Delta(U-B)_{z=0} }{ \Delta log(M_*/M_{\odot}) }$\textsuperscript{b}}
-& \colhead{$\sigma(U-B)_{z=0}$\textsuperscript{c}}
-& \colhead{$c_0$\textsuperscript{d}}
-}
-\startdata
-1  & SpARCS J003442-430752 & 18 & $0.043\substack{+0.166 \\ -0.136} $ & $0.033\substack{+0.024 \\ -0.015}$ & $1.211\substack{+0.020 \\ -0.017}$ \\
-2  & SpARCS J003645-441050 & 28 & $0.173\substack{+0.405 \\ -0.408} $ & $0.088\substack{+0.034 \\ -0.026}$ & $1.267\substack{+0.095 \\ -0.137}$ \\
-3  & SpARCS J161314+564930 & 44 & $0.086\substack{+0.085 \\ -0.083} $ & $0.127\substack{+0.017 \\ -0.014}$ & $1.209\substack{+0.024 \\ -0.026}$ \\
-4  & SpARCS J104737+574137 & 15 & $0.079\substack{+0.235 \\ -0.305} $ & $0.083\substack{+0.042 \\ -0.030}$ & $1.252\substack{+0.050 \\ -0.051}$ \\
-5  & SpARCS J021524-034331 & 30 & $0.048\substack{+0.168 \\ -0.199} $ & $0.048\substack{+0.026 \\ -0.022}$ & $1.298\substack{+0.022 \\ -0.021}$ \\
-6  & SpARCS J105111+581803 & 14 & $0.234\substack{+0.130 \\ -0.118} $ & $0.058\substack{+0.026 \\ -0.020}$ & $1.271\substack{+0.035 \\ -0.033}$ \\
-7  & SpARCS J161641+554513 & 29 & $0.048\substack{+0.065 \\ -0.071} $ & $0.033\substack{+0.014 \\ -0.012}$ & $1.225\substack{+0.018 \\ -0.017}$ \\
-8  & SpARCS J163435+402151 & 17 & $0.338\substack{+0.182 \\ -0.140} $ & $0.030\substack{+0.019 \\ -0.014}$ & $1.263\substack{+0.033 \\ -0.027}$ \\
-9  & SpARCS J163852+403843 & 7 & $0.314\substack{+0.226 \\ -0.255} $ & $0.085\substack{+0.054 \\ -0.032}$ & $1.217\substack{+0.053 \\ -0.056}$ \\
-10  & SpARCS J003550-431224 & 11 & $0.181\substack{+0.139 \\ -0.128} $ & $0.076\substack{+0.040 \\ -0.029}$ & $1.240\substack{+0.032 \\ -0.031}$ \\
-\enddata
-\tablecomments{These fit parameters were derived using a Bayesian maximum likelihood estimator.}
-\tablenotetext{a}{The number of quiescent cluster member galaxies used in computing the fit.}
-\tablenotetext{b}{The slope of the rest-frame U-B color-mass relation.}
-\tablenotetext{c}{The intrinsic scatter of the rest-frame U-B color-mass relation.}
-\tablenotetext{d}{The zeropoint of the rest-frame U-B color-mass relation, in AB magnitudes.}
-\end{deluxetable}
+% \tablehead{
+% \colhead{Index} & \colhead{Cluster}
+% & \colhead{N\textsuperscript{a}}
+% & \colhead{$\frac{ \Delta(U-B)_{z=0} }{ \Delta log(M_*/M_{\odot}) }$\textsuperscript{b}}
+% & \colhead{$\sigma(U-B)_{z=0}$\textsuperscript{c}}
+% & \colhead{$c_0$\textsuperscript{d}}
+% }
+% \startdata
+% 1  & SpARCS J003442-430752 & 18 & $0.043\substack{+0.166 \\ -0.136} $ & $0.033\substack{+0.024 \\ -0.015}$ & $1.211\substack{+0.020 \\ -0.017}$ \\
+% 2  & SpARCS J003645-441050 & 28 & $0.173\substack{+0.405 \\ -0.408} $ & $0.088\substack{+0.034 \\ -0.026}$ & $1.267\substack{+0.095 \\ -0.137}$ \\
+% 3  & SpARCS J161314+564930 & 44 & $0.086\substack{+0.085 \\ -0.083} $ & $0.127\substack{+0.017 \\ -0.014}$ & $1.209\substack{+0.024 \\ -0.026}$ \\
+% 4  & SpARCS J104737+574137 & 15 & $0.079\substack{+0.235 \\ -0.305} $ & $0.083\substack{+0.042 \\ -0.030}$ & $1.252\substack{+0.050 \\ -0.051}$ \\
+% 5  & SpARCS J021524-034331 & 30 & $0.048\substack{+0.168 \\ -0.199} $ & $0.048\substack{+0.026 \\ -0.022}$ & $1.298\substack{+0.022 \\ -0.021}$ \\
+% 6  & SpARCS J105111+581803 & 14 & $0.234\substack{+0.130 \\ -0.118} $ & $0.058\substack{+0.026 \\ -0.020}$ & $1.271\substack{+0.035 \\ -0.033}$ \\
+% 7  & SpARCS J161641+554513 & 29 & $0.048\substack{+0.065 \\ -0.071} $ & $0.033\substack{+0.014 \\ -0.012}$ & $1.225\substack{+0.018 \\ -0.017}$ \\
+% 8  & SpARCS J163435+402151 & 17 & $0.338\substack{+0.182 \\ -0.140} $ & $0.030\substack{+0.019 \\ -0.014}$ & $1.263\substack{+0.033 \\ -0.027}$ \\
+% 9  & SpARCS J163852+403843 & 7 & $0.314\substack{+0.226 \\ -0.255} $ & $0.085\substack{+0.054 \\ -0.032}$ & $1.217\substack{+0.053 \\ -0.056}$ \\
+% 10  & SpARCS J003550-431224 & 11 & $0.181\substack{+0.139 \\ -0.128} $ & $0.076\substack{+0.040 \\ -0.029}$ & $1.240\substack{+0.032 \\ -0.031}$ \\
+% \enddata
+% \tablecomments{These fit parameters were derived using a Bayesian maximum likelihood estimator.}
+% \tablenotetext{a}{The number of quiescent cluster member galaxies used in computing the fit.}
+% \tablenotetext{b}{The slope of the rest-frame U-B color-mass relation.}
+% \tablenotetext{c}{The intrinsic scatter of the rest-frame U-B color-mass relation.}
+% \tablenotetext{d}{The zeropoint of the rest-frame U-B color-mass relation, in AB magnitudes.}
+% \end{deluxetable}
