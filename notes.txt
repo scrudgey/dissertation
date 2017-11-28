@@ -1,9 +1,10 @@
 THESIS
-title
+√ title
 acknowledgements
 √ abstract
 √ intro
-move appendices
+√ move appendices
+fix tables
 
 summary
 full text edits (see below) (this can wait till after first pass?)

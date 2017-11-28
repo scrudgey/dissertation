@@ -7,6 +7,9 @@ A: it doesn't affect those studies which only look at the SF population and so t
 environment-mass interplay:
 denser environments container larger hot gas masses and therefore enhance AGN feedback and promote BH mergers, but they also enhance RPS and tidal stripping.
 
+could the "green valley" that i see at high z be the result of photometric uncertainty?
+it would explain why
+
 derive dynamical time
 
 understand why delayed-then-rapid arguments
