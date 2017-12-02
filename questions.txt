@@ -1,5 +1,9 @@
 Q:
 
+spectral clustering algorithm?
+
+why not halo infall rates instead of mass infall rates?
+
 time evolution of tQ is not included in model, but tQ does evolve
 how does averaging over the past affect measured tQ?
 A: it doesn't affect those studies which only look at the SF population and so the main conclusions are safe (check)
