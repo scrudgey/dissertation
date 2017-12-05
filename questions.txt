@@ -2,7 +2,11 @@ Q:
 
 spectral clustering algorithm?
 
+dust correction
+https://idlastro.gsfc.nasa.gov/ftp/pro/astro/calz_unred.pro
+
 why not halo infall rates instead of mass infall rates?
+for a first approximation, this is okay. a colleague has offered to help calculate halo infall rates.
 
 time evolution of tQ is not included in model, but tQ does evolve
 how does averaging over the past affect measured tQ?
@@ -12,7 +16,7 @@ environment-mass interplay:
 denser environments container larger hot gas masses and therefore enhance AGN feedback and promote BH mergers, but they also enhance RPS and tidal stripping.
 
 could the "green valley" that i see at high z be the result of photometric uncertainty?
-it would explain why
+probably, but it won't affect tQ very much.
 
 derive dynamical time
 
