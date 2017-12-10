@@ -6,6 +6,8 @@ acknowledgements
 √ move appendices
 fix tables
 
+fix that intro sentence
+
 summary
 full text edits (see below) (this can wait till after first pass?)
   requires modification of eq.tex, do this last

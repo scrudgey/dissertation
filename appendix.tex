@@ -12,7 +12,7 @@ The eSFH models employ a star formation history parametrized by:
 \end{equation}
 where $\Psi$ is the instantaneous star formation rate at time $t$ after the onset of star formation, SFR$_0$ is the initial star formation rate, and $\tau$ is a parameter ranging from 0.5 Gyr $\leq \tau \leq$ 5 Gyr.
 
-We begin by generating model stellar populations with the range of six metallicities provided by the BC03 population synthesis code ($\mathrm{Z} = 0.0001, 0.0004, 0.004, 0.008, 0.02\, (\mathrm{Z}_\odot) , 0.05$). These six models each exhibit a metallicity-dependent U-V, J-K, and V-K color, but the absolute $M_{B,z=0}$ magnitudes are free parameters of these stellar population models.
+We begin by generating model stellar populations with the range of six metallicities provided by the BC03 population synthesis code ($\mathrm{Z} =$ 0.0001, 0.0004, 0.004, 0.008, 0.02\, $(\mathrm{Z}_\odot)$, 0.05). These six models each exhibit a metallicity-dependent U-V, J-K, and V-K color, but the absolute $M_{B,z=0}$ magnitudes are free parameters of these stellar population models.
 We therefore fix each $M_{B,z=0}$ magnitude by finding the value for which the reported Coma CMRs \citep{Bower:1992mb} best match each model's U-V, J-K, and V-K colors, by minimizing $\chi^2$.
 This essentially provides mass normalizations for each galaxy model and reproduces the CMR at $z=0$. The galaxy models then describe a simple red-sequence which may be passively evolved backward in redshift to provide a predicted redshift evolution of CMR slope and zeropoint.
 
@@ -32,9 +32,9 @@ For the star formation history defined in Equation \ref{eq-esfh}, this equals
 \end{equation}
 
 Our observed zeropoints can then place constraints on this $\langle t \rangle_\mathrm{SFH}$, which, together with the lookback time to the redshift of the cluster, can constrain the star-formation-weighted formation redshift $\langle z_f \rangle_\mathrm{SFH}$ of these stellar populations. We note that in general, the formation of the stars will be followed by their assembly into galaxies, and the age of the galaxy will be younger than the age of its component stars.
-\clearpage
 
 \begin{deluxetable}{llcccccc}
+\rotate
 \tabletypesize{\scriptsize}
 \tablecaption{Description of the GCLASS cluster sample\label{tbl-gclass}}
 \tablewidth{0pt}
@@ -64,9 +64,8 @@ Our observed zeropoints can then place constraints on this $\langle t \rangle_\m
 \tablenotetext{b}{The radius for which the mean density is 200 times the critical density. From Wilson et al. (2015, in prep).}
 \end{deluxetable}
 
-\clearpage
-
 \begin{deluxetable}{llcccccc}
+% \rotate
 \tabletypesize{\scriptsize}
 \tablecaption{Color-magnitude relation fit parameters\label{tbl-colormag}}
 \tablewidth{0pt}
@@ -80,26 +79,26 @@ Our observed zeropoints can then place constraints on this $\langle t \rangle_\m
 & \colhead{$c_0 \mathrm{(Vega)}$}
 }
 \startdata
-1  & SpARCS J003442-430752 & 14 & MLE & $-0.041\substack{+0.043 \\ -0.044} $ & $0.067\substack{+0.024 \\ -0.017}$ & $1.211\substack{+0.026 \\ -0.023}$ & $0.3720\substack{+0.026 \\ -0.023}$ \\[1.5ex]
-   &                       &    & TLS & $-0.046\substack{+0.030 \\ -0.061} $ & $0.057\substack{+0.017 \\ -0.018}$ & $1.189\substack{+0.043 \\ -0.006}$ & $0.3490\substack{+0.043 \\ -0.006}$ \\[1.5ex]
-2  & SpARCS J003645-441050 & 22 & MLE & $-0.003\substack{+0.041 \\ -0.042} $ & $0.123\substack{+0.028 \\ -0.022}$ & $1.239\substack{+0.031 \\ -0.028}$ & $0.4020\substack{+0.031 \\ -0.028}$ \\[1.5ex]
-   &                       &    & TLS & $-0.016\substack{+0.057 \\ -0.038} $ & $0.094\substack{+0.018 \\ -0.024}$ & $1.214\substack{+0.050 \\ -0.040}$ & $0.3760\substack{+0.050 \\ -0.040}$ \\[1.5ex]
-3  & SpARCS J161314+564930 & 54 & MLE & $-0.008\substack{+0.023 \\ -0.024} $ & $0.123\substack{+0.015 \\ -0.013}$ & $1.194\substack{+0.025 \\ -0.023}$ & $0.3570\substack{+0.025 \\ -0.023}$ \\[1.5ex]
-   &                       &    & TLS & $-0.024\substack{+0.028 \\ -0.015} $ & $0.069\substack{+0.018 \\ -0.021}$ & $1.191\substack{+0.018 \\ -0.029}$ & $0.3530\substack{+0.018 \\ -0.029}$ \\[1.5ex]
-4  & SpARCS J104737+574137 & 14 & MLE & $-0.034\substack{+0.074 \\ -0.077} $ & $0.112\substack{+0.036 \\ -0.025}$ & $1.226\substack{+0.041 \\ -0.042}$ & $0.3870\substack{+0.041 \\ -0.042}$ \\[1.5ex]
-   &                       &    & TLS & $-0.082\substack{+0.041 \\ -0.045} $ & $0.065\substack{+0.011 \\ -0.040}$ & $1.223\substack{+0.018 \\ -0.039}$ & $0.3810\substack{+0.018 \\ -0.039}$ \\[1.5ex]
-5  & SpARCS J021524-034331 & 24 & MLE & $-0.033\substack{+0.043 \\ -0.044} $ & $0.102\substack{+0.025 \\ -0.020}$ & $1.284\substack{+0.028 \\ -0.026}$ & $0.4450\substack{+0.028 \\ -0.026}$ \\[1.5ex]
-   &                       &    & TLS & $-0.057\substack{+0.033 \\ -0.038} $ & $0.046\substack{+0.034 \\ -0.008}$ & $1.269\substack{+0.031 \\ -0.032}$ & $0.4290\substack{+0.031 \\ -0.032}$ \\[1.5ex]
-6  & SpARCS J105111+581803 & 16 & MLE & $-0.013\substack{+0.044 \\ -0.041} $ & $0.089\substack{+0.032 \\ -0.024}$ & $1.220\substack{+0.032 \\ -0.033}$ & $0.3820\substack{+0.032 \\ -0.033}$ \\[1.5ex]
-   &                       &    & TLS & $-0.018\substack{+0.043 \\ -0.051} $ & $0.065\substack{+0.008 \\ -0.038}$ & $1.216\substack{+0.033 \\ -0.035}$ & $0.3780\substack{+0.033 \\ -0.035}$ \\[1.5ex]
-7  & SpARCS J161641+554513 & 25 & MLE & $-0.009\substack{+0.017 \\ -0.018} $ & $0.046\substack{+0.012 \\ -0.011}$ & $1.222\substack{+0.015 \\ -0.014}$ & $0.3840\substack{+0.015 \\ -0.014}$ \\[1.5ex]
-   &                       &    & TLS & $-0.014\substack{+0.014 \\ -0.013} $ & $0.030\substack{+0.010 \\ -0.008}$ & $1.215\substack{+0.016 \\ -0.015}$ & $0.3770\substack{+0.016 \\ -0.015}$ \\[1.5ex]
-8  & SpARCS J163435+402151 & 17 & MLE & $-0.038\substack{+0.044 \\ -0.044} $ & $0.051\substack{+0.018 \\ -0.013}$ & $1.229\substack{+0.014 \\ -0.015}$ & $0.3900\substack{+0.014 \\ -0.015}$ \\[1.5ex]
-   &                       &    & TLS & $-0.035\substack{+0.027 \\ -0.039} $ & $0.030\substack{+0.010 \\ -0.011}$ & $1.226\substack{+0.017 \\ -0.010}$ & $0.3870\substack{+0.017 \\ -0.010}$ \\[1.5ex]
-9  & SpARCS J163852+403843 & 7 & MLE &  $-0.064\substack{+0.088 \\ -0.100} $ & $0.061\substack{+0.046 \\ -0.023}$ & $1.200\substack{+0.032 \\ -0.031}$ & $0.3590\substack{+0.032 \\ -0.031}$ \\[1.5ex]
-   &                       &   & TLS &  $-0.040\substack{+0.034 \\ -0.140} $ & $0.028\substack{+0.001 \\ -0.023}$ & $1.200\substack{+0.010 \\ -0.012}$ & $0.3610\substack{+0.010 \\ -0.012}$ \\[1.5ex]
-10  & SpARCS J003550-431224 & 11 & MLE & $-0.030\substack{+0.068 \\ -0.068} $ & $0.094\substack{+0.044 \\ -0.032}$ & $1.242\substack{+0.042 \\ -0.040}$ & $0.4030\substack{+0.042 \\ -0.040}$ \\[1.5ex]
-    &                       &    & TLS & $-0.041\substack{+0.057 \\ -0.030} $ & $0.047\substack{+0.014 \\ -0.022}$ & $1.233\substack{+0.036 \\ -0.034}$ & $0.3940\substack{+0.036 \\ -0.034}$ \\
+1  & J003442-430752 & 14 & MLE & $-0.041\substack{+0.043 \\ -0.044} $ & $0.067\substack{+0.024 \\ -0.017}$ & $1.211\substack{+0.026 \\ -0.023}$ & $0.3720\substack{+0.026 \\ -0.023}$ \\[1.25ex]
+   &                       &    & TLS & $-0.046\substack{+0.030 \\ -0.061} $ & $0.057\substack{+0.017 \\ -0.018}$ & $1.189\substack{+0.043 \\ -0.006}$ & $0.3490\substack{+0.043 \\ -0.006}$ \\[1.25ex]
+2  & J003645-441050 & 22 & MLE & $-0.003\substack{+0.041 \\ -0.042} $ & $0.123\substack{+0.028 \\ -0.022}$ & $1.239\substack{+0.031 \\ -0.028}$ & $0.4020\substack{+0.031 \\ -0.028}$ \\[1.25ex]
+   &                       &    & TLS & $-0.016\substack{+0.057 \\ -0.038} $ & $0.094\substack{+0.018 \\ -0.024}$ & $1.214\substack{+0.050 \\ -0.040}$ & $0.3760\substack{+0.050 \\ -0.040}$ \\[1.25ex]
+3  & J161314+564930 & 54 & MLE & $-0.008\substack{+0.023 \\ -0.024} $ & $0.123\substack{+0.015 \\ -0.013}$ & $1.194\substack{+0.025 \\ -0.023}$ & $0.3570\substack{+0.025 \\ -0.023}$ \\[1.25ex]
+   &                       &    & TLS & $-0.024\substack{+0.028 \\ -0.015} $ & $0.069\substack{+0.018 \\ -0.021}$ & $1.191\substack{+0.018 \\ -0.029}$ & $0.3530\substack{+0.018 \\ -0.029}$ \\[1.25ex]
+4  & J104737+574137 & 14 & MLE & $-0.034\substack{+0.074 \\ -0.077} $ & $0.112\substack{+0.036 \\ -0.025}$ & $1.226\substack{+0.041 \\ -0.042}$ & $0.3870\substack{+0.041 \\ -0.042}$ \\[1.25ex]
+   &                       &    & TLS & $-0.082\substack{+0.041 \\ -0.045} $ & $0.065\substack{+0.011 \\ -0.040}$ & $1.223\substack{+0.018 \\ -0.039}$ & $0.3810\substack{+0.018 \\ -0.039}$ \\[1.25ex]
+5  & J021524-034331 & 24 & MLE & $-0.033\substack{+0.043 \\ -0.044} $ & $0.102\substack{+0.025 \\ -0.020}$ & $1.284\substack{+0.028 \\ -0.026}$ & $0.4450\substack{+0.028 \\ -0.026}$ \\[1.25ex]
+   &                       &    & TLS & $-0.057\substack{+0.033 \\ -0.038} $ & $0.046\substack{+0.034 \\ -0.008}$ & $1.269\substack{+0.031 \\ -0.032}$ & $0.4290\substack{+0.031 \\ -0.032}$ \\[1.25ex]
+6  & J105111+581803 & 16 & MLE & $-0.013\substack{+0.044 \\ -0.041} $ & $0.089\substack{+0.032 \\ -0.024}$ & $1.220\substack{+0.032 \\ -0.033}$ & $0.3820\substack{+0.032 \\ -0.033}$ \\[1.25ex]
+   &                       &    & TLS & $-0.018\substack{+0.043 \\ -0.051} $ & $0.065\substack{+0.008 \\ -0.038}$ & $1.216\substack{+0.033 \\ -0.035}$ & $0.3780\substack{+0.033 \\ -0.035}$ \\[1.25ex]
+7  & J161641+554513 & 25 & MLE & $-0.009\substack{+0.017 \\ -0.018} $ & $0.046\substack{+0.012 \\ -0.011}$ & $1.222\substack{+0.015 \\ -0.014}$ & $0.3840\substack{+0.015 \\ -0.014}$ \\[1.25ex]
+   &                       &    & TLS & $-0.014\substack{+0.014 \\ -0.013} $ & $0.030\substack{+0.010 \\ -0.008}$ & $1.215\substack{+0.016 \\ -0.015}$ & $0.3770\substack{+0.016 \\ -0.015}$ \\[1.25ex]
+8  & J163435+402151 & 17 & MLE & $-0.038\substack{+0.044 \\ -0.044} $ & $0.051\substack{+0.018 \\ -0.013}$ & $1.229\substack{+0.014 \\ -0.015}$ & $0.3900\substack{+0.014 \\ -0.015}$ \\[1.25ex]
+   &                       &    & TLS & $-0.035\substack{+0.027 \\ -0.039} $ & $0.030\substack{+0.010 \\ -0.011}$ & $1.226\substack{+0.017 \\ -0.010}$ & $0.3870\substack{+0.017 \\ -0.010}$ \\[1.25ex]
+9  & J163852+403843 & 7 & MLE &  $-0.064\substack{+0.088 \\ -0.100} $ & $0.061\substack{+0.046 \\ -0.023}$ & $1.200\substack{+0.032 \\ -0.031}$ & $0.3590\substack{+0.032 \\ -0.031}$ \\[1.25ex]
+   &                       &   & TLS &  $-0.040\substack{+0.034 \\ -0.140} $ & $0.028\substack{+0.001 \\ -0.023}$ & $1.200\substack{+0.010 \\ -0.012}$ & $0.3610\substack{+0.010 \\ -0.012}$ \\[1.25ex]
+10  & J003550-431224 & 11 & MLE & $-0.030\substack{+0.068 \\ -0.068} $ & $0.094\substack{+0.044 \\ -0.032}$ & $1.242\substack{+0.042 \\ -0.040}$ & $0.4030\substack{+0.042 \\ -0.040}$ \\[1.25ex]
+    &                      &    & TLS & $-0.041\substack{+0.057 \\ -0.030} $ & $0.047\substack{+0.014 \\ -0.022}$ & $1.233\substack{+0.036 \\ -0.034}$ & $0.3940\substack{+0.036 \\ -0.034}$ \\
 \enddata
 \tablenotetext{a}{The number of quiescent cluster member galaxies used in computing the fit.}
 \tablenotetext{b}{The method used to derive fit parameters: maximum likelihood estimator (MLE) or total least squares (TLS).}
@@ -108,7 +107,6 @@ Our observed zeropoints can then place constraints on this $\langle t \rangle_\m
 \tablenotetext{e}{The zeropoint, i.e., the U-B color of the color-magnitude relation evaluated at M$_B$=-21.4, reported as an AB magnitude.}
 \end{deluxetable}
 
-\clearpage
 
 \begin{deluxetable}{llcccc}
 \tabletypesize{\scriptsize}
@@ -144,7 +142,7 @@ Our observed zeropoints can then place constraints on this $\langle t \rangle_\m
 
 \chapter{Environmental Quenching Model}\label{sec-math}
 
-\begin{figure}[h!]
+\begin{figure}
 \centering \includegraphics[width=\textwidth]{figures/c2/appendix/sfh.pdf}
 \caption[Toy model of star formation history of a quenched galaxy]{Model star formation rate of a galaxy as a function of time relative to its accretion by the cluster.
 The galaxy's color reflects its star formation rate, such that star-forming galaxies are labeled blue, galaxies with declining star formation rate are labeled green, and quiescent galaxies are labeled red.
@@ -434,7 +432,7 @@ In the higher-redshift sample at $z=1.55$, we find $\tq{1.16}{0.12}{0.14}$~ Gyr,
 Our error bars are likely under-estimated when adapting the Monte Carlo method to the UVJ classification, as it describes uncertainty in only two variables (RB) instead of the RGB method's full three.
 The UVJ method yields a $t_Q$ that is lower in both cases because it finds a slightly higher passive fraction.
 This is indicative of the way both classification schemes treat intermediate galaxies, which are necessarily split between the UVJ-star-forming and UVJ-quiescent categories.
-Not all G galaxies are included in the UVJ-star-forming category, having instead been classified UVJ-quiescent.
+% Not all G galaxies are included in the UVJ-star-forming category, having instead been classified UVJ-quiescent.
 
 % When adapting our method to the UVJ classification, we started with the assumption that all G galaxies would be folded into the UVJ-star-forming category,
 
@@ -444,9 +442,7 @@ Not all G galaxies are included in the UVJ-star-forming category, having instead
 \tablecolumns{9}
 \tablewidth{0pt}
 \tablehead{
-\colhead{Cluster} \vspace{-0.4cm} & & & & & \colhead{UVJ ${t_Q}^a$} & \colhead{RGB ${t_Q}^b$}\\ \vspace{-0.4cm}
-& \colhead{N} & \colhead{$\bar{z}$} & \colhead{Quiescent} & \colhead{Star-Forming} & & \\
-\colhead{Sample} & \colhead{} & \colhead{} & \colhead{} & \colhead{} & \colhead{(Gyr)} & \colhead{(Gyr)}
+\colhead{Sample} & \colhead{N} & \colhead{$\bar{z}$} & \colhead{Quiescent} & \colhead{Star-Forming} & \colhead{UVJ ${t_Q}^a$ (Gyr)} & \colhead{RGB ${t_Q}^b$ (Gyr)}
 }
 \startdata
 GCLASS & 10 & 1.04 & 187 & 58 & $\tq{1.11}{0.16}{0.20}$ & \gresult \\
