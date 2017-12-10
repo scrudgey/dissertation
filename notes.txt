@@ -4,12 +4,12 @@ acknowledgements
 √ abstract
 √ intro
 √ move appendices
-fix tables
+√ fix tables
 
-fix that intro sentence
+√ fix that intro sentence
 
 summary
-full text edits (see below) (this can wait till after first pass?)
+√ full text edits (see below) (this can wait till after first pass?)
   requires modification of eq.tex, do this last
   document your changes so that they can be repeated later (sigh)
 √ intro
@@ -53,8 +53,8 @@ text edits:
   hyphen?
 
 persistent checks:
-  "this paper" / "this work" -> this chapter
-  appendix -> is it in an appendix or did it get moved?
-  capitalization of sections
+  √ "this paper" / "this work" -> this chapter
+  √ appendix -> is it in an appendix or did it get moved?
+  √ capitalization of sections
   abbreviations and the order they appear in the text
   e.g., or e.g   ?
